@@ -23,6 +23,7 @@ header{
 }
 header .logo{
     width: 255px;
+    font-size: 0;
     background: url(/image/CI/05Basic_BS04_SigKor_jpg_01.jpg) no-repeat 50% 50%/contain;
 }
 header nav{

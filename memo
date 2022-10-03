@@ -1,0 +1,21 @@
+// html 안에 html 불러오기
+if (location.search != '') {
+    function getParameterByName(name) {
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)")
+        results = regex.exec(location.search);
+        return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+    }
+    var menukey = getParameterByName('key');
+    var contents = document.getElementById('contents');
+    contents.className = 'page' + menukey;
+    var url = location.href.match('.*' + location.host) + '/note/contents/' + menukey + '.html';
+    async function fetchHtmlAsText(url) {
+        return await (await fetch(url)).text();
+    }
+    async function importPage(target) {
+        document.getElementById(target).innerHTML = await fetchHtmlAsText(url);
+        var js = document.createElement('script');
+        js.src = '/note/js/ex.js';
+        document.body.appendChild(js);
+    }
+    importPage('contents')
