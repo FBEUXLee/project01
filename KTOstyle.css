@@ -8,11 +8,23 @@
     box-sizing: border-box;
     border: 1px solid red;
 }
+span, a{
+    color: black;
+    font-weight: 400;
+}
+.inner{
+    width: 1400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    margin: 0 auto;
+}
 header{
     width: 100%;
     height: 150px;
     display: flex;
-    position: fixed;
+    /* position: fixed; */
     top: 0;
 }
 .header_inner{
@@ -21,9 +33,10 @@ header{
     display: flex;
     align-items: center;
 }
-header .logo{
+header img{
     width: 255px;
-    background: url(/image/CI/05Basic_BS04_SigKor_jpg_01.jpg) no-repeat 50% 50%/contain;
+    font-size: 0;
+    height: 100%;
 }
 header nav{
     width: 70%;
@@ -48,7 +61,6 @@ header nav ul li a{
     height: 110px;
     line-height: 24px;
     text-align: center;
-    color: black;
     font-weight: 500;
 }   
 header nav ul li a span{
@@ -80,7 +92,6 @@ header .link{
     font-size: 14px;
     line-height: 32px;
     font-weight: 300;
-    color: black;
 }
 .link .button{
     position: relative;
@@ -90,15 +101,14 @@ header .link{
 .link .button .search{
     width: 250px;
     height: 100%;
-    color: black;
     font-weight: 500;
-    display: block;
-    box-sizing: border-box;
+    display: flex;
+    align-items: center;
     border: 2px solid black;
     border-radius: 20px;
 }
 .link .button .search+span{
-    margin: 0 25px 0px 0;
+    margin: 0 25px;
     font-size: 17px;
 }
 .link .button .search .material-symbols-outlined{
@@ -106,8 +116,157 @@ header .link{
     align-items: center;
     margin: 0 0 0 50px;
 }
-.link .button .menu{
+.link .button .sitemap{
     display: block;
-    color: black;
     margin-left: 15px;
+}
+
+/* 섹션1  나중에 다시 정리(배너바, 동적인 요소)*/
+.sec01{
+    width: 100%;
+    height: 950px;
+}
+.sec01::after{
+    display: block;
+    content: "";
+    width: 108px;
+    height: 4px;
+    color: #43A038;
+}
+
+/* 섹션2(나중에 hover 생각) */
+.sec02{
+    width: 100%;
+    height: 250px;
+}
+.sec02 .inner{
+    display: flex;
+    flex-direction: column;
+}
+.sec02 .inner .menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.sec02 .inner .menu h2{
+    /* 수정요망 */
+}
+.sec02 .inner .menu span{
+    margin: 5px;
+    align-items: center;
+    display: flex;
+}
+.sec02 .inner .boxContent01{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: flex-start;
+    height: 170px;
+}
+.sec02 .inner .boxContent01 a{
+    width: 170px;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 38px;
+    border-radius: 10px;
+    gap: 8px;
+}
+.sec02 .inner .boxContent01 a:nth-of-type(1){
+    border: 1px solid #D63C3A;
+}
+.sec02 .inner .boxContent01 a:nth-of-type(2){
+    border: 1px solid #EB581F;
+}
+.sec02 .inner .boxContent01 a:nth-of-type(3){
+    border: 1px solid #FBCE4C;
+}
+.sec02 .inner .boxContent01 a:nth-of-type(4){
+    border: 1px solid #8BCB49;
+}
+.sec02 .inner .boxContent01 a:nth-of-type(5){
+    border: 1px solid #11A0DD;
+}
+.sec02 .inner .boxContent01 a:nth-of-type(6){
+    border: 1px solid #485DA4;
+}
+.sec02 .inner .boxContent01 a:nth-of-type(7){
+    border: 1px solid #9D419F;
+}
+.sec02 .inner .boxContent01 a img{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    margin-bottom: 10px;
+}
+.sec02 .inner .boxContent01 a span{
+    display: block;
+    width: 110px;
+    align-items: flex-end;
+    text-align: center;
+}
+
+/* 섹션3 */
+.sec03{
+    width: 100%;
+    height: 700px;
+}
+.sec03 .left{
+    display: flex;
+    flex-direction: column;
+}
+.sec03 .inner .left .menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sec03 .inner .left .menu span{
+    align-items: center;
+    display: flex;
+}
+.sec03 .inner .left .boxContent02{
+    /* 내용추가 */
+}
+.sec03 .inner .left .boxContent02 div{
+    width: 100%;
+    gap: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.sec03 .inner .left .boxContent02 div a{
+    width: 170px;
+    height: 170px;
+    border-radius: 10px;
+    gap: 8px;
+    border:1px solid #dddddd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sec03 .inner .left .boxContent02 div a span{
+    /* 내용추가 */
+}
+
+.sec03 .inner .right{
+    /* 내용추가 */
+}
+.sec03 .inner .right .menu{
+    display: flex;
+    justify-content: space-between;
+}
+.sec03 .inner .right .menu span{
+    display: flex;
+    align-items: center;
+}
+.sec03 .inner .right .article01, .article02{
+    margin: 20px 0 0 20px;
+}
+.sec03 .inner .right .article01 h3{
+    margin: 0 0 20px 0;
 }
