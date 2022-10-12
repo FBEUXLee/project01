@@ -1,3 +1,8 @@
+/* #gnb::after{
+    content: "";
+    display: block;
+    clear: both;
+} */
 <!-- <div class="navbar">
             <a href="#">경영전략</a>
             <div class="subnav">
