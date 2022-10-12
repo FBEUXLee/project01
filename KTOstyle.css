@@ -36,69 +36,58 @@ header{
     align-items: center;
 }
 header img{
-    width: 255px;
+    width: 240px;
     font-size: 0;
     height: 100%;
 }
 
 /* nav */
 nav{
-    width: 70%;
-    height: 110px;
+    width: 100%;
+    height: 100%;
+}
+nav ul,li{
+    list-style-type: none;
 }
 nav #gnb{
-    list-style-type: none;
     display: flex;
     justify-content: space-between;
 }
-#gnb::after{
-    content: "";
-    display: block;
-    clear: both;
-}
-#gnb>a{
-    display: block;
-    height: 40px;
-    line-height: 40px;
-}
-#gnb li{
-    margin: 0 30px 0 0;
+#gnb #m{
+    margin: 0 30px;
     width: 100%; 
     height: 100%;
     justify-content: center;
     align-items: center;
-    list-style-type: none;
-}
-#gnb .m{
-    float: left;
-    width: 120px;
     text-align: center;
-    position: relative;
 }
-#gnb .m ul{
-    position: absolute;
-    left: 0;
-    line-height: 40px;
-    /* font-size: 1.4em; */
-}
-
-/* nav ul li a{
+nav #gnb #m a{
     display: block;
     font-size: 19px;
     height: 110px;
-    line-height: 24px;
-    text-align: center;
-    font-weight: 500;
+    line-height: 20px;
 }   
-nav ul li a span{
+nav #gnb #m a span{
     display: inline-block;
     height: 100%;
-    font-weight: 500;
-    margin: 58px 0 0 0;
-    line-height: 24px;
-} */
+    font-weight: bold;
+    margin: 70px 0 0 0;
+    line-height: 20px;
+}
 
 /* subnav */
+.subnav{
+    width: 100%;
+}
+.subnav_inner{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.subnav_ul{
+    display: block;
+}
 
 
 /* 로그인 회원가입 사이트맵 */
@@ -240,7 +229,7 @@ header .link{
 /* 섹션3 */
 .sec03{
     width: 100%;
-    height: 700px;
+    height: 100%;
 }
 .sec03 .left{
     display: flex;
@@ -304,6 +293,7 @@ header .link{
 }
 .sec03 .inner .right ul li{
     margin: 0 0 15px 0;
+    list-style-type :disc;
 }
 .sec03 .inner .right ul li a{
     display: flex;
