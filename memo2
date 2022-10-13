@@ -252,3 +252,217 @@
             <a href="#"><img src="/image/banner5.PNG" alt="제 2회 한국관광 데이터랩 우수 활용사례 공모전"></a>
             <a href="#"><img src="/image/banner6.PNG" alt="관광산업 통합 정보 제공 채널"></a>            
         </section> -->
+
+        <div class="subnav">
+                    <!-- 스크립트로 slidetoggle을 한다 선택자 nav의 hover 했을때 내려옴 -->
+                    <div class="subnav_inner">
+                        <!-- 서브메뉴 5덩어리 들어있음 -->
+                        <ul class="subnav_ul01">
+                            <li class="sub01_01">CEO</li>
+                            <ul>
+                                <li><a href="#">인사말</a></li>
+                                <li><a href="#">역대 CEO</a></li>
+                            </ul>
+                            <li class="sub01_02">연혁</li>
+                            <ul>
+                                <li><a href="#">1961~1970</a></li>
+                                <li><a href="#">1971~1980</a></li>
+                                <li><a href="#">1981~1990</a></li>
+                                <li><a href="#">1991~2000</a></li>
+                                <li><a href="#">2001~현재</a></li>
+                            </ul>
+                            <li class="sub01_03">조직현황</li>
+                            <ul>
+                                <li><a href="#">조직도</a></li>
+                            </ul>
+                            <li class="sub01_04">시설현황</li>
+                            <ul>
+                                <li><a href="#">약도/연락처</a></li>
+                                <li><a href="#">관광안내센터</a></li>
+                                <li><a href="#">관광일자리센터</a></li>
+                            </ul>
+                            <li class="sub01_05">CI</li>
+                            <ul>
+                                <li><a href="#">CI</a></li>
+                                <li><a href="#">BI</a></li>
+                            </ul>
+                        </ul>
+                        <ul class="subnav_ul02">
+                            <li class="sub02_01">경영혁신</li>
+                            <ul>
+                                <li><a href="#">비전 및 추진체계</a></li>
+                                <li><a href="#">시민참여혁신</a></li>
+                                <li><a href="#">사회적가치</a></li>
+                            </ul>
+                            <li class="sub02_02">윤리인권경영</li>
+                            <ul>
+                                <li><a href="#">윤리경영</a></li>
+                                <li><a href="#">인권경영</a></li>
+                            </ul>
+                            <li class="sub02_03">클린경영</li>
+                            <ul>
+                                <li><a href="#">클린경영 소개</a></li>
+                                <li><a href="#">감사계획 및 일상감사</a></li>
+                                <li><a href="#">청탁금지법 안내</a></li>
+                                <li><a href="#">부패신고 및 보호보상제도</a></li>
+                                <li><a href="#">공익신고 및 보호보상제도</a></li>
+                                <li><a href="#">윤리적 딜레마 FAQ</a></li>
+                                <li><a href="#">클린경영센터</a></li>
+                                <li><a href="#">청렴 옴부즈만</a></li>
+                                <li><a href="#">기타사항</a></li>
+                            </ul>
+                            <li class="sub02_04">안전경영</li>
+                            <ul>
+                                <li><a href="#">안전보건경영방침</a></li>
+                                <li><a href="#">안전보건활동</a></li>
+                                <li><a href="#">안전여행 가이드</a></li>
+                                <li><a href="#">안전보건 자료실</a></li>
+                            </ul>
+                            <li class="sub02_05">ALIO</li>
+                            <ul>
+                                <li><a href="#">경영공시</a></li>
+                            </ul>
+                        </ul>
+                        <ul class="subnav_ul03">
+                            <li class="sub03_01">포털</li>
+                            <ul>
+                                <li><a href="#">대한민국정보공개포털</a></li>
+                                <li><a href="#">국가공유자원포털</a></li>
+                                <li><a href="#">Tourgo관광지식정보시스템</a></li>
+                                <li><a href="#">한국관광공사 분석리포트</a></li>
+                                <li><a href="#">TourAPI</a></li>
+                            </ul>
+                            <li class="sub03_02">갤러리 및 소식</li>
+                            <ul>
+                                <li><a href="#">갤러리</a></li>
+                                <li><a href="#">소식</a></li>
+                            </ul>
+                            <li class="sub03_03">데이터랩</li>
+                            <ul>
+                                <li><a href="#">한국관광통계</a></li>
+                                <li><a href="#">관광실태조사</a></li>
+                                <li><a href="#">관광시장 동향</a></li>
+                                <li><a href="#">뉴스레터</a></li>
+                                <li><a href="#">공사발간보고서</a></li>
+                                <li><a href="#">여행행태분석</a></li>
+                            </ul>
+                            <li class="sub03_04">지원</li>
+                            <ul>
+                                <li><a href="#">관광투자지원</a></li>
+                                <li><a href="#">관광마케팅지원</a></li>
+                            </ul>
+                            <li class="sub03_05">구석구석 똑똑</li>
+                            <ul>
+                                <li><a href="#">자주묻는질문</a></li>
+                                <li><a href="#">똑똑한 문의</a></li>
+                                <li><a href="#">똑똑한 제안</a></li>
+                                <li><a href="#">칭찬합시다</a></li>
+                                <li><a href="#">관광정보 수정/신규요청</a></li>
+                            </ul>
+                            <li class="sub03_06"><a href="#">도서자료실</a></li>
+                            <li class="sub03_07"><a href="#">관광산업육성 및 지원</a></li>
+                        </ul>
+                        <ul class="subnav_ul04">
+                            <li class="sub04_01">지원사업</li>
+                            <ul>
+                                <li><a href="#">관광홍보지원</a></li>
+                                <li><a href="#">외국인번역 감수지원</a></li>
+                                <li><a href="#">문화관광축제 사업지원</a></li>
+                                <li><a href="#">근로자휴가 지원사업</a></li>
+                                <li><a href="#">관광업계 ICT인력 신규채용 지원사업</a></li>
+                            </ul>
+                            <li class="sub04_02">주요사업</li>
+                            <ul>
+                                <li><a href="#">사업실명제</a></li>
+                                <li><a href="#">해외관광마케팅</a></li>
+                                <li><a href="#">국제회의 유치</a></li>
+                                <li><a href="#">국제협력</a></li>
+                                <li><a href="#">관광안내서비스</a></li>
+                                <li><a href="#">지자체유관기관 협력</a></li>
+                                <li><a href="#">국내 관광 수용 태세 개선</a></li>
+                                <li><a href="#">국내 관광 진흥</a></li>
+                                <li><a href="#">남북관광교류</a></li>
+                                <li><a href="#">관광기업지원</a></li>
+                                <li><a href="#">스마트관광</a></li>
+                            </ul>
+                            <li class="sub04_03">스마트관광도시조성사업</li>
+                            <ul>
+                                <li><a href="#">사업안내</a></li>
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">질의응답</a></li>
+                                <li><a href="#">지자체홍보</a></li>
+                            </ul>
+                            <li class="sub04_04">기타</li>
+                            <ul>
+                                <li><a href="#">한국관광 디지털 얼라이언스</a></li>
+                                <li><a href="#">KTO글로벌서비스</a></li>
+                                <li><a href="#">한국관광 품질인증제</a></li>
+                                <li><a href="#">외국어메뉴판 만들기</a></li>
+                                <li><a href="#">관광컨설팅 브로슈어</a></li>
+                                <li><a href="#">관광자원개발 메뉴얼 2010</a></li>
+                                <li><a href="#">교육정보/신청</a></li>
+                                <li><a href="#">무장애 여행</a></li>
+                                <li><a href="#">국가공유자원포털</a></li>
+                            </ul>
+                        </ul>
+                        <ul class="subnav_ul05">
+                            <li class="sub05_01">공사 내 채용소식</li>
+                            <ul>
+                                <li><a href="#">정규직</a></li>
+                                <li><a href="#">계약직 및 인턴</a></li>
+                            </ul>
+                            <li class="sub05_02">공사 외 채용소식</li>
+                            <ul>
+                                <li><a href="#">관광in</a></li>
+                            </ul>
+                        </ul>                
+                    </div>
+                </div>       
+
+/* nav */
+nav{
+    width: 100%;
+    height: 100%;
+}
+nav ul,li{
+    list-style-type: none;
+}
+nav #gnb{
+    display: flex;
+    justify-content: space-between;
+}
+#gnb #m{
+    margin: 0 30px;
+    width: 100%; 
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+nav #gnb #m a{
+    display: block;
+    font-size: 19px;
+    height: 110px;
+    line-height: 20px;
+}   
+nav #gnb #m a span{
+    display: inline-block;
+    height: 100%;
+    font-weight: bold;
+    margin: 70px 0 0 0;
+    line-height: 20px;
+}
+
+/* subnav */
+.subnav{
+    width: 100%;
+}
+.subnav_inner{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.subnav_ul{
+    display: block;
+}

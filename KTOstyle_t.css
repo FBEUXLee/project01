@@ -1,4 +1,12 @@
 @charset "utf-8";
-@media all and (min-width:801px) and (max-width:1400px){
-    
+@media all and (min-width:801px) and (max-width:1200px){
+    .wrapper{
+        width: 100%;
+    }
+    .nav-links{
+        width: 100%;
+    }
+    .nav-links li{
+        width: 100%;
+    }
 }

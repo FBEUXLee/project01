@@ -7,6 +7,7 @@
     text-decoration: none;
     box-sizing: border-box;
     border: 1px solid red;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 span, a{
     color: black;
@@ -43,50 +44,101 @@ header img{
 
 /* nav */
 nav{
-    width: 100%;
-    height: 100%;
+    width:100% ;
+    z-index: 999;
+    height: 65px;
+    line-height: 65px;
 }
-nav ul,li{
-    list-style-type: none;
-}
-nav #gnb{
+nav .wrapper{
+    max-width: 1400px;
+    padding: 0 30px;
+    margin: auto;
     display: flex;
+    align-items: center;
+    position: relative;
+}
+.wrapper .nav-links{
+    display: inline-flex;
     justify-content: space-between;
 }
-#gnb #m{
-    margin: 0 30px;
-    width: 100%; 
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+.nav-links li{
+    list-style: none;
+    margin: 0 25px;
 }
-nav #gnb #m a{
-    display: block;
-    font-size: 19px;
-    height: 110px;
-    line-height: 20px;
-}   
-nav #gnb #m a span{
-    display: inline-block;
-    height: 100%;
-    font-weight: bold;
-    margin: 70px 0 0 0;
-    line-height: 20px;
+.nav-links li:hover .mega-box{
+    opacity: 1;
+    visibility: visible;
+    top: 65px;
+    transition: all 0.3s ease;
+    background: #fff;
+}
+.nav-links li a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 9px 50px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+nav .nav-links li a:hover{
+    color: #43a047;
 }
 
-/* subnav */
-.subnav{
+.mega-box{
+    position: absolute;
     width: 100%;
+    top: 80px;
+    width: 100%;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
 }
-.subnav_inner{
-    width: 70%;
-    height: 100%;
+.mega-box li a{
+    width: 100%;
+    display: block;
+    padding: 0 0 0 15px;
+    font-weight: 400;
+    border-radius: 0px;
+}
+nav .nav-links li a:hover .mega-box{
+    top: 60px;
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s ease;
+}
+.mega-box .mega-content{
+    padding: 25px 20px;
     display: flex;
+    width: 100%;
     justify-content: space-between;
 }
-.subnav_ul{
+.mega-content .row{
+    width:100%;
+    line-height: 45px;
+}
+.mega-content .row header{
+    color: black;
+    font-size: 17px;
+    font-weight: 500;
+    height: auto;
+}
+.mega-content .row .mega-links{
+    border-left: 1px solid rgba(255, 255, 255, 0.08);
+    margin-left: -20px;
+}
+.row .mega-links li{
+    padding: 0 20px;    
+}
+.row .mega-links li a{
+    padding: 0 20px;
+    color: black;   
+    font-size: 13px;
     display: block;
+}
+.row .mega-links li a:hover{
+    color: #43a047;
 }
 
 
@@ -148,6 +200,43 @@ header .link{
     height: 100%;
 }
 
+/* 스와이퍼 */
+.swiper{
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide{
+    font-size: 18px;
+    background: #fff;
+    position: relative;
+}
+.swiper-slide img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.swiper-slide .content{
+    position: absolute;
+    bottom:100px;
+    padding: 30px 30px;
+    background-color: black;
+    opacity: 0.8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.swiper-slide .content a{
+    color: #fff;
+}
+.swiper-slide .content a h3, h5, p{
+    margin:0 0 30px 0;
+}
+.swiper-slide .content .tag{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
 
 /* 섹션2(나중에 hover 생각) */
 .sec02{
@@ -163,9 +252,6 @@ header .link{
     justify-content: space-between;
     align-items: center;
     width: 100%;
-}
-.sec02 .inner .menu h2{
-    /* 수정요망 */
 }
 .sec02 .inner .menu span{
     margin: 5px;
@@ -187,10 +273,12 @@ header .link{
     align-items: center;
     justify-content: center;
     padding: 0 38px;
-    border-radius: 10px;
+    border-radius: 20px;
     gap: 8px;
+    border: 2px solid black;
 }
-.sec02 .inner .boxContent01 a:nth-of-type(1){
+.sec02 .inner .boxContent01 a:nth-of-type(1):hover,
+.sec02 .inner .boxContent01 a img:nth-of-type(1):hover{
     border: 1px solid #D63C3A;
 }
 .sec02 .inner .boxContent01 a:nth-of-type(2){
@@ -257,16 +345,20 @@ header .link{
 .sec03 .inner .left .boxContent02 div a{
     width: 170px;
     height: 170px;
-    border-radius: 10px;
+    border-radius: 20px;
     gap: 8px;
+    font-size: 18px;
     border:1px solid #dddddd;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
-.sec03 .inner .left .boxContent02 div a span{
-    /* 내용추가 */
+.sec03 .inner .left .boxContent02 div a:hover{
+    background: #43a047;
+    color: #fff;
+    transition: all 0.3s ease;
 }
 
 .sec03 .inner .right{
@@ -338,26 +430,30 @@ header .link{
     height: 170px;
     display: flex;
     flex-direction: column;
+    text-align: center;
     align-items: center;
     justify-content: center;
     padding: 0 38px;
-    border-radius: 10px;
+    border-radius: 20px;
     gap: 8px;
     border: 1px solid #dddddd;
+    transition : all 0.3s ease;
 }
-.sec04 .inner .boxContent03 a span{
-    display: block;
-    width: 110px;
-    align-items: flex-end;
-    text-align: center;
+.sec04 .inner .boxContent03 a:hover{
+    background: #43a047;
+    color: #fff;
 }
+
 .sec04 .inner .boxContent03 a img{
     display: inline-block;
     justify-content: center;
     align-items: center;
-    width: 70px;
-    height: 70px;
+    width: 80px;
+    height: 80px;
     margin-bottom: 10px;
+}
+.sec04 .inner .boxContent03 a img:nth-child(1){
+    border-radius: 100%;
 }
 
 /* 섹션5 */
@@ -381,43 +477,6 @@ header .link{
     margin: 5px;
 }
 
-/* 스와이퍼 */
-.swiper{
-    width: 100%;
-    height: 100%;
-}
-.swiper-slide{
-    font-size: 18px;
-    background: #fff;
-    position: relative;
-}
-.swiper-slide img{
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.swiper-slide .content{
-    position: absolute;
-    bottom:100px;
-    padding: 30px 30px;
-    background-color: black;
-    opacity: 0.8;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.swiper-slide .content a{
-    color: #fff;
-}
-.swiper-slide .content a h3, h5, p{
-    margin:0 0 30px 0;
-}
-.swiper-slide .content .tag{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
 
 /* footer */
 footer{
