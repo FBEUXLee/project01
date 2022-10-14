@@ -1,12 +1,68 @@
 @charset "utf-8";
-@media all and (min-width:801px) and (max-width:1200px){
-    .wrapper{
+@media all and (min-width:641px) and (max-width:1080px){
+    /* 공통 */
+    *{
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+    }
+    .inner{
+        width:100%
+    }
+    .sec01,.sec02,.sec03,.sec04,.sec05{
+        width:100%
+    }
+    h2{
+        font-size: 20px;
+    }
+    .menu>span{
+        font-size: 15px;
+    }
+
+    /* 헤더 */
+    header{
+        width: 100%;
+        height: auto;
+    }
+    header img{
+        width: 120px;
+        height: 100%;
+    }
+
+    /* 네비 */
+    nav, .link>ul{
+        display: none;
+    }
+    
+    /* sec02 */
+    .sec02 .inner .boxContent01 a{
+        width: 120px;
+        height: 120px;
+    }
+    .sec02 .inner .boxContent01 a img{
+        width: 50px;
+        height: 50px;
+    }
+    .sec02 .inner .boxContent01 a span{
+        font-size: 13px;
+        width: 100px;
+    }
+
+    /* sec03 */
+    .sec03 .inner{
+        display: flex;
+        flex-direction: column;
+    }
+    .sec03 .inner .left{
         width: 100%;
     }
-    .nav-links{
-        width: 100%;
+    .sec03 .inner .boxContent02 div{
+        display: flex;
+        /* flex-direction: column; */
     }
-    .nav-links li{
-        width: 100%;
+    .sec03 .inner .left .boxContent02 div a{
+        width: 120px;
+        height: 120px;
+        font-size: 13px;
     }
 }

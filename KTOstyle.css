@@ -25,7 +25,6 @@ span, a{
 /* 헤더 */
 header{
     width: 100%;
-    height: 150px;
     display: flex;
     /* position: fixed; */
     top: 0;
@@ -111,11 +110,11 @@ nav .nav-links li a:hover .mega-box{
 .mega-box .mega-content{
     padding: 25px 20px;
     display: flex;
+    flex-flow: row wrap;
     width: 100%;
-    justify-content: space-between;
 }
 .mega-content .row{
-    width:100%;
+    width:20%;
     line-height: 45px;
 }
 .mega-content .row header{
@@ -140,13 +139,19 @@ nav .nav-links li a:hover .mega-box{
 .row .mega-links li a:hover{
     color: #43a047;
 }
-
+.row .single a{
+    width: 100%;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+}
 
 /* 로그인 회원가입 사이트맵 */
 header .link{
     position: absolute;
     right: 2%;
-    top: 12px;
+    top: 10px;
 }
 .link > ul{
     position: relative;
@@ -166,7 +171,7 @@ header .link{
 }
 .link .button{
     position: relative;
-    margin-top: 12px;
+    margin-top: 10px;
     display: flex;
 }
 .link .button .search{
@@ -241,7 +246,6 @@ header .link{
 /* 섹션2(나중에 hover 생각) */
 .sec02{
     width: 100%;
-    height: 250px;
 }
 .sec02 .inner{
     display: flex;
@@ -263,7 +267,7 @@ header .link{
     justify-content: center;
     gap: 30px;
     align-items: flex-start;
-    height: 170px;
+    margin: 20px 0 0 0;
 }
 .sec02 .inner .boxContent01 a{
     width: 170px;
@@ -272,7 +276,7 @@ header .link{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0 38px;
+    padding: 0 30px;
     border-radius: 20px;
     gap: 8px;
     border: 2px solid black;
@@ -305,19 +309,15 @@ header .link{
     align-items: center;
     width: 70px;
     height: 70px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 .sec02 .inner .boxContent01 a span{
-    display: block;
-    width: 110px;
-    align-items: flex-end;
     text-align: center;
 }
 
 /* 섹션3 */
 .sec03{
     width: 100%;
-    height: 100%;
 }
 .sec03 .left{
     display: flex;
