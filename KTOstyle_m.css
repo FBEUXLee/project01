@@ -1,4 +1,83 @@
 @charset "utf-8";
 @media all and (max-width:800px){
-    
+    /* 공통 */
+    *{
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+    }
+    .inner{
+        width:100%
+    }
+    .sec01,.sec02,.sec03,.sec04,.sec05{
+        width:100%
+    }
+    h2{
+        font-size: 18px;
+    }
+    .menu>span{
+        font-size: 13px;
+    }
+    .menu span,a{
+        margin: 0;
+    }
+
+    /* 헤더 */
+        header img{
+            width: 75px;
+        }
+    /* 네비 */
+    nav, .link>ul{
+        display: none;
+    }
+
+    /* 섹션2 */
+    .sec02 .inner .boxContent01 a{
+        width: 80px;
+        height: 80px;
+        font-size: 10px;
+    }
+    .sec02 .inner .boxContent01 a img{
+        width: 30px;
+        height: 30px;
+    }
+
+    /* 섹션3 */
+    .sec03 .inner{
+        display: flex;
+        flex-direction: column;
+    }
+    .sec03 .inner .left{
+        width: 100%;
+    }
+    .sec03 .inner .left .boxContent02 div a{
+        width: 80px;
+        height: 80px;
+        font-size: 10px;
+    }
+    .sec03 .inner .right{
+        width: 100%;
+    }
+    .sec03 .inner .right .article01, .article02 h3{
+        font-size: 15px;
+    }
+    .sec03 .inner .right .article01, .article02 span{
+        font-size: 13px;
+    }
+
+    /* 섹션4 */
+    .sec04 .inner{
+        width: 100%;
+    }
+    .sec04 .inner .boxContent03 a{
+        width: 80px;
+        height: 80px;
+        font-size: 10px;
+        padding: 0;
+    }
+    .sec04 .inner .boxContent03 a img{
+        width: 30px;
+        height: 30px;
+        margin: 0;
+    }
 }

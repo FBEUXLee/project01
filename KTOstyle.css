@@ -202,10 +202,8 @@ header .link{
 /* 섹션1  나중에 다시 정리(배너바, 동적인 요소)*/
 .sec01{
     width: 100%;
-    height: 100%;
 }
-
-/* 스와이퍼 */
+/* 스와이퍼(sec01, sec05 슬라이드 공통) */
 .swiper{
     width: 100%;
     height: 100%;
@@ -235,19 +233,26 @@ header .link{
     color: #fff;
 }
 .swiper-slide .content a h3, h5, p{
-    margin:0 0 30px 0;
+    margin:0 0 20px 0;
+}
+.swiper-slide .content a p{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    /* 수정 */
 }
 .swiper-slide .content .tag{
     display: flex;
-    justify-content: space-between;
-    width: 80%;
+    justify-content: flex-start;
+    width : 100%;
+}
+.swiper-slide .content .tag a{
+    margin: 0 30px 0 0;
 }
 
-/* 섹션2(나중에 hover 생각) */
-.sec02{
-    width: 100%;
-}
+/* 섹션2 */
 .sec02 .inner{
+    /* width: 100%; */
     display: flex;
     flex-direction: column;
 }
@@ -258,9 +263,9 @@ header .link{
     width: 100%;
 }
 .sec02 .inner .menu span{
-    margin: 5px;
-    align-items: center;
     display: flex;
+    align-items: center;
+    margin: 5px;
 }
 .sec02 .inner .boxContent01{
     display: flex;
@@ -268,6 +273,7 @@ header .link{
     gap: 30px;
     align-items: flex-start;
     margin: 20px 0 0 0;
+    width: 100%;
 }
 .sec02 .inner .boxContent01 a{
     width: 170px;
@@ -280,6 +286,7 @@ header .link{
     border-radius: 20px;
     gap: 8px;
     border: 2px solid black;
+    text-align: center;
 }
 .sec02 .inner .boxContent01 a:nth-of-type(1):hover,
 .sec02 .inner .boxContent01 a img:nth-of-type(1):hover{
@@ -310,9 +317,6 @@ header .link{
     width: 70px;
     height: 70px;
     margin-bottom: 5px;
-}
-.sec02 .inner .boxContent01 a span{
-    text-align: center;
 }
 
 /* 섹션3 */
@@ -402,7 +406,6 @@ header .link{
 /* 섹션4 */
 .sec04{
     width: 100%;
-    height: 250px;
 }
 .sec04 .inner{
     flex-direction: column;
@@ -423,7 +426,7 @@ header .link{
     justify-content: center;
     gap: 30px;
     align-items: flex-start;
-    height: 170px;
+    width: 100%;
 }
 .sec04 .inner .boxContent03 a{
     width: 170px;
@@ -482,16 +485,19 @@ header .link{
 footer{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin: 0 30px 0 0;
+    align-items: flex-end;
 }
 footer .adress{
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 footer .mark{
     display: flex;
+    align-items: flex-end;
+}
+footer .mark a{
+    margin: 0;
+    padding: 0;
 }
 .mark img{
     width: 40px;

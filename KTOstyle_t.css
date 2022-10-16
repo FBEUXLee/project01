@@ -36,16 +36,14 @@
     
     /* sec02 */
     .sec02 .inner .boxContent01 a{
-        width: 120px;
-        height: 120px;
+        width: 100px;
+        height: 100px;
+        padding: 0;
+        font-size: 15px;
     }
     .sec02 .inner .boxContent01 a img{
         width: 50px;
         height: 50px;
-    }
-    .sec02 .inner .boxContent01 a span{
-        font-size: 13px;
-        width: 100px;
     }
 
     /* sec03 */
@@ -56,13 +54,52 @@
     .sec03 .inner .left{
         width: 100%;
     }
-    .sec03 .inner .boxContent02 div{
+    .sec03 .inner .boxContent02{
         display: flex;
-        /* flex-direction: column; */
+        justify-content: center;
+        flex-direction: column;
+    }
+    .sec03 .inner .boxContent02 div{
+        width: 100%;
     }
     .sec03 .inner .left .boxContent02 div a{
         width: 120px;
         height: 120px;
+        font-size: 15px;
+    }
+    .sec03 .inner .right{
+        width: 100%;
+    }
+
+
+
+    /* sec04 */
+    .sec04 .inner .boxContent03 a{
+        width: 100px;
+        height: 100px;
+        font-size: 15px;
+        padding: 0;
+    }
+    .sec04 .inner .boxContent03 a img{
+        width: 50px;
+        height: 50px;
+        margin: 0;
+    }
+
+    /* sec05 */
+
+    /* footer */
+    footer img{
+        width: 130px;
+    }
+    footer .address{
         font-size: 13px;
+    }    
+    footer .mark img{
+        width: 20px;
+        height: 20px;
+    }
+    footer .mark div span{
+        font-size: 10px;
     }
 }
