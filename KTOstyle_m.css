@@ -33,9 +33,11 @@
 
     /* 섹션2 */
     .sec02 .inner .boxContent01 a{
-        width: 80px;
-        height: 80px;
+        width: 90px;
+        height: 90px;
         font-size: 10px;
+        word-wrap: break-word;
+        padding: 0;
     }
     .sec02 .inner .boxContent01 a img{
         width: 30px;
@@ -50,9 +52,13 @@
     .sec03 .inner .left{
         width: 100%;
     }
+    .sec03 .inner .left .boxContent02 div{
+        display: flex;
+        justify-content: center;
+    }
     .sec03 .inner .left .boxContent02 div a{
-        width: 80px;
-        height: 80px;
+        width: 90px;
+        height: 90px;
         font-size: 10px;
     }
     .sec03 .inner .right{
@@ -70,8 +76,8 @@
         width: 100%;
     }
     .sec04 .inner .boxContent03 a{
-        width: 80px;
-        height: 80px;
+        width: 90px;
+        height: 90px;
         font-size: 10px;
         padding: 0;
     }
@@ -79,5 +85,38 @@
         width: 30px;
         height: 30px;
         margin: 0;
+    }
+
+    /* 섹션5 */
+    
+    .tag a{
+        font-size: 10px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    /* swiper */
+    .swiper-slide .content{
+        display: none;
+        opacity: 0;
+    }
+
+    /* footer */
+    footer img{
+        width: 80px;
+    }
+    footer .address{
+        font-size: 5px;
+    }
+    footer .mark{
+        margin: 0;
+        padding: 0;
+    }
+    footer .mark img{
+        width: 15px;
+        height: 15px;
+    }
+    footer .mark div span{
+        display: none;
     }
 }

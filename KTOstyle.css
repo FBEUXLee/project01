@@ -14,11 +14,10 @@ span, a{
     font-weight: 400;
 }
 .inner{
-    width: 1400px;
+    max-width: 1400px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100%;
     margin: 0 auto;
 }
 
@@ -51,7 +50,7 @@ nav{
 nav .wrapper{
     max-width: 1400px;
     padding: 0 30px;
-    margin: auto;
+    /* margin: auto; */
     display: flex;
     align-items: center;
     position: relative;
@@ -121,7 +120,6 @@ nav .nav-links li a:hover .mega-box{
     color: black;
     font-size: 17px;
     font-weight: 500;
-    height: auto;
 }
 .mega-content .row .mega-links{
     border-left: 1px solid rgba(255, 255, 255, 0.08);
@@ -141,6 +139,7 @@ nav .nav-links li a:hover .mega-box{
 }
 .row .single a{
     width: 100%;
+    font-size: 17px;
     text-align: left;
     margin: 0;
     padding: 0;
@@ -197,12 +196,9 @@ header .link{
     margin-left: 15px;
 }
 
-
-
 /* 섹션1  나중에 다시 정리(배너바, 동적인 요소)*/
-.sec01{
-    width: 100%;
-}
+
+
 /* 스와이퍼(sec01, sec05 슬라이드 공통) */
 .swiper{
     width: 100%;
@@ -222,7 +218,7 @@ header .link{
 .swiper-slide .content{
     position: absolute;
     bottom:100px;
-    padding: 30px 30px;
+    padding: 10px 30px;
     background-color: black;
     opacity: 0.8;
     display: flex;
@@ -235,19 +231,15 @@ header .link{
 .swiper-slide .content a h3, h5, p{
     margin:0 0 20px 0;
 }
-.swiper-slide .content a p{
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    /* 수정 */
-}
+
 .swiper-slide .content .tag{
     display: flex;
     justify-content: flex-start;
     width : 100%;
 }
 .swiper-slide .content .tag a{
-    margin: 0 30px 0 0;
+    margin: 0 20px 0 0;
+    padding: 0 10px;
 }
 
 /* 섹션2 */
@@ -271,8 +263,6 @@ header .link{
     display: flex;
     justify-content: center;
     gap: 30px;
-    align-items: flex-start;
-    margin: 20px 0 0 0;
     width: 100%;
 }
 .sec02 .inner .boxContent01 a{
@@ -282,14 +272,11 @@ header .link{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0 30px;
     border-radius: 20px;
     gap: 8px;
-    border: 2px solid black;
     text-align: center;
 }
-.sec02 .inner .boxContent01 a:nth-of-type(1):hover,
-.sec02 .inner .boxContent01 a img:nth-of-type(1):hover{
+.sec02 .inner .boxContent01 a:nth-of-type(1){
     border: 1px solid #D63C3A;
 }
 .sec02 .inner .boxContent01 a:nth-of-type(2){
@@ -310,6 +297,41 @@ header .link{
 .sec02 .inner .boxContent01 a:nth-of-type(7){
     border: 1px solid #9D419F;
 }
+.sec02 .inner .boxContent01 a:nth-of-type(1):hover{
+    transition: all 0.3s ease;
+    color: #fff;
+    background-color: #D63C3A;
+}
+.sec02 .inner .boxContent01 a:nth-of-type(2):hover{
+    transition: all 0.3s ease;
+    color: #fff;
+    background-color: #eb581f;
+}
+.sec02 .inner .boxContent01 a:nth-of-type(3):hover{
+    transition: all 0.3s ease;
+    color: #fff;
+    background-color: #FBCE4C;
+}
+.sec02 .inner .boxContent01 a:nth-of-type(4):hover{
+    transition: all 0.3s ease;
+    color: #fff;
+    background-color: #8BCB49;
+}
+.sec02 .inner .boxContent01 a:nth-of-type(5):hover{
+    transition: all 0.3s ease;
+    color: #fff;
+    background-color: #11A0DD;
+}
+.sec02 .inner .boxContent01 a:nth-of-type(6):hover{
+    transition: all 0.3s ease;
+    color: #fff;
+    background-color: #485DA4;
+}
+.sec02 .inner .boxContent01 a:nth-of-type(7):hover{
+    transition: all 0.3s ease;
+    color: #fff;
+    background-color: #9D419F;
+}
 .sec02 .inner .boxContent01 a img{
     display: inline-block;
     justify-content: center;
@@ -323,9 +345,13 @@ header .link{
 .sec03{
     width: 100%;
 }
+.sec03 .inner{
+    width: 100%;
+}
 .sec03 .left{
     display: flex;
     flex-direction: column;
+    margin: 0 10px 0 0;
 }
 .sec03 .inner .left .menu{
     display: flex;
@@ -338,15 +364,17 @@ header .link{
     margin: 5px;
 }
 .sec03 .inner .left .boxContent02{
-    /* 내용추가 */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 .sec03 .inner .left .boxContent02 div{
     width: 100%;
-    gap: 40px;
+    gap: 20px;
     display: flex;
     justify-content: space-between;
 }
-.sec03 .inner .left .boxContent02 div a{
+.sec03 .inner .left .boxContent02 a{
     width: 170px;
     height: 170px;
     border-radius: 20px;
@@ -354,19 +382,18 @@ header .link{
     font-size: 18px;
     border:1px solid #dddddd;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
-.sec03 .inner .left .boxContent02 div a:hover{
+.sec03 .inner .left .boxContent02 a:hover{
     background: #43a047;
     color: #fff;
     transition: all 0.3s ease;
 }
 
 .sec03 .inner .right{
-    /* 내용추가 */
+    width: 100%;
 }
 .sec03 .inner .right .menu{
     display: flex;
@@ -380,6 +407,7 @@ header .link{
 }
 .sec03 .inner .right .article01, .article02{
     margin: 20px 0 0 20px;
+    width: 100%;
 }
 .sec03 .inner .right h3{
     margin: 0 0 10px 0;
@@ -393,21 +421,18 @@ header .link{
 }
 .sec03 .inner .right ul li a{
     display: flex;
-    width: 100%;
     justify-content: space-between;
 }
 .sec03 .inner .right ul li a .title{
-    width: 70%;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
+    width: 70%;
 }
 
 /* 섹션4 */
-.sec04{
-    width: 100%;
-}
 .sec04 .inner{
+    /* width: 100%; */
     flex-direction: column;
 }
 .sec04 .inner .menu{
@@ -436,7 +461,6 @@ header .link{
     text-align: center;
     align-items: center;
     justify-content: center;
-    padding: 0 38px;
     border-radius: 20px;
     gap: 8px;
     border: 1px solid #dddddd;
@@ -451,8 +475,8 @@ header .link{
     display: inline-block;
     justify-content: center;
     align-items: center;
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     margin-bottom: 10px;
 }
 .sec04 .inner .boxContent03 a img:nth-child(1){
@@ -460,9 +484,6 @@ header .link{
 }
 
 /* 섹션5 */
-.sec05{
-    height: 1000px;
-}
 .sec05 .inner{
     flex-direction: column;
     align-items: center;
@@ -478,6 +499,31 @@ header .link{
     display: flex;
     align-items: center;
     margin: 5px;
+}
+
+
+/* 컨텐츠 */
+.content, .content a{
+    width: 100%;
+}
+.content a p{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+/* 태그 */
+.tag{
+    margin: 0;
+    padding: 0;
+}
+.tag a{
+    display: block;
+}
+.tag a:hover{
+    color: black;
+    background: #fff;
+    transition: all 0.3s ease;
 }
 
 
