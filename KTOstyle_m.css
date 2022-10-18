@@ -23,9 +23,9 @@
     }
 
     /* 헤더 */
-        header img{
-            width: 75px;
-        }
+    header img{
+        width: 75px;
+    }
     /* 네비 */
     nav, .link>ul{
         display: none;
@@ -51,12 +51,16 @@
     }
     .sec03 .inner .left{
         width: 100%;
+        height: auto;
     }
-    .sec03 .inner .left .boxContent02 div{
+    .sec03 .inner .left .boxContent02{
         display: flex;
         justify-content: center;
+        overflow-y: scroll;
+        gap: 10px;
+        padding: 0;
     }
-    .sec03 .inner .left .boxContent02 div a{
+    .sec03 .inner .left .boxContent02 a{
         width: 90px;
         height: 90px;
         font-size: 10px;

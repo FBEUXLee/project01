@@ -147,54 +147,36 @@ nav .nav-links li a:hover .mega-box{
 }
 
 /* 로그인 회원가입 사이트맵 */
-header .link{
-    position: absolute;
-    right: 2%;
-    top: 10px;
+.account{
+    display: flex;
+    flex-direction: column;
 }
-.link > ul{
-    position: relative;
-    z-index: 71;
+.account .inner{
+    width: 100%;
+    justify-content: right;
+}
+.account ul{
     list-style-type: none;
     display: flex;
+    flex-direction: row;
 }
-.link ul li{
-    position: relative;
-    z-index: 71;
+.account ul li{
+    margin: 0 5px;
 }
-.link ul li a{
-    display: block;
-    font-size: 14px;
-    line-height: 32px;
-    font-weight: 300;
+.button{
+    display: flex;
+    right: 300px;
 }
-.link .button{
-    position: relative;
-    margin-top: 10px;
+.button form{
     display: flex;
 }
-.link .button .search{
-    width: 250px;
-    height: 100%;
-    font-weight: 500;
-    display: flex;
-    align-items: center;
-    border: 2px solid black;
-    border-radius: 20px;
+.button .hidden{
+    overflow: hidden;
+    font-size: 1px;
+    line-height: 1px;
+    text-indent: -3000px;
 }
-.link .button .search+span{
-    margin: 0 25px;
-    font-size: 17px;
-}
-.link .button .search .material-symbols-outlined{
-    justify-content: right;
-    align-items: center;
-    margin: 0 0 0 50px;
-}
-.link .button .sitemap{
-    display: block;
-    margin-left: 15px;
-}
+
 
 /* 섹션1  나중에 다시 정리(배너바, 동적인 요소)*/
 
@@ -244,7 +226,7 @@ header .link{
 
 /* 섹션2 */
 .sec02 .inner{
-    /* width: 100%; */
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -266,8 +248,8 @@ header .link{
     width: 100%;
 }
 .sec02 .inner .boxContent01 a{
-    width: 170px;
-    height: 170px;
+    width: 160px;
+    height: 160px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -275,6 +257,7 @@ header .link{
     border-radius: 20px;
     gap: 8px;
     text-align: center;
+    word-break: break-all;
 }
 .sec02 .inner .boxContent01 a:nth-of-type(1){
     border: 1px solid #D63C3A;
@@ -347,11 +330,14 @@ header .link{
 }
 .sec03 .inner{
     width: 100%;
+    height: 100%;
+    align-items: stretch;
 }
 .sec03 .left{
     display: flex;
     flex-direction: column;
     margin: 0 10px 0 0;
+    height: 395px;
 }
 .sec03 .inner .left .menu{
     display: flex;
@@ -365,26 +351,24 @@ header .link{
 }
 .sec03 .inner .left .boxContent02{
     width: 100%;
+    height: 100%;
     display: flex;
-    flex-direction: column;
-}
-.sec03 .inner .left .boxContent02 div{
-    width: 100%;
-    gap: 20px;
-    display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .sec03 .inner .left .boxContent02 a{
-    width: 170px;
-    height: 170px;
+    width: 25%;
+    height: 50%;
     border-radius: 20px;
-    gap: 8px;
+    gap: 10px;
     font-size: 18px;
     border:1px solid #dddddd;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    word-break: keep-all;
 }
 .sec03 .inner .left .boxContent02 a:hover{
     background: #43a047;
@@ -392,6 +376,7 @@ header .link{
     transition: all 0.3s ease;
 }
 
+/* 섹션3보도자료 */
 .sec03 .inner .right{
     width: 100%;
 }
@@ -406,7 +391,7 @@ header .link{
     margin: 5px;
 }
 .sec03 .inner .right .article01, .article02{
-    margin: 20px 0 0 20px;
+    margin: 20px 0 0 0;
     width: 100%;
 }
 .sec03 .inner .right h3{
@@ -428,6 +413,22 @@ header .link{
     overflow: hidden;
     white-space: nowrap;
     width: 70%;
+}
+/* 뉴스탭 */
+.newstab button{
+    padding: 10px 24px;
+    margin: 5px 10px;
+    background: none;
+    border-radius: 10px;
+    border: 1px solid #dddddd;
+    cursor: pointer;
+}
+.newstab button:hover,
+.newstab button.on{
+    transition: all 0.3s ease;
+    background: #43a047;
+    border: 1px solid #43a047;
+    color: #fff;
 }
 
 /* 섹션4 */
@@ -454,8 +455,8 @@ header .link{
     width: 100%;
 }
 .sec04 .inner .boxContent03 a{
-    width: 170px;
-    height: 170px;
+    width: 160px;
+    height: 160px;
     display: flex;
     flex-direction: column;
     text-align: center;

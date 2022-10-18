@@ -466,3 +466,63 @@ nav #gnb #m a span{
 .subnav_ul{
     display: block;
 }
+
+---------------------------------------------------------
+<div class="link">              
+                <div class="button">
+                    <a href="#" class="search"><span>"검색어를 입력하세요"</span><span class="material-symbols-outlined">
+                            search</span></a>
+                    <a href="#" class="sitemap"><span class="material-symbols-outlined">
+                            menu
+                        </span></a>
+                </div>
+            </div>
+
+/* header .link{
+    position: absolute;
+    right: 2%;
+    top: 10px;
+}
+.link > ul{
+    position: relative;
+    z-index: 71;
+    list-style-type: none;
+    display: flex;
+}
+.link ul li{
+    position: relative;
+    z-index: 71;
+}
+.link ul li a{
+    display: block;
+    font-size: 14px;
+    line-height: 32px;
+    font-weight: 300;
+}
+.link .button{
+    position: relative;
+    margin-top: 10px;
+    display: flex;
+}
+.link .button .search{
+    width: 250px;
+    height: 100%;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+.link .button .search+span{
+    margin: 0 25px;
+    font-size: 17px;
+}
+.link .button .search .material-symbols-outlined{
+    justify-content: right;
+    align-items: center;
+    margin: 0 0 0 50px;
+}
+.link .button .sitemap{
+    display: block;
+    margin-left: 15px;
+} */
