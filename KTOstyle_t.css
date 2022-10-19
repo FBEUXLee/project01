@@ -19,19 +19,32 @@
         font-size: 15px;
     }
 
+    /* 로그인 */
+    .account{
+        display: none;
+    }
+
     /* 헤더 */
     header{
         width: 100%;
-        height: auto;
     }
     header img{
-        width: 120px;
-        height: 100%;
+        width: 150px;
+    }
+    .header_inner{
+        width: 100%;
+        display: flex;
     }
 
     /* 네비 */
-    nav, .link>ul{
+    nav .wrapper{
         display: none;
+    }
+    nav{
+        width: 100%;
+        display: flex;
+        margin: 0 auto;
+        justify-content: flex-end;
     }
     
     /* sec02 */

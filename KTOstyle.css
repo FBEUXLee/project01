@@ -9,6 +9,9 @@
     border: 1px solid red;
     font-family: 'Noto Sans KR', sans-serif;
 }
+/* body{
+    max-width: 1600px;
+} */
 span, a{
     color: black;
     font-weight: 400;
@@ -23,69 +26,74 @@ span, a{
 
 /* 헤더 */
 header{
-    width: 100%;
+    max-width: 1650px;
     display: flex;
-    /* position: fixed; */
     top: 0;
+    /* position: fixed; */
 }
 .header_inner{
     width: 100%;
     padding: 0;
+    padding: 0 0 0 10px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+}
+.header_inner a{
+    margin: 0;
 }
 header img{
-    width: 240px;
+    width: 200px;
     font-size: 0;
-    height: 100%;
 }
 
 /* nav */
 nav{
-    width:100% ;
-    z-index: 999;
-    height: 65px;
+    display: flex;
+    /* justify-content: space-between; */
+    width:100%;
+    height: 50px;
     line-height: 65px;
 }
 nav .wrapper{
-    max-width: 1400px;
-    padding: 0 30px;
-    /* margin: auto; */
+    width: 100%;
     display: flex;
     align-items: center;
     position: relative;
+    z-index: 9;
 }
 .wrapper .nav-links{
+    width: 100%;
     display: inline-flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 .nav-links li{
     list-style: none;
-    margin: 0 25px;
+    margin: 0 20px;
 }
 .nav-links li:hover .mega-box{
     opacity: 1;
     visibility: visible;
-    top: 65px;
+    top: 60px;
     transition: all 0.3s ease;
     background: #fff;
 }
 .nav-links li a{
     color: black;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
-    padding: 9px 50px;
+    padding: 9px 15px;
     border-radius: 5px;
     transition: all 0.3s ease;
 }
 nav .nav-links li a:hover{
-    color: #43a047;
+    background: #43a047;
+    color: #fff;
 }
 
 .mega-box{
     position: absolute;
-    width: 100%;
     top: 80px;
     width: 100%;
     left: 0;
@@ -93,13 +101,13 @@ nav .nav-links li a:hover{
     visibility: hidden;
     transition: all 0.3s ease;
 }
-.mega-box li a{
+/* .mega-box li a{
     width: 100%;
     display: block;
     padding: 0 0 0 15px;
     font-weight: 400;
     border-radius: 0px;
-}
+} */
 nav .nav-links li a:hover .mega-box{
     top: 60px;
     opacity: 1;
@@ -107,35 +115,39 @@ nav .nav-links li a:hover .mega-box{
     transition: all 0.3s ease;
 }
 .mega-box .mega-content{
-    padding: 25px 20px;
+    padding: 20px 20px;
     display: flex;
     flex-flow: row wrap;
     width: 100%;
 }
 .mega-content .row{
     width:20%;
-    line-height: 45px;
+    line-height: 40px;
 }
 .mega-content .row header{
     color: black;
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 500;
+    word-break:keep-all;
 }
 .mega-content .row .mega-links{
     border-left: 1px solid rgba(255, 255, 255, 0.08);
     margin-left: -20px;
 }
-.row .mega-links li{
-    padding: 0 20px;    
-}
+/* .row .mega-links li{
+    margin: 0 20px;    
+} */
 .row .mega-links li a{
-    padding: 0 20px;
+    padding: 0 5px;
+    margin: 5px 0;
     color: black;   
-    font-size: 13px;
+    font-size: 12px;
     display: block;
+    word-break: keep-all;
 }
 .row .mega-links li a:hover{
-    color: #43a047;
+    background: #43a047;
+    color: #fff;
 }
 .row .single a{
     width: 100%;
@@ -160,15 +172,18 @@ nav .nav-links li a:hover .mega-box{
     display: flex;
     flex-direction: row;
 }
-.account ul li{
+.account ul li a{
+    display: flex;
+    align-items: center;
     margin: 0 5px;
 }
+
 .button{
     display: flex;
-    right: 300px;
 }
 .button form{
     display: flex;
+    align-items: center;
 }
 .button .hidden{
     overflow: hidden;
@@ -176,7 +191,14 @@ nav .nav-links li a:hover .mega-box{
     line-height: 1px;
     text-indent: -3000px;
 }
-
+.button input{
+    height: 30px;
+    width: 120px;
+}
+.button form span{
+    display: flex;
+    align-items: center;
+}
 
 /* 섹션1  나중에 다시 정리(배너바, 동적인 요소)*/
 
@@ -213,7 +235,6 @@ nav .nav-links li a:hover .mega-box{
 .swiper-slide .content a h3, h5, p{
     margin:0 0 20px 0;
 }
-
 .swiper-slide .content .tag{
     display: flex;
     justify-content: flex-start;
@@ -225,6 +246,9 @@ nav .nav-links li a:hover .mega-box{
 }
 
 /* 섹션2 */
+.sec02{
+    margin: 10px 0;
+}
 .sec02 .inner{
     width: 100%;
     display: flex;
@@ -246,6 +270,7 @@ nav .nav-links li a:hover .mega-box{
     justify-content: center;
     gap: 30px;
     width: 100%;
+    margin: 10px 0;
 }
 .sec02 .inner .boxContent01 a{
     width: 160px;
@@ -327,6 +352,7 @@ nav .nav-links li a:hover .mega-box{
 /* 섹션3 */
 .sec03{
     width: 100%;
+    margin: 10px 0;
 }
 .sec03 .inner{
     width: 100%;
@@ -336,7 +362,7 @@ nav .nav-links li a:hover .mega-box{
 .sec03 .left{
     display: flex;
     flex-direction: column;
-    margin: 0 10px 0 0;
+    margin: 10px 30px 0 0;
     height: 395px;
 }
 .sec03 .inner .left .menu{
@@ -356,6 +382,7 @@ nav .nav-links li a:hover .mega-box{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    margin: 10px 0;
 }
 .sec03 .inner .left .boxContent02 a{
     width: 25%;
@@ -379,6 +406,7 @@ nav .nav-links li a:hover .mega-box{
 /* 섹션3보도자료 */
 .sec03 .inner .right{
     width: 100%;
+    margin: 10px 0;
 }
 .sec03 .inner .right .menu{
     display: flex;
@@ -432,6 +460,9 @@ nav .nav-links li a:hover .mega-box{
 }
 
 /* 섹션4 */
+.sec04{
+    margin: 10px 0;
+}
 .sec04 .inner{
     /* width: 100%; */
     flex-direction: column;
@@ -453,6 +484,7 @@ nav .nav-links li a:hover .mega-box{
     gap: 30px;
     align-items: flex-start;
     width: 100%;
+    margin: 10px 0;
 }
 .sec04 .inner .boxContent03 a{
     width: 160px;
@@ -485,6 +517,9 @@ nav .nav-links li a:hover .mega-box{
 }
 
 /* 섹션5 */
+.sec05{
+    margin: 10px 0;
+}
 .sec05 .inner{
     flex-direction: column;
     align-items: center;
@@ -520,6 +555,10 @@ nav .nav-links li a:hover .mega-box{
 }
 .tag a{
     display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 17px;
 }
 .tag a:hover{
     color: black;

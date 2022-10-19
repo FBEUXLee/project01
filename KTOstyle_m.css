@@ -1,5 +1,5 @@
 @charset "utf-8";
-@media all and (max-width:800px){
+@media all and (max-width:640px){
     /* 공통 */
     *{
         margin: 0;
@@ -22,15 +22,27 @@
         margin: 0;
     }
 
-    /* 헤더 */
-    header img{
-        width: 75px;
-    }
-    /* 네비 */
-    nav, .link>ul{
+    .account{
         display: none;
     }
-
+    /* 헤더 */
+    .header_inner{
+        width: 100%;
+        padding: 0;
+    }
+    header img{
+        width: 120px;
+    }
+    /* 네비 */
+    nav .wrapper,
+    .button input{
+        display: none;
+    }
+    nav{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
     /* 섹션2 */
     .sec02 .inner .boxContent01 a{
         width: 90px;
@@ -56,7 +68,6 @@
     .sec03 .inner .left .boxContent02{
         display: flex;
         justify-content: center;
-        overflow-y: scroll;
         gap: 10px;
         padding: 0;
     }
