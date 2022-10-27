@@ -1,23 +1,32 @@
 @charset "utf-8";
 @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
+/* 공통 */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid red;
+    /* border-bottom: 1px solid red; */
     text-decoration: none;
 }
 body {
     background: #43a047;
-}
-.sitemap {
-    width: 100%;
 }
 .inner {
     width: 100%;
     display: flex;
     flex-direction: column;
 }
+a {
+    color: #fff;
+}
+.material-symbols-outlined{
+    border: 1px solid #fafbfc;
+}
+.sitemap {
+    width: 100%;
+}
+
+/* 헤더 */
 header {
     width: 100%;
     height: 200px;
@@ -29,6 +38,7 @@ header {
     font-size: 50px;
     font-weight: 500;
     color: #fff;
+    border-bottom: 4px solid #fafbfc;
 }
 header span {
     float: right;
@@ -36,26 +46,38 @@ header span {
     top: 20px;
     right: 10px;
 }
-a {
-    color: #fff;
-}
+
+
+/* nav */
 .nav {
     display: flex;
     justify-content: space-between;
     visibility:visible;
+    margin: 10px 0;
 }
 .title {
     font-size: 30px;
     color: #fff;
     padding: 0 10px;
     margin: 0 10px;
-    width: 250px;
+    width: 12%;
     text-align: center;
+    border: 1px solid #fafbfc;
 }
 .content {
-    width: 100%;
+    width: 88%;
     display: flex;
     justify-content: flex-start;
+    transition: height 0.3s ease;
+    border-top: 1px solid #fafbfc;
+    border-bottom: 1px solid #fafbfc;
+    flex-wrap: wrap;
+}
+li a:hover,
+.list h3 a:hover{
+    transition: all 0.2s ease;
+    font-weight: 800;
+    color: #fff;
 }
 
 .list {
@@ -63,6 +85,8 @@ a {
 }
 .list h3 {
     color: #fff;
+    word-wrap:break-word;
+    /* border: 1px solid #fafbfc; */
 }
 .list li {
     color: #fff;
@@ -73,12 +97,6 @@ a {
     margin: 10px 0 0 20px;
 }
 
-/* 정보공개-도서자료실, 관광산업육성 및 지원 */
-.snd_inner{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-.snd_inner .content .list{
-    width: 20%;
-}
+
+
+
