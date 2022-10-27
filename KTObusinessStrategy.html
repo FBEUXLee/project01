@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>경영혁신</title>
     <link rel="stylesheet" type="text/css" href="/project01/KTObusinessStrategy.css">
+    <link rel="stylesheet" type="text/css" href="/project01/KTObusinessStrategy_t.css">
 </head>
 
 <body>
@@ -414,13 +415,12 @@
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"
         integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <script>
-        // $(".content").hide();
-        $(".nav ul li a span").click(function () {
-            $(".content").siblings().slideToggle("slow", "swing");
+        $(".content").hide();
+        $("nav ul li a span").click(function () {
+            $(".content,.snd_title>ul").slideToggle("slow", "swing");
             $(this).text(function (e, text) {
                 return text === 'expand_Less' ? 'expand_more' : 'expand_Less';
             });
-
         });
     </script>
 </body>

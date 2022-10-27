@@ -106,7 +106,7 @@ nav .nav-links li a:hover .mega-box{
     width:20%;
     line-height: 40px;
 }
-.mega-content .row header{
+.mega-content .row h3{
     color: black;
     font-size: 15px;
     font-weight: 500;

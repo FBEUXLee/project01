@@ -1,0 +1,11 @@
+@charset "utf-8";
+@media all and (min-width:641px) and (max-width:1080px){
+    header{
+        display: flex;
+        justify-content: space-between;
+    }
+    header nav .wrapper,input{
+        display: none;
+    }
+
+}
