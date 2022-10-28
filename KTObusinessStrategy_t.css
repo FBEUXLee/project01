@@ -4,8 +4,24 @@
         display: flex;
         justify-content: space-between;
     }
-    header nav .wrapper,input{
+    nav .wrapper,input,.left{
         display: none;
     }
-
+    .right{
+        width: 100%;
+        justify-content: center;
+        margin: 0 10px;
+    }
+    .right img{
+        width: 100%;
+    }
+    .right h3{
+        font-size: 15px;
+    }
+    .right .contact ul li{
+        margin: 0 15px;
+    }
+    .right li span{
+        font-size: 13px;
+    }
 }

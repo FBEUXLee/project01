@@ -166,6 +166,10 @@ nav .nav-links li a:hover .mega-box{
 }
 .sec01 .inner{
     background: #43a047;
+    flex-direction: column;
+}
+.sec01 img{
+    width: 100%;
 }
 .site{
     width: 100%;
@@ -211,6 +215,7 @@ nav .nav-links li a:hover .mega-box{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0 0 0 5px;
 }
 .left nav div a{
     display: flex;
@@ -224,7 +229,7 @@ nav .nav-links li a:hover .mega-box{
     font-size: 13px;
 }
 .left nav .content>li>ul>li{
-    margin: 0 0 0 15px;
+    margin: 0 0 0 20px;
     font-size: 10px;
 }
 .snd_title>div{
@@ -233,5 +238,24 @@ nav .nav-links li a:hover .mega-box{
 
 /* right */
 .right{
-    width: 100%;
+    width: 80%;
+}
+.right h2{
+    margin: 20px 0;
+}
+.right img{
+    width: 80%;
+}
+.right .contact{
+    padding: 15px 0;
+    margin: 20px 0;
+    background: #d1d3d4;
+}
+.right .contact ul{
+    display: flex;
+}
+.right .contact ul li{
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
 }
