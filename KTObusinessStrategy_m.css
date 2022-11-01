@@ -1,50 +1,55 @@
 @charset "utf-8";
-@media all and (min-width:641px) and (max-width:1080px){
-    header nav{
+@media all and (max-width:640px){
+    header{
         display: flex;
         justify-content: space-between;
     }
     nav .wrapper,input,.left{
         display: none;
     }
+
+    /* 섹션1 */
     .sec01 .banner{
-        height: 250px;
+        height: 200px;
     }
     .sec01 .banner h2{
         left: 3%;
+        font-size: 25px;
     }
     .sec01 .banner span{
         left: 3%;
-        top: 75%
+        font-size: 13px;
+        top: 73%;
     }
 
+    .site{
+        padding: 0 5px;
+    }
+    .site .home{
+        display: none;
+    }
+
+    /* 섹션2 */
     .right{
         width: 100%;
         justify-content: center;
         margin: 0 10px;
     }
+    .right img{
+        width: 100%;
+    }
     .right h3{
-        font-size: 13px;
+        font-size: 12px;
     }
     .right .contact ul li{
-        margin: 0 10px;
+        margin: 0 12px;
     }
     .right li span{
-        font-size: 13px;
+        font-size: 10px;
     }
 
     /* footer */
-    footer img{
-        width: 130px;
-    }
-    footer .address{
-        font-size: 12px;
-    }    
-    footer .mark img{
-        width: 20px;
-        height: 20px;
-    }
-    footer .mark div span{
-        font-size: 10px;
+    footer{
+        display: none;
     }
 }
