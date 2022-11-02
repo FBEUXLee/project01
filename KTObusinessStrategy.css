@@ -5,7 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     text-decoration: none;
     font-family: 'Noto Sans KR', sans-serif;
 }
@@ -208,7 +208,10 @@ nav .nav-links li a:hover .mega-box {
     width: 100%;
     display: flex;
     align-items: center;
-    padding: 5px 0;
+}
+.site .home{
+    background: green;
+    padding: 8px;
 }
 .site a span {
     color: black;
@@ -257,8 +260,10 @@ nav .nav-links li a:hover .mega-box {
 .left nav a:hover {
     color: #43a047;
 }
+.left nav .content{
+    margin: 0 0 0 30px;
+}
 .left nav .content > li {
-    margin: 0 0 0 20px;
     font-size: 13px;
 }
 .left nav .content > li > ul > li {
@@ -275,7 +280,10 @@ nav .nav-links li a:hover .mega-box {
     transition: all 0.3s ease;
 }
 .right h2 {
-    margin: 20px 0;
+    margin: 20px 10px;
+}
+.right>span{
+    margin: 0 10px;
 }
 .right img {
     width: 80%;

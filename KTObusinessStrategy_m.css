@@ -15,15 +15,20 @@
     .sec01 .banner h2{
         left: 3%;
         font-size: 25px;
+        top:40%;
     }
     .sec01 .banner span{
         left: 3%;
         font-size: 13px;
-        top: 73%;
+        top: 60%;
     }
 
     .site{
-        padding: 0 5px;
+        padding: 5px;
+        font-size: 13px;
+    }
+    .site .material-symbols-outlined{
+        font-weight: 350;
     }
     .site .home{
         display: none;
@@ -35,6 +40,13 @@
         justify-content: center;
         margin: 0 10px;
     }
+    .right h2{
+        font-size: 17px;
+        margin: 7px 8px;
+    }
+    .right span{
+        font-size: 10px;
+    }
     .right img{
         width: 100%;
     }
@@ -42,10 +54,7 @@
         font-size: 12px;
     }
     .right .contact ul li{
-        margin: 0 12px;
-    }
-    .right li span{
-        font-size: 10px;
+        margin: 0 5px;
     }
 
     /* footer */
