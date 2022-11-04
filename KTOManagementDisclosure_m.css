@@ -1,0 +1,56 @@
+@charset "utf-8";
+@media all and (max-width:640px){
+    header{
+        display: flex;
+        justify-content: space-between;
+    }
+    nav .wrapper,input,.left{
+        display: none;
+    }
+
+    /* 섹션1 */
+    .sec01 .banner{
+        height: 200px;
+    }
+    .sec01 .banner h2{
+        left: 3%;
+        font-size: 25px;
+        top:40%;
+    }
+    .sec01 .banner span{
+        left: 3%;
+        font-size: 13px;
+        top: 60%;
+    }
+
+    .site{
+        padding: 5px;
+        font-size: 13px;
+    }
+    .site .material-symbols-outlined{
+        font-weight: 350;
+    }
+    .site .home{
+        display: none;
+    }
+
+    /* 섹션2 */
+    .right{
+        width: 100%;
+        justify-content: center;
+    }
+    .ALIO .title h2{
+        font-size: 15px;
+    }
+    .ALIO .subtitle{
+        font-size: 12px;
+    }
+    .ALIO .trdtitle a{
+        font-size: 8px;
+    }
+
+    /* footer */
+    footer{
+        display: none;
+    }
+}
