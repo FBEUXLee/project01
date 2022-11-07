@@ -37,6 +37,39 @@ header img {
     font-size: 0;
 }
 
+/* 로그인 회원가입 사이트맵 */
+.account{
+    display: flex;
+    flex-direction: column;
+}
+.account .inner{
+    width: 100%;
+    justify-content: right;
+}
+.account ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+.account ul li a{
+    display: flex;
+    align-items: center;
+    margin: 0 5px;
+    font-size: 11px;
+}
+.account ul li a span{
+    font-size: 13px;
+}
+.account ul li ul{
+    flex-direction: column;
+    position: absolute;
+    z-index: 100;
+    background: #fff;
+}
+.account ul li ul li{
+    padding: 5px 0;
+}
+
 /* nav */
 nav {
     display: flex;
@@ -297,18 +330,21 @@ nav .nav-links li a:hover .mega-box {
 }
 .ALIO .title{
     display: block;
+    margin: 20px 0 0 0;
 }
 .ALIO .title h2{
     text-align: center;
     font-size: 18px;
     word-wrap:break-word;
     border: 1px solid black;
+    padding: 5px 0;
+    text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.4);
 }
 .ALIO .title li a:hover{
     color: #43a047;
 }
 .ALIO .subtitle{
-    margin:10px 20px;
+    margin:15px 20px;
     font-size: 15px;
 }
 .ALIO .trdtitle{
@@ -317,6 +353,7 @@ nav .nav-links li a:hover .mega-box {
 .ALIO .trdtitle a{
     font-size: 12px;
 }
+
 
 /* footer */
 footer {
@@ -338,8 +375,8 @@ footer .mark a {
     padding: 0;
 }
 .mark img {
-    width: 40px;
-    height: 40px;
+    width: 25px;
+    height: 25px;
     display: block;
 }
 .mark div {
@@ -347,5 +384,5 @@ footer .mark a {
     flex-direction: column;
 }
 .mark div span{
-    font-size: 15px;
+    font-size: 10px;
 }

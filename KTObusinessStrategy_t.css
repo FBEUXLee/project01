@@ -1,13 +1,12 @@
 @charset "utf-8";
 @media all and (min-width:641px) and (max-width:1080px){
-    header nav{
-        display: flex;
-        justify-content: space-between;
-    }
-    nav .wrapper,input,.left{
+    .account, nav .wrapper,input,.left{
         display: none;
     }
 
+    nav{
+        justify-content: flex-end;
+    }
     
     /* 섹션1 */
     .sec01 .banner{

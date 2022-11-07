@@ -11,6 +11,26 @@
 </head>
 
 <body>
+
+    <div class="account">
+        <div class="inner">
+            <ul>
+                <li><a href="#">로그인</a></li>
+                <li><a href="#"><strong>Language</strong><span class="material-symbols-outlined">
+                            expand_more
+                        </span></a>
+                    <ul>
+                        <li><a href="#">한국어</a></li>
+                        <li><a href="#">English</a></li>
+                        <li><a href="#">Japanese</a></li>
+                        <li><a href="#">Chinese</a></li>
+                    </ul>
+                </li>
+                <li><a href="/project01/KTOsitemap.html" class="sitemap"><strong>바로가기</strong></a></li>
+            </ul>
+        </div>
+    </div>
+
     <header>
         <div class="header_inner">
             <a href="#" class="logo">한국관광공사</a>
@@ -267,11 +287,11 @@
         </div>
 
     </header>
-    
+
     <section class="sec01">
         <div class="banner">
             <h2>비전 및 추진체계</h2>
-            <span>Business Strategy</span>            
+            <span>Business Strategy</span>
         </div>
         <div class="inner">
             <div class="site">
@@ -285,8 +305,8 @@
                     chevron_right
                 </span>
                 <span>비전 및 추진체계</span>
-            </div> 
-        </div>       
+            </div>
+        </div>
     </section>
 
     <section class="sec02">
@@ -302,7 +322,8 @@
                                 <li><a href="#">비전 및 추진체계</a></li>
                                 <li><a href="#">시민참여 혁신</a></li>
                                 <li class="snd_title">
-                                    <div><a href="#">사회적가치</a><a href="#"><span class="material-symbols-outlined subcap">
+                                    <div><a href="#">사회적가치</a><a href="#"><span
+                                                class="material-symbols-outlined subcap">
                                                 expand_more
                                             </span></a></div>
                                     <ul>
@@ -398,10 +419,18 @@
                 <div><img src="/project01/image/innovation1.png" alt="비전 및 추진체계"></div>
                 <div class="contact">
                     <ul>
-                        <li><h3>담당자</h3><span>: 최혜리</span></li>
-                        <li><h3>이메일</h3><span>: chaeriy@knto.or.kr</span></li>
-                        <li><h3>전화(Tel)</h3><span>: 033-738-3672</span></li>
-                        <li><h3>팩스(Fax)</h3><span>: 033-738-3883</span></li>
+                        <li>
+                            <h3>담당자</h3><span>: 최혜리</span>
+                        </li>
+                        <li>
+                            <h3>이메일</h3><span>: chaeriy@knto.or.kr</span>
+                        </li>
+                        <li>
+                            <h3>전화(Tel)</h3><span>: 033-738-3672</span>
+                        </li>
+                        <li>
+                            <h3>팩스(Fax)</h3><span>: 033-738-3883</span>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -430,20 +459,31 @@
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"
         integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <script>
-        $(".content,.content ul").hide();
-        $("nav ul li a span.cap").click(function () {
-            $(".content").slideUp();
-            $(this).parent().parent().next('ul').stop().slideToggle("slow", "swing");
+        $(function(){
+            $(".account .inner ul li ul").hide();
+            $(".account .inner ul li span").click(function () {
+            $(".account .inner ul li ul").stop().slideToggle("slow", "swing");
             $(this).text(function (e, text) {
                 return text === 'expand_Less' ? 'expand_more' : 'expand_Less';
             });
         });
-        $("nav ul li a span.subcap").click(function () {
-            $(".content ul").slideUp();
-            $(this).parent().parent().next('ul').stop().slideToggle("slow", "swing");
-            $(this).text(function (e, text) {
-                return text === 'expand_Less' ? 'expand_more' : 'expand_Less';
+            $(".content,.content ul").hide();
+            $("nav ul li a span.cap").click(function () {
+                $(".content").slideUp();
+                $(this).parent().parent().next('ul').stop().slideToggle("slow", "swing");
+                $(this).text(function (e, text) {
+                    return text === 'expand_Less' ? 'expand_more' : 'expand_Less';
+                });
+            });
+            $("nav ul li a span.subcap").click(function () {
+                $(".content ul").slideUp();
+                $(this).parent().parent().next('ul').stop().slideToggle("slow", "swing");
+                $(this).text(function (e, text) {
+                    return text === 'expand_Less' ? 'expand_more' : 'expand_Less';
+                });
             });
         });
+        
+        
     </script>
 </body>

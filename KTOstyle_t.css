@@ -31,19 +31,12 @@
     header img{
         width: 150px;
     }
-    .header_inner{
-        width: 100%;
-        display: flex;
-    }
 
     /* 네비 */
     nav .wrapper{
         display: none;
     }
     nav{
-        width: 100%;
-        display: flex;
-        margin: 0 auto;
         justify-content: flex-end;
     }
     

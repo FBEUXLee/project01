@@ -39,8 +39,6 @@
         display: none;
     }
     nav{
-        width: 100%;
-        display: flex;
         justify-content: flex-end;
     }
     /* 섹션2 */

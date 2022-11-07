@@ -37,6 +37,39 @@ header img {
     font-size: 0;
 }
 
+/* 로그인 회원가입 사이트맵 */
+.account{
+    display: flex;
+    flex-direction: column;
+}
+.account .inner{
+    width: 100%;
+    justify-content: right;
+}
+.account ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+.account ul li a{
+    display: flex;
+    align-items: center;
+    margin: 0 5px;
+    font-size: 11px;
+}
+.account ul li a span{
+    font-size: 13px;
+}
+.account ul li ul{
+    flex-direction: column;
+    position: absolute;
+    z-index: 100;
+    background: #fff;
+}
+.account ul li ul li{
+    padding: 5px 0;
+}
+
 /* nav */
 nav {
     display: flex;
@@ -310,8 +343,8 @@ footer .mark a {
     padding: 0;
 }
 .mark img {
-    width: 40px;
-    height: 40px;
+    width: 25px;
+    height: 25px;
     display: block;
 }
 .mark div {
@@ -319,5 +352,5 @@ footer .mark a {
     flex-direction: column;
 }
 .mark div span{
-    font-size: 15px;
+    font-size: 10px;
 }

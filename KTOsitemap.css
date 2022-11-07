@@ -77,7 +77,7 @@ li a:hover,
 .list h3 a:hover{
     transition: all 0.2s ease;
     font-weight: 800;
-    color: #fff;
+    color: black;
 }
 
 .list {
@@ -86,17 +86,16 @@ li a:hover,
 .list h3 {
     color: #fff;
     word-wrap:break-word;
-    /* border: 1px solid #fafbfc; */
+    border: 1px solid #fafbfc;
+    margin: 0 5px 0 0;
+    text-align: center;
 }
 .list li {
     color: #fff;
-    margin: 10px 0 10px 20px;
+    margin: 10px 0 10px 25px;
     text-indent: -5px;
 }
 .list .sub_list {
-    margin: 10px 0 0 20px;
+    margin: 10px 0 0 10px;
+    font-size: 13px;
 }
-
-
-
-
