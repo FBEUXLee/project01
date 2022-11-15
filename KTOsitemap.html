@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>사이트맵</title>
     <link rel="stylesheet" type="text/css" href="/project01/KTOsitemap.css">
+    <link rel="stylesheet" type="text/css" href="/project01/KTOsitemap_t.css">
+    <link rel="stylesheet" type="text/css" href="/project01/KTOsitemap_m.css">
 </head>
 
 <body>
@@ -13,10 +15,11 @@
     <div class="sitemap">
         <div class="inner">
             <header>
-                사이트맵
+                <p>사이트맵</p>
                 <a href="#"><span class="material-symbols-outlined close">
                         close
                     </span></a>
+                <a href="#"><span class="slideToggle">전체열기</span></a>
             </header>
 
             <div class="nav">
@@ -136,7 +139,7 @@
                         <ul>
                             <li><a href="#">안전보건경영방침</a></li>
                             <li><a href="#">안전보건활동</a></li>
-                            <li><a href="#">안전여행가이드</a></li>
+                            <li><a href="/project01/KTOsafetourguide.html">안전여행가이드</a></li>
                             <li><a href="#">안전보건자료실</a></li>
                         </ul>
                     </div>
@@ -336,14 +339,23 @@
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"
         integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <script>
-        
         $(".content .list").hide();
         $(".nav a span").click(function () {
-            $(".content .list").siblings().slideToggle("slow", "swing");
+            $(this).parent().siblings(".content").find(".list").stop().slideToggle("slow", "swing");
             $(this).text(function (e, text) {
-                return text === 'expand_Less' ? 'expand_more':'expand_Less'  ;
+                return text === 'expand_Less' ? 'expand_more' : 'expand_Less';
             });
             // var num = Number($(".content .list").text())
+        });
+
+        $(".slideToggle").click(function () {
+            $(".list").stop().slideToggle("slow", "swing");
+            $(this).text(function (e, text) {
+                return text === '전체열기' ? '전체닫기' : '전체열기';
+            });
+            $(".nav a span").text(function (e, text) {
+                return text === 'expand_Less' ? 'expand_more' : 'expand_Less';
+            });
         });
 
     </script>
