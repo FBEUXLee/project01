@@ -1,0 +1,113 @@
+@charset "utf-8";
+@media all and (max-width:640px){
+    .account, nav .wrapper,input,.left{
+        display: none;
+    }
+
+    nav{
+        justify-content: flex-end;
+    }
+
+    /* 섹션1 */
+    .sec01 .banner{
+        height: 200px;
+    }
+    .sec01 .banner h2{
+        left: 3%;
+        font-size: 25px;
+        top:40%;
+    }
+    .sec01 .banner span{
+        left: 3%;
+        font-size: 13px;
+        top: 60%;
+    }
+
+    .site{
+        padding: 5px;
+        font-size: 13px;
+    }
+    .site .material-symbols-outlined{
+        font-weight: 350;
+    }
+    .site .home{
+        display: none;
+    }
+
+    /* 섹션2 */
+    .right{
+        width: 100%;
+        justify-content: center;
+        margin: 0 10px;
+    }
+    .right h2{
+        font-size: 17px;
+        margin: 7px 8px;
+    }
+    .right img{
+        width: 100%;
+    }
+    .right h3{
+        font-size: 12px;
+    }
+    .right .contact ul li{
+        margin: 0 5px;
+    }
+    .right li span{
+        font-size: 10px;
+    }
+
+    /* 가이드북01 */
+    .guidebook01{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: none;
+    }
+    .guidebook01 img{
+        width: 50%;
+        margin: 0 auto;
+    }
+    .guidebook01 .text{
+        display: none;
+    }
+    .pdf .button{
+        width: 180px;
+        height: 40px;
+        font-size: 10px;
+        background: rgba(0,0,0,0.8);
+        cursor: pointer;
+        color: #fff;
+    }
+    .pdf .button span{
+        color: red;
+        font-size: 15px;
+    }
+
+    /* 가이드북02 */
+    .guidebook02{
+        width: 90%;
+    }
+    .guidebook02>div{
+        margin: 30px 0;
+    }
+    .guidebook02 a img{
+        width: 125px;
+    }
+    .guidebook02 .download{
+        width: 125px;
+        height: 30px;
+        line-height: 30px;
+        bottom: -24px;
+        font-size: 10px;
+    }
+    .guidebook02 .download span{
+        font-size: 15px;
+    }
+
+    /* footer */
+    footer{
+        display: none;
+    }
+}
