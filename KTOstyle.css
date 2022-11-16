@@ -6,7 +6,6 @@
     padding: 0;
     text-decoration: none;
     box-sizing: border-box;
-    /* border: 1px solid red; */
     font-family: 'Noto Sans KR', sans-serif;
 }
 /* body{
@@ -23,43 +22,15 @@ span, a{
     align-items: center;
     margin: 10px auto;
 }
-
-/* 로그인 회원가입 사이트맵 */
-.account{
-    display: flex;
-    flex-direction: column;
-}
-.account .inner{
-    width: 100%;
-    justify-content: right;
-}
-.account ul{
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-}
-.account ul li a{
-    display: flex;
-    align-items: center;
-    margin: 0 5px;
-    font-size: 11px;
-}
-.account ul li a span{
-    font-size: 13px;
-}
-.account ul li ul{
-    flex-direction: column;
-    position: absolute;
-    z-index: 100;
-    background: #fff;
-}
-.account ul li ul li{
-    padding: 5px 0;
+.sec02 .inner .menu,
+.sec03 .inner .menu,
+.sec04 .inner .menu{
+    margin-left: 10px;
 }
 
 /* 헤더 */
 header{
-    max-width: 1650px;
+    max-width: 1920px;
     display: flex;
     top: 0;
     /* position: fixed; */
@@ -85,7 +56,7 @@ header img{
 nav{
     display: flex;
     /* justify-content: space-between; */
-    width:100%;
+    width:70%;
     height: 50px;
     line-height: 65px;
 }
@@ -192,10 +163,47 @@ nav .nav-links li a:hover .mega-box{
     border-radius: 0;
 }
 
+/* 로그인 회원가입 사이트맵 */
+.header_right{
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+}
+.account{
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    margin-bottom: 5px;
+}
+.account ul{
+    list-style-type: none;
+    display: flex;
+}
+.account ul li a{
+    display: flex;
+    align-items: center;
+    margin: 0 5px;
+    font-size: 11px;
+}
+.account ul li a span{
+    font-size: 13px;
+}
+.account .language{
+    flex-direction: column;
+    position: absolute;
+    z-index: 100;
+    background: #fff;
+}
+.account .language li{
+    padding: 5px 0;
+}
 
 /* 검색 */
 .button{
+    width: 100%;
     display: flex;
+    margin-right: 10px;
+    justify-content: right;
 }
 .button form{
     display: flex;
@@ -210,6 +218,9 @@ nav .nav-links li a:hover .mega-box{
 .button input{
     height: 30px;
     width: 120px;
+}
+.button form input{
+    height: 20px;
 }
 .button form span{
     display: flex;
@@ -288,11 +299,11 @@ nav .nav-links li a:hover .mega-box{
     justify-content: center;
     gap: 30px;
     width: 100%;
-    margin: 10px 0;
+    margin: 10px;
 }
 .sec02 .inner .boxContent01 a{
-    width: 160px;
-    height: 160px;
+    width: 140px;
+    height: 140px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -300,7 +311,7 @@ nav .nav-links li a:hover .mega-box{
     border-radius: 20px;
     gap: 8px;
     text-align: center;
-    word-break: break-all;
+    word-break:keep-all;
 }
 .sec02 .inner .boxContent01 a:nth-of-type(1){
     border: 1px solid #D63C3A;
@@ -401,7 +412,7 @@ nav .nav-links li a:hover .mega-box{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 10px 0;
+    margin: 10px;
 }
 .sec03 .inner .left .boxContent02 a{
     width: 25%;
@@ -438,23 +449,28 @@ nav .nav-links li a:hover .mega-box{
     margin: 5px;
 }
 .sec03 .inner .right .article01, .article02{
-    margin: 20px 0 0 0;
+    margin: 20px 0 0 10px;
     width: 100%;
 }
 .sec03 .inner .right h3{
     margin: 0 0 10px 0;
 }
 .sec03 .inner .right ul{
-    margin: 0 0 0 20px;
+    margin: 0 15px;
 }
 .sec03 .inner .right ul li{
-    margin: 0 0 15px 0;
+    margin: 0 5px 15px 5px;
     list-style-type :disc;
 }
 .sec03 .inner .right ul li a{
     display: flex;
     justify-content: space-between;
 }
+.sec03 .right .article01 a:hover,
+.sec03 .right .article02 a:hover{
+    font-weight: bold;
+}
+
 .sec03 .inner .right ul li a .title{
     text-overflow: ellipsis;
     overflow: hidden;
@@ -501,11 +517,11 @@ nav .nav-links li a:hover .mega-box{
     gap: 30px;
     align-items: flex-start;
     width: 100%;
-    margin: 10px 0;
+    margin: 10px;
 }
 .sec04 .inner .boxContent03 a{
-    width: 160px;
-    height: 160px;
+    width: 140px;
+    height: 140px;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -515,6 +531,7 @@ nav .nav-links li a:hover .mega-box{
     gap: 8px;
     border: 1px solid #dddddd;
     transition : all 0.3s ease;
+    word-break:keep-all;
 }
 .sec04 .inner .boxContent03 a:hover{
     background: #43a047;
@@ -544,6 +561,7 @@ nav .nav-links li a:hover .mega-box{
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    margin-left: 10px;
 }
 .sec05 .inner .menu span{
     display: flex;
@@ -616,4 +634,121 @@ footer .mark a{
 }
 .mark div span{
     font-size: 10px;
+}
+
+/* 사이트맵 */
+.sitemap{
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: none;
+    position: fixed;
+    z-index: 100;
+    overflow-y: scroll;
+    background: #43a047;
+    width: 100%;
+}
+.sitemap .inner{
+    max-width: 1400px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+}
+.sitemap a,
+.sitemap p,
+.sitemap span{
+    color: #fff;
+}
+.sitemap .material-symbols-outlined{
+    border: 1px solid #fafbfc;
+}
+
+/* 헤더 */
+.sitemap header{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+    color: #fff;
+    border-bottom: 4px solid #fafbfc;
+}
+.sitemap header .close {
+    float: right;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+}
+.sitemap header .slideToggle{
+    width: 200px;
+    position: absolute;
+    border: 2px solid #fff;
+    font-size: 20px;
+    top: 130px;
+    right: 10px;
+    padding: 5px 0;
+}
+
+
+/* nav */
+.sitemap .nav {
+    display: flex;
+    justify-content: space-between;
+    visibility:visible;
+    margin: 10px 0;
+    width: 100%;
+}
+.sitemap .title {
+    font-size: 30px;
+    color: #fff;
+    padding: 0 10px;
+    margin: 0 10px;
+    width: 15%;
+    text-align: center;
+    border: 1px solid #fafbfc;
+    font-weight: bold;
+}
+.sitemap .content {
+    width: 85%;
+    display: flex;
+    justify-content: flex-start;
+    transition: height 0.3s ease;
+    border-top: 1px solid #fafbfc;
+    border-bottom: 1px solid #fafbfc;
+    flex-wrap: wrap;
+}
+.sitemap li a:hover,
+.sitemap .list h3 a:hover{
+    transition: all 0.2s ease;
+    font-weight: 700;
+    color: black;
+}
+.sitemap .list {
+    width: 20%;
+}
+.sitemap .list h3{
+    color: #fff;
+    word-break:keep-all;
+    border: 1px solid #fafbfc;
+    margin: 0 10px 0 0;
+    text-align: center;
+    padding: 5px 0;
+}
+.sitemap .list h3 a{
+    font-weight: bold;
+}
+.sitemap .list li {
+    color: #fff;
+    margin: 10px 10px 10px 25px;
+    text-indent: -5px;
+}
+.sitemap .list a{
+    border: none;
+}
+.sitemap .list .sub_list {
+    margin: 10px 0 0 10px;
+    font-size: 13px;
 }
