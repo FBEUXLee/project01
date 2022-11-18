@@ -396,18 +396,19 @@ nav .nav-links li a:hover .mega-box {
     color: red;
 }
 
-.right .contact {
+.contact {
     padding: 15px 0;
     margin: 20px 0;
     background: #d1d3d4;
 }
-.right .contact ul {
+.contact ul {
     display: flex;
+    justify-content: center;
 }
-.right .contact ul li {
+.contact ul li {
     display: flex;
     align-items: center;
-    margin: 0 20px;
+    margin: 0 10px;
 }
 
 /* footer */

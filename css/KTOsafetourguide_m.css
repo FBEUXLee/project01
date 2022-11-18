@@ -47,14 +47,25 @@
     .right img{
         width: 100%;
     }
-    .right h3{
-        font-size: 12px;
+    
+    .contact{
+        word-break:break-all;
+        
     }
-    .right .contact ul li{
+    .contact ul{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        justify-content: center;
+    }
+    .contact ul li{
         margin: 0 5px;
     }
-    .right li span{
+    .contact h3{
         font-size: 10px;
+    }
+    .contact span{
+        font-size: 8px;
     }
 
     /* 가이드북01 */

@@ -29,11 +29,12 @@
     .right h3{
         font-size: 13px;
     }
-    .right .contact ul li{
-        margin: 0 10px;
+    
+    .contact h3{
+        font-size: 12px;
     }
-    .right li span{
-        font-size: 13px;
+    .contact span{
+        font-size: 10px;
     }
 
     /* footer */
