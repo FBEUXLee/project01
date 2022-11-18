@@ -37,39 +37,6 @@ header img {
     font-size: 0;
 }
 
-/* 로그인 회원가입 사이트맵 */
-.account{
-    display: flex;
-    flex-direction: column;
-}
-.account .inner{
-    width: 100%;
-    justify-content: right;
-}
-.account ul{
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-}
-.account ul li a{
-    display: flex;
-    align-items: center;
-    margin: 0 5px;
-    font-size: 11px;
-}
-.account ul li a span{
-    font-size: 13px;
-}
-.account ul li ul{
-    flex-direction: column;
-    position: absolute;
-    z-index: 100;
-    background: #fff;
-}
-.account ul li ul li{
-    padding: 5px 0;
-}
-
 /* nav */
 nav {
     display: flex;
@@ -170,24 +137,66 @@ nav .nav-links li a:hover .mega-box {
     border-radius: 0;
 }
 
-.button {
+/* 로그인 회원가입 사이트맵 */
+.header_right{
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+}
+.account{
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    margin-bottom: 5px;
+}
+.account ul{
+    list-style-type: none;
     display: flex;
 }
-.button form {
+.account ul li a{
+    display: flex;
+    align-items: center;
+    margin: 0 5px;
+    font-size: 11px;
+}
+.account ul li a span{
+    font-size: 13px;
+}
+.account .language{
+    flex-direction: column;
+    position: absolute;
+    z-index: 100;
+    background: #fff;
+}
+.account .language li{
+    padding: 5px 0;
+}
+
+/* 검색 */
+.button{
+    width: 100%;
+    display: flex;
+    margin-right: 10px;
+    justify-content: right;
+}
+.button form{
     display: flex;
     align-items: center;
 }
-.button .hidden {
+.button .hidden{
     overflow: hidden;
     font-size: 1px;
     line-height: 1px;
     text-indent: -3000px;
 }
-.button input {
+.button input{
     height: 30px;
     width: 120px;
 }
-.button form span {
+.button form input{
+    height: 20px;
+}
+.button form span{
     display: flex;
     align-items: center;
 }
@@ -318,9 +327,31 @@ nav .nav-links li a:hover .mega-box {
 .right>span{
     margin: 0 10px;
 }
-.right img {
-    width: 80%;
+.right table{
+    width: 100%;
 }
+.right thead{
+    background: #ddd;
+}
+.right thead th{
+    padding: 3px 0;
+}
+.right .bg a{
+    padding: 7px 0;
+    display: block;
+    margin: 0 10px;
+}
+.right .bg a:hover{
+    text-decoration: underline;
+}
+.right .bg td:nth-of-type(2){
+    text-align: center;
+}
+.right tbody tr:nth-of-type(2n){
+    background: #eee;
+}
+
+
 .right .contact {
     padding: 15px 0;
     margin: 20px 0;

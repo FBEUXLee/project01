@@ -681,6 +681,8 @@ footer .mark a{
     position: absolute;
     top: 20px;
     right: 10px;
+    border: none;
+    font-size: 40px;
 }
 .sitemap header .slideToggle{
     width: 200px;
@@ -690,6 +692,7 @@ footer .mark a{
     top: 130px;
     right: 10px;
     padding: 5px 0;
+    font-weight: 500;
 }
 
 
@@ -706,9 +709,11 @@ footer .mark a{
     color: #fff;
     padding: 0 10px;
     margin: 0 10px;
-    width: 15%;
+    width: 220px;
     text-align: center;
     border: 1px solid #fafbfc;
+}
+.sitemap .title span{
     font-weight: bold;
 }
 .sitemap .content {

@@ -37,39 +37,6 @@ header img {
     font-size: 0;
 }
 
-/* 로그인 회원가입 사이트맵 */
-.account{
-    display: flex;
-    flex-direction: column;
-}
-.account .inner{
-    width: 100%;
-    justify-content: right;
-}
-.account ul{
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-}
-.account ul li a{
-    display: flex;
-    align-items: center;
-    margin: 0 5px;
-    font-size: 11px;
-}
-.account ul li a span{
-    font-size: 13px;
-}
-.account ul li ul{
-    flex-direction: column;
-    position: absolute;
-    z-index: 100;
-    background: #fff;
-}
-.account ul li ul li{
-    padding: 5px 0;
-}
-
 /* nav */
 nav {
     display: flex;
@@ -170,24 +137,66 @@ nav .nav-links li a:hover .mega-box {
     border-radius: 0;
 }
 
-.button {
+/* 로그인 회원가입 사이트맵 */
+.header_right{
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+}
+.account{
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    margin-bottom: 5px;
+}
+.account ul{
+    list-style-type: none;
     display: flex;
 }
-.button form {
+.account ul li a{
+    display: flex;
+    align-items: center;
+    margin: 0 5px;
+    font-size: 11px;
+}
+.account ul li a span{
+    font-size: 13px;
+}
+.account .language{
+    flex-direction: column;
+    position: absolute;
+    z-index: 100;
+    background: #fff;
+}
+.account .language li{
+    padding: 5px 0;
+}
+
+/* 검색 */
+.button{
+    width: 100%;
+    display: flex;
+    margin-right: 10px;
+    justify-content: right;
+}
+.button form{
     display: flex;
     align-items: center;
 }
-.button .hidden {
+.button .hidden{
     overflow: hidden;
     font-size: 1px;
     line-height: 1px;
     text-indent: -3000px;
 }
-.button input {
+.button input{
     height: 30px;
     width: 120px;
 }
-.button form span {
+.button form input{
+    height: 20px;
+}
+.button form span{
     display: flex;
     align-items: center;
 }
@@ -205,15 +214,6 @@ nav .nav-links li a:hover .mega-box {
     background-size: 100%;
     transition: all 0.3s ease;
 }
-/* .sec01 .banner::after{
-    content: "";
-    display: block;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-} */
 .sec01 .banner h2 {
     position: absolute;
     color: #fff;
@@ -440,4 +440,126 @@ footer .mark a {
 }
 .mark div span{
     font-size: 10px;
+}
+
+/* 사이트맵 */
+.sitemap{
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: none;
+    position: fixed;
+    z-index: 100;
+    overflow-y: scroll;
+    background: #43a047;
+    width: 100%;
+}
+.sitemap .inner{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+}
+.sitemap a,
+.sitemap p,
+.sitemap span{
+    color: #fff;
+}
+.sitemap .material-symbols-outlined{
+    border: 1px solid #fafbfc;
+}
+
+/* 헤더 */
+.sitemap header{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+    color: #fff;
+    border-bottom: 4px solid #fafbfc;
+}
+.sitemap header p{
+    margin-bottom: 20px;
+}
+.sitemap header .close {
+    float: right;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    font-size: 40px;
+    border: none;
+}
+.sitemap header .slideToggle{
+    width: 200px;
+    position: absolute;
+    border: 2px solid #fff;
+    font-size: 20px;
+    top: 130px;
+    right: 10px;
+    padding: 5px 0;
+}
+
+
+/* nav */
+.sitemap .nav {
+    display: flex;
+    justify-content: space-between;
+    visibility:visible;
+    margin: 10px 0;
+    width: 100%;
+}
+.sitemap .title {
+    font-size: 30px;
+    color: #fff;
+    padding: 0 10px;
+    margin: 0 10px;
+    width: 220px;
+    text-align: center;
+    border: 1px solid #fafbfc;
+    font-weight: bold;
+}
+.sitemap .Cont {
+    width: 85%;
+    display: flex;
+    justify-content: flex-start;
+    transition: height 0.3s ease;
+    border-top: 1px solid #fafbfc;
+    border-bottom: 1px solid #fafbfc;
+    flex-wrap: wrap;
+}
+.sitemap li a:hover,
+.sitemap .list h3 a:hover{
+    transition: all 0.2s ease;
+    font-weight: 700;
+    color: black;
+}
+.sitemap .list {
+    width: 20%;
+}
+.sitemap .list h3{
+    color: #fff;
+    word-break:keep-all;
+    border: 1px solid #fafbfc;
+    margin: 0 10px 0 0;
+    text-align: center;
+    padding: 5px 0;
+}
+.sitemap .list h3 a{
+    font-weight: bold;
+}
+.sitemap .list li {
+    color: #fff;
+    margin: 10px 10px 10px 25px;
+    text-indent: -5px;
+}
+.sitemap .list a{
+    border: none;
+}
+.sitemap .list .sub_list {
+    margin: 10px 0 0 10px;
+    font-size: 13px;
 }

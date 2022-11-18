@@ -153,7 +153,8 @@
         right: 10px;
         padding: 5px 0;
     }
-    .sitemap header p{
+    .sitemap header p,
+    .sitemap header .close{
         font-size: 20px;
     }
 
