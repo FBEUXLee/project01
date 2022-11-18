@@ -351,6 +351,11 @@ nav .nav-links li a:hover .mega-box {
     background: #eee;
 }
 
+.page{
+    display: flex;
+    justify-content: center;
+}
+
 
 .contact {
     padding: 15px 0;

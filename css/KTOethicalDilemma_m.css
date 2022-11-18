@@ -55,11 +55,6 @@
         font-size: 12px;
     }
 
-    .page{
-        display: flex;
-        justify-content: center;
-    }
-
     .contact{
         word-break:break-all;
         width: 100%;
