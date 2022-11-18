@@ -519,6 +519,7 @@ nav .nav-links li a:hover .mega-box{
     align-items: flex-start;
     width: 100%;
     margin: 10px;
+    overflow-x: auto;
 }
 .sec04 .inner .boxContent03 a{
     width: 140px;

@@ -46,8 +46,8 @@
         justify-content: flex-start;
     }
     .sec02 .inner .boxContent01 a{
-        width: 90px;
-        height: 90px;
+        width: 80px;
+        height: 80px;
         font-size: 10px;
         word-wrap: break-word;
         padding: 0;
@@ -97,8 +97,8 @@
         overflow-x: auto;
     }
     .sec04 .inner .boxContent03 a{
-        width: 90px;
-        height: 90px;
+        width: 80px;
+        height: 80px;
         font-size: 10px;
         padding: 0;
         word-wrap: break-word;
@@ -127,9 +127,11 @@
     /* footer */
     footer img{
         width: 80px;
+        display: none;
     }
     footer .address{
-        font-size: 5px;
+        font-size: 3px;
+        margin-left: 0;
     }
     footer .mark{
         margin: 0;
