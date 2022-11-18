@@ -42,12 +42,16 @@
         justify-content: flex-end;
     }
     /* 섹션2 */
+    .sec02 .inner .boxContent01{
+        justify-content: flex-start;
+    }
     .sec02 .inner .boxContent01 a{
         width: 90px;
         height: 90px;
         font-size: 10px;
         word-wrap: break-word;
         padding: 0;
+        flex-shrink: 0;
     }
     .sec02 .inner .boxContent01 a img{
         width: 30px;
@@ -88,11 +92,17 @@
     .sec04 .inner{
         width: 100%;
     }
+    .sec04 .inner .boxContent03{
+        justify-content: flex-start;
+        overflow-x: auto;
+    }
     .sec04 .inner .boxContent03 a{
         width: 90px;
         height: 90px;
         font-size: 10px;
         padding: 0;
+        word-wrap: break-word;
+        flex-shrink: 0;
     }
     .sec04 .inner .boxContent03 a img{
         width: 30px;

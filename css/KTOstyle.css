@@ -300,6 +300,7 @@ nav .nav-links li a:hover .mega-box{
     gap: 30px;
     width: 100%;
     margin: 10px;
+    overflow-x: auto;
 }
 .sec02 .inner .boxContent01 a{
     width: 140px;
