@@ -26,6 +26,7 @@
     .site{
         padding: 5px;
         font-size: 13px;
+        right: 2%;
     }
     .site .material-symbols-outlined{
         font-weight: 350;
@@ -50,7 +51,23 @@
     }
 
     /* footer */
-    footer{
+    footer img{
+        width: 70px;
+        display: none;
+    }
+    footer .address{
+        font-size: 3px;
+        margin-left: 0;
+    }
+    footer .mark{
+        margin: 0;
+        padding: 0;
+    }
+    footer .mark img{
+        width: 15px;
+        height: 15px;
+    }
+    footer .mark div span{
         display: none;
     }
 

@@ -20,6 +20,9 @@
         left: 3%;
         top: 63%
     }
+    .site{
+        right: 2%;
+    }
 
     .right{
         width: 100%;
@@ -43,7 +46,7 @@
         height: 20px;
     }
     footer .mark div span{
-        font-size: 8px;
+        font-size:5px;
     }
 
     /* 사이트맵 */

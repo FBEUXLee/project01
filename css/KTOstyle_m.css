@@ -54,8 +54,8 @@
         flex-shrink: 0;
     }
     .sec02 .inner .boxContent01 a img{
-        width: 30px;
-        height: 30px;
+        width: 20px;
+        height: 20px;
     }
 
     /* 섹션3 */
@@ -80,6 +80,7 @@
     }
     .sec03 .inner .right{
         width: 100%;
+        margin-left: 0px;
     }
     .sec03 .inner .right .article01, .article02 h3{
         font-size: 15px;
@@ -88,15 +89,22 @@
         font-size: 13px;
     }
 
-    /* 섹션4 */
-    .sec04 .inner{
+    /* 섹션4 */    
+    .tag a{
+        font-size: 10px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    /* 섹션5 */
+    .sec05 .inner{
         width: 100%;
     }
-    .sec04 .inner .boxContent03{
+    .sec05 .inner .boxContent03{
         justify-content: flex-start;
         overflow-x: auto;
     }
-    .sec04 .inner .boxContent03 a{
+    .sec05 .inner .boxContent03 a{
         width: 80px;
         height: 80px;
         font-size: 10px;
@@ -104,19 +112,12 @@
         word-wrap: break-word;
         flex-shrink: 0;
     }
-    .sec04 .inner .boxContent03 a img{
+    .sec05 .inner .boxContent03 a img{
         width: 30px;
         height: 30px;
         margin: 0;
     }
 
-    /* 섹션5 */
-    
-    .tag a{
-        font-size: 10px;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
 
     /* swiper */
     .swiper-slide .content{
@@ -127,7 +128,7 @@
     /* footer */
     footer img{
         width: 80px;
-        display: none;
+        /* display: none; */
     }
     footer .address{
         font-size: 3px;

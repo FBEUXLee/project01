@@ -262,56 +262,11 @@ nav .nav-links li a:hover .mega-box {
     justify-content: flex-start;
 }
 
-/* left */
-.left {
-    width: 20%;
-    margin: 0 20px 0 0;
-}
-.left nav {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    background: #fafbfc;
-    width: 100%;
-    height: 200px;
-    line-height: 40px;
-}
-.left nav > ul > li {
-    font-size: 15px;
-    list-style-type: none;
-}
-.left nav div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 0 0 5px;
-}
-.left nav div a {
-    display: flex;
-    align-items: center;
-}
-.left nav a:hover {
-    color: #43a047;
-}
-.left nav .content{
-    margin: 0 0 0 30px;
-}
-.left nav .content > li {
-    font-size: 13px;
-}
-.left nav .content > li > ul > li {
-    margin: 0 0 0 20px;
-    font-size: 10px;
-}
-.snd_title > div {
-    font-size: 13px;
-}
-
 /* right */
 .right {
     width: 100%;
     transition: all 0.3s ease;
-    margin: 10px;
+    margin: 30px 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -359,35 +314,42 @@ nav .nav-links li a:hover .mega-box {
 
 
 /* footer */
-footer {
+footer{
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     border-top: 1px solid #dddddd;
+    background: #222222;
+    padding: 30px 0;
 }
-footer .adress {
+footer .address{
     display: flex;
     flex-direction: column;
 }
-footer .mark {
+.address address,
+.address span{
+    color: #fff;
+}
+footer .mark{
     display: flex;
     align-items: flex-end;
 }
-footer .mark a {
+footer .mark a{
     margin: 0;
     padding: 0;
 }
-.mark img {
+.mark img{
+    display: block;
     width: 25px;
     height: 25px;
-    display: block;
 }
-.mark div {
+.mark div{
     display: flex;
     flex-direction: column;
 }
 .mark div span{
     font-size: 10px;
+    color: #fff;
 }
 
 /* 사이트맵 */

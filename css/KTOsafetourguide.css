@@ -221,7 +221,7 @@ nav .nav-links li a:hover .mega-box {
     left: calc(29%);
     font-size: 35px;
 }
-.sec01 .banner span{
+.sec01 .banner>span{
     position: absolute;
     color: #fff;
     top:70%;
@@ -232,24 +232,18 @@ nav .nav-links li a:hover .mega-box {
 
 
 .sec01 .inner {
-    flex-direction: column;
-    justify-content: right;
-    margin: 0 auto;
+    margin: 0;
+    background: #43a047;
+    height: 2px;
+    width: 100%;
 }
 .site {
-    background: #43a047;
-    width: 100%;
     display: flex;
     align-items: center;
-}
-.site .home{
-    background: green;
-    padding: 8px;
-}
-.site a span {
-    color: black;
-    display: flex;
-    align-items: center;
+    position: absolute;
+    bottom: 10px;
+    right: 18%;
+    color: #fff;
 }
 
 /* 섹션2 */
@@ -265,7 +259,7 @@ nav .nav-links li a:hover .mega-box {
 /* left */
 .left {
     width: 20%;
-    margin: 0 30px 0 0;
+    margin: 60px 30px 0 0;
 }
 .left nav {
     display: flex;
@@ -311,10 +305,10 @@ nav .nav-links li a:hover .mega-box {
 .right {
     width: 100%;
     transition: all 0.3s ease;
-    margin: 0 15px;
+    margin: 30px 10px;
 }
 .right h2 {
-    margin: 20px 0px;
+    margin: 20px 10px;
 }
 .right div{
     display: flex;
@@ -412,35 +406,42 @@ nav .nav-links li a:hover .mega-box {
 }
 
 /* footer */
-footer {
+footer{
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     border-top: 1px solid #dddddd;
+    background: #222222;
+    padding: 30px 0;
 }
-footer .adress {
+footer .address{
     display: flex;
     flex-direction: column;
 }
-footer .mark {
+.address address,
+.address span{
+    color: #fff;
+}
+footer .mark{
     display: flex;
     align-items: flex-end;
 }
-footer .mark a {
+footer .mark a{
     margin: 0;
     padding: 0;
 }
-.mark img {
+.mark img{
+    display: block;
     width: 25px;
     height: 25px;
-    display: block;
 }
-.mark div {
+.mark div{
     display: flex;
     flex-direction: column;
 }
 .mark div span{
     font-size: 10px;
+    color: #fff;
 }
 
 /* 사이트맵 */

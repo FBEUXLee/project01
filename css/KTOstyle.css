@@ -48,43 +48,35 @@ header{
     margin: 0;
 }
 header img{
-    width: 200px;
+    width: 160px;
     font-size: 0;
 }
 
 /* nav */
 nav{
-    display: flex;
-    /* justify-content: space-between; */
-    width:70%;
-    height: 50px;
+    width: 100%;
+    z-index: 999;
+    height: 65px;
     line-height: 65px;
 }
-nav .wrapper{
-    width: 100%;
-    display: flex;
-    align-items: center;
+.nav-links{
+    background: #fff;
     position: relative;
-    z-index: 9;
-}
-.wrapper .nav-links{
-    width: 100%;
     display: inline-flex;
+    align-items: center;
     justify-content: center;
+    margin: 0 auto;
 }
 .nav-links li{
     list-style: none;
-    margin: 0 20px;
 }
 .nav-links li:hover .mega-box{
+    top:65px;
     opacity: 1;
     visibility: visible;
-    top: 60px;
     transition: all 0.3s ease;
-    background: #fff;
 }
 .nav-links li a{
-    color: black;
     text-decoration: none;
     font-size: 18px;
     font-weight: 500;
@@ -92,7 +84,7 @@ nav .wrapper{
     border-radius: 5px;
     transition: all 0.3s ease;
 }
-nav .nav-links li a:hover{
+.nav-links li a:hover{
     background: #43a047;
     color: #fff;
 }
@@ -105,63 +97,44 @@ nav .nav-links li a:hover{
     opacity: 0;
     visibility: hidden;
     transition: all 0.3s ease;
-}
-/* .mega-box li a{
-    width: 100%;
-    display: block;
-    padding: 0 0 0 15px;
-    font-weight: 400;
-    border-radius: 0px;
-} */
-nav .nav-links li a:hover .mega-box{
-    top: 60px;
-    opacity: 1;
-    visibility: visible;
-    transition: all 0.3s ease;
-}
-.mega-box .mega-content{
-    padding: 20px 20px;
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: column;
+}
+.mega-box .content{
+    padding: 25px 20px;
+    display: flex;
+    flex-direction: column;
     width: 100%;
+    justify-content: space-between;
+    background: #eee;
 }
-.mega-content .row{
-    width:20%;
-    line-height: 40px;
+.content .row{
+    width: calc(25% - 30px);
+    line-height: 45px;
+    display: flex;
 }
-.mega-content .row h2{
-    color: black;
-    font-size: 15px;
-    font-weight: 500;
-    word-break:keep-all;
-}
-.mega-content .row .mega-links{
-    border-left: 1px solid rgba(255, 255, 255, 0.08);
-    margin-left: -20px;
-}
-/* .row .mega-links li{
-    margin: 0 20px;    
+/* .content .row img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 } */
+.content .row h2{
+    font-size: 20px;
+    font-weight: 500;
+}
+.content .row .mega-links{
+    margin-left: 40px;
+    border-left: 1px solid rgba(255,255,0,0.09);
+}
+.row .mega-links li{
+    padding: 0 20px;
+}
 .row .mega-links li a{
-    padding: 0 5px;
-    margin: 5px 0;
-    color: black;   
-    font-size: 12px;
-    display: block;
-    word-break: keep-all;
-}
-.row .mega-links li a:hover{
-    background: #43a047;
-    color: #fff;
-}
-.row .single a{
-    width: 100%;
+    padding: 0 20px;
     font-size: 17px;
-    text-align: left;
-    margin: 0;
-    padding: 0;
-    border-radius: 0;
+    display: block;
 }
+
 
 /* 로그인 회원가입 사이트맵 */
 .header_right{
@@ -179,14 +152,17 @@ nav .nav-links li a:hover .mega-box{
     list-style-type: none;
     display: flex;
 }
+.account ul li:first-child{
+    margin: 0 10px;
+}
 .account ul li a{
     display: flex;
     align-items: center;
-    margin: 0 5px;
     font-size: 11px;
 }
 .account ul li a span{
     font-size: 13px;
+    margin: 0;
 }
 .account .language{
     flex-direction: column;
@@ -202,7 +178,6 @@ nav .nav-links li a:hover .mega-box{
 .button{
     width: 100%;
     display: flex;
-    margin-right: 10px;
     justify-content: right;
 }
 .button form{
@@ -374,8 +349,8 @@ nav .nav-links li a:hover .mega-box{
     display: inline-block;
     justify-content: center;
     align-items: center;
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
     margin-bottom: 5px;
 }
 
@@ -404,7 +379,7 @@ nav .nav-links li a:hover .mega-box{
 .sec03 .inner .left .menu span{
     align-items: center;
     display: flex;
-    margin: 5px;
+    margin-left: 10px;
 }
 .sec03 .inner .left .boxContent02{
     width: 100%;
@@ -419,6 +394,7 @@ nav .nav-links li a:hover .mega-box{
     width: 25%;
     height: 50%;
     border-radius: 20px;
+    padding: 0 10px;
     gap: 10px;
     font-size: 18px;
     border:1px solid #dddddd;
@@ -426,7 +402,7 @@ nav .nav-links li a:hover .mega-box{
     justify-content: center;
     align-items: center;
     text-align: center;
-    word-break: keep-all;
+    word-break:keep-all;
 }
 .sec03 .inner .left .boxContent02 a:hover{
     background: #43a047;
@@ -437,7 +413,7 @@ nav .nav-links li a:hover .mega-box{
 /* 섹션3보도자료 */
 .sec03 .inner .right{
     width: 100%;
-    margin: 10px 0;
+    margin: 10px 0 10px 30px;
 }
 .sec03 .inner .right .menu{
     display: flex;
@@ -447,7 +423,7 @@ nav .nav-links li a:hover .mega-box{
 .sec03 .inner .right .menu span{
     display: flex;
     align-items: center;
-    margin: 5px;
+    margin-left: 10px;
 }
 .sec03 .inner .right .article01, .article02{
     margin: 20px 0 0 10px;
@@ -497,82 +473,25 @@ nav .nav-links li a:hover .mega-box{
 
 /* 섹션4 */
 .sec04 .inner{
-    /* width: 100%; */
-    flex-direction: column;
-    border-bottom: 1px solid #dddddd;
-}
-.sec04 .inner .menu{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    align-items: center;
-}
-.sec04 .inner .menu span{
-    display: flex;
-    align-items: center;
-    margin: 5px;
-}
-.sec04 .inner .boxContent03{
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    align-items: flex-start;
-    width: 100%;
-    margin: 10px;
-    overflow-x: auto;
-}
-.sec04 .inner .boxContent03 a{
-    width: 140px;
-    height: 140px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    border-radius: 20px;
-    gap: 8px;
-    border: 1px solid #dddddd;
-    transition : all 0.3s ease;
-    word-break:keep-all;
-}
-.sec04 .inner .boxContent03 a:hover{
-    background: #43a047;
-    color: #fff;
-}
-
-.sec04 .inner .boxContent03 a img{
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
-    width: 70px;
-    height: 70px;
-    margin-bottom: 10px;
-}
-.sec04 .inner .boxContent03 a img:nth-child(1){
-    border-radius: 100%;
-}
-
-/* 섹션5 */
-.sec05 .inner{
     flex-direction: column;
     align-items: center;
     gap: 0 40px;
 }
-.sec05 .inner .menu{
+.sec04 .inner .menu{
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     margin-left: 10px;
 }
-.sec05 .inner .menu span{
+.sec04 .inner .menu span{
     display: flex;
     align-items: center;
     margin: 5px;
 }
 
 
-/* sec05 컨텐츠 */
+/* sec04 컨텐츠 */
 .content, .content a{
     width: 100%;
 }
@@ -587,7 +506,7 @@ nav .nav-links li a:hover .mega-box{
     border: 1px solid #fff;
 }
 
-/* sec05 태그 */
+/* sec04 태그 */
 .tag{
     margin: 0;
     padding: 0;
@@ -605,6 +524,66 @@ nav .nav-links li a:hover .mega-box{
     transition: all 0.3s ease;
 }
 
+/* 섹션5 */
+.sec05 .inner{
+    /* width: 100%; */
+    flex-direction: column;
+    border-bottom: 1px solid #dddddd;
+}
+.sec05 .inner .menu{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+.sec05 .inner .menu span{
+    display: flex;
+    align-items: center;
+    margin: 5px;
+}
+.sec05 .inner .boxContent03{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: flex-start;
+    width: 100%;
+    margin: 10px;
+    overflow-x: auto;
+}
+.sec05 .inner .boxContent03 a{
+    width: 140px;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-end-end-radius: 20px;
+    border-end-start-radius: 20px;
+    gap: 7px;
+    border: 1px solid #dddddd;
+    transition : all 0.3s ease;
+    word-break:keep-all;
+}
+.sec05 .inner .boxContent03 a:hover{
+    background: #43a047;
+    color: #fff;
+}
+
+.sec05 .inner .boxContent03 a img{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    margin-bottom: 10px;
+}
+.sec05 .inner .boxContent03 a img:nth-child(1){
+    border-radius: 100%;
+}
+
+
+
 
 /* footer */
 footer{
@@ -612,10 +591,16 @@ footer{
     justify-content: space-between;
     align-items: flex-end;
     border-top: 1px solid #dddddd;
+    background: #222222;
+    padding: 30px 0;
 }
-footer .adress{
+footer .address{
     display: flex;
     flex-direction: column;
+}
+.address address,
+.address span{
+    color: #fff;
 }
 footer .mark{
     display: flex;
@@ -636,6 +621,7 @@ footer .mark a{
 }
 .mark div span{
     font-size: 10px;
+    color: #fff;
 }
 
 /* 사이트맵 */
