@@ -1,11 +1,6 @@
 @charset "utf-8";
 @media (max-width:1080px){
     /* 공통 */
-    *{
-        margin: 0;
-        padding: 0;
-        text-decoration: none;
-    }
     .inner{
         width:100%
     }
@@ -33,12 +28,10 @@
     }
 
     /* 네비 */
-    nav .wrapper{
+    nav{
         display: none;
     }
-    nav{
-        justify-content: flex-end;
-    }
+
     
     /* sec02 */
     .sec02 .inner,.sec03 .inner,.sec05 .inner{
@@ -48,14 +41,14 @@
         overflow: auto;
         width: 100%;
     }
-    .sec02 .inner .boxContent01 a{
-        width: 100px;
-        height: 100px;
+    .sec02 .inner .boxContent01 .boxContent_list .boxContent_item .boxContent_anchor{
+        width: 80px;
+        height: 80px;
         padding: 0;
         font-size: 13px;
         flex-shrink: 0;
     }
-    .sec02 .inner .boxContent01 a img{
+    .sec02 .inner .boxContent01 .boxContent_list .boxContent_item .boxContent_anchor img{
         width: 30px;
         height: 30px;
         margin: 0;
@@ -78,7 +71,7 @@
         /* overflow-y: scroll; */
         padding: 0;
     } 
-    .sec03 .inner .left .boxContent02 a{
+    .sec03 .inner .left .boxContent02 .boxContent_list .boxContent_item .boxContent_anchor{
         width: 100px;
         height: 100px;
         font-size: 13px;
