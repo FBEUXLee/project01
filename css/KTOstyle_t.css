@@ -15,7 +15,7 @@
     }
 
     /* 로그인 */
-    .account{
+    .header_right .account, nav{
         display: none;
     }
 
@@ -25,11 +25,6 @@
     }
     header img{
         width: 150px;
-    }
-
-    /* 네비 */
-    nav{
-        display: none;
     }
 
     
@@ -42,8 +37,8 @@
         width: 100%;
     }
     .sec02 .inner .boxContent01 .boxContent_list .boxContent_item .boxContent_anchor{
-        width: 80px;
-        height: 80px;
+        width: 90px;
+        height: 90px;
         padding: 0;
         font-size: 13px;
         flex-shrink: 0;
@@ -51,7 +46,6 @@
     .sec02 .inner .boxContent01 .boxContent_list .boxContent_item .boxContent_anchor img{
         width: 30px;
         height: 30px;
-        margin: 0;
     }
 
     /* sec03 */
@@ -72,12 +66,11 @@
         padding: 0;
     } 
     .sec03 .inner .left .boxContent02 .boxContent_list .boxContent_item .boxContent_anchor{
-        width: 100px;
+        /* width: 100px; */
         height: 100px;
         font-size: 13px;
     }
     .sec03 .inner .right{
-        width: 100%;
         margin-left: 0;
     }
 
@@ -102,16 +95,16 @@
     .sec05 .inner .boxContent03{
         justify-content: flex-start;
     }
-    .sec05 .inner .boxContent03 a{
-        width: 100px;
-        height: 100px;
+    .sec05 .inner .boxContent03 .boxContent_list .boxContent_item a{
+        width: 90px;
+        height: 90px;
         font-size: 13px;
         padding: 0;
         flex-shrink: 0;
     }
-    .sec05 .inner .boxContent03 a img{
-        width: 40px;
-        height: 40px;
+    .sec05 .inner .boxContent03 .boxContent_list .boxContent_item a img{
+        width: 30px;
+        height: 30px;
         margin: 0;
     }
 
