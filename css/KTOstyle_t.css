@@ -1,5 +1,5 @@
 @charset "utf-8";
-@media all and (min-width:641px) and (max-width:1080px){
+@media (max-width:1080px){
     /* 공통 */
     *{
         margin: 0;
@@ -45,7 +45,8 @@
         margin: 0 5px;
     }
     .sec02 .inner .boxContent01{
-        justify-content: flex-start;
+        overflow: auto;
+        width: 100%;
     }
     .sec02 .inner .boxContent01 a{
         width: 100px;

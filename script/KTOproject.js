@@ -1,18 +1,29 @@
-var swiper = new Swiper(".banner", {
-    spaceBetween: 30,
+var swiper = new Swiper(".swiper.banner", {
+    effect: "coverflow",
+    grabCursor: true,
     centeredSlides: true,
+    slidesPerView: "auto",
+    loop: true,
+    coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+    },
     autoplay: {
         delay: 2500,
         disableOnInteraction: false,
-    },
+      },
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
     },
+    
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
-    },
+      },
 });
 
 $(function () {
@@ -97,10 +108,17 @@ $(function () {
         });
     });
 
-    $("form .shortcut").click(function(){
+    $("form .shortcut").click(function () {
         $(".sitemap").show();
     });
-    $(".sitemap .close").click(function(){
+    $(".sitemap .close").click(function () {
         $(".sitemap").hide();
     });
+    var $gnb = $('.gnb'),
+        $gnb_top = $gnb.find('.depth1 > .gnb_item');
+
+    $gnb_top.each(function (n, v) {
+        var $gnb_text = $(v).find('a:not(".depth2 a")').text();
+        $(v).find('.depth2').append('<h3 class="gnb_title">' + $gnb_text + '</h3>');
+    })
 });

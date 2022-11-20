@@ -1,6 +1,8 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0");
+@import url(KTOstyle_t.css);
+@import url(KTOstyle_m.css);
 *{
     margin: 0;
     padding: 0;
@@ -16,8 +18,8 @@ span, a{
     font-weight: 400;
 }
 .inner{
-    max-width: 1400px;
     display: flex;
+    max-width: 1400px;
     justify-content: space-between;
     align-items: center;
     margin: 10px auto;
@@ -30,17 +32,18 @@ span, a{
 
 /* 헤더 */
 header{
-    max-width: 1920px;
     display: flex;
     top: 0;
+    max-width: 1920px;
     /* position: fixed; */
 }
 .header_inner{
+    display: flex;
+    position:relative;
     border-bottom: 1px solid #dddddd;
     width: 100%;
     padding: 0;
     padding: 0 0 0 10px;
-    display: flex;
     align-items: center;
     justify-content: space-between;
 }
@@ -51,106 +54,123 @@ header img{
     width: 160px;
     font-size: 0;
 }
-
-/* nav */
-nav{
-    width: 100%;
-    z-index: 999;
-    height: 65px;
-    line-height: 65px;
-}
-.nav-links{
-    background: #fff;
-    position: relative;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-}
-.nav-links li{
-    list-style: none;
-}
-.nav-links li:hover .mega-box{
-    top:65px;
-    opacity: 1;
-    visibility: visible;
-    transition: all 0.3s ease;
-}
-.nav-links li a{
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 500;
-    padding: 9px 15px;
-    border-radius: 5px;
-    transition: all 0.3s ease;
-}
-.nav-links li a:hover{
-    background: #43a047;
-    color: #fff;
-}
-
-.mega-box{
-    position: absolute;
-    top: 80px;
-    width: 100%;
-    left: 0;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.3s ease;
-    display: flex;
-    flex-direction: column;
-}
-.mega-box .content{
-    padding: 25px 20px;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    justify-content: space-between;
-    background: #eee;
-}
-.content .row{
-    width: calc(25% - 30px);
-    line-height: 45px;
-    display: flex;
-}
-/* .content .row img{
-    width: 100%;
+:before,
+:after{display:none;content:"";}
+/* 네비 */
+/* nav common */
+.gnb {
+    width: 1000px;
     height: 100%;
-    object-fit: cover;
-} */
-.content .row h2{
-    font-size: 20px;
-    font-weight: 500;
 }
-.content .row .mega-links{
-    margin-left: 40px;
-    border-left: 1px solid rgba(255,255,0,0.09);
+.gnb .gnb_list ul{
+    display: none;
 }
-.row .mega-links li{
-    padding: 0 20px;
+.gnb li{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
 }
-.row .mega-links li a{
-    padding: 0 20px;
-    font-size: 17px;
-    display: block;
+.gnb li > a{
+    position:relative;
+    width:100%;
+    text-align: center;
+}
+.gnb li > a:hover:after{
+    display:inline-block;
+    position:absolute;
+    top:80%;
+    left:50%;
+    transform:translateX(-50%);
+    height:1px;
+    width:120px;
+    background-color:#11A0DD;
+}
+.gnb .gnb_list{
+    display: flex;
+}
+.gnb .gnb_title{
+    position:absolute;
+    top:50%;
+    right:100%;
+    width:100%;
+}
+/* //nav common */
+.gnb .gnb_list.depth1{
+    padding: 0 72px;
+    height: 100%;
+}
+.gnb .gnb_list.depth1 > .gnb_item{
+    width: 20%;
+    z-index: 100;
+    height: 100%;
+}
+.gnb .gnb_list.depth1 > .gnb_item:before{
+    display: none;
+    position:absolute;
+    top:100%;
+    left:0;
+    width:100%;
+    height:420px;
+    background-color: #badbad44;
+    z-index: -1;
+    
+}
+.gnb .gnb_list.depth1 .gnb_item .gnb_anchor{
+    padding: 17px 9px;
+    border-radius: 10px;
+}
+.gnb .gnb_list.depth1 > .gnb_item .depth2{
+    position: absolute;
+    top:100%;
+    left:20%;
+    flex-direction: column;
+    height:420px;
+    background-color:#fff;
+    width:210px;
+}
+.gnb .gnb_list.depth1 > .gnb_item .depth2 > .gnb_item .depth3{
+    position:absolute;
+    top:0;
+    left:100%;
+    flex-wrap: wrap;
+    max-height: 420px;
+    overflow: auto;
+}
+.gnb .gnb_list.depth1 > .gnb_item .depth2 > .gnb_item .depth3 .gnb_item{
+    width: 220px;
+    text-align: center;
+}
+
+
+@media (min-width:800px) {
+    .gnb .gnb_list.depth1 > .gnb_item:hover .depth2{
+        display: flex;
+    }    
+    .gnb .gnb_list.depth1 > .gnb_item:hover:before{
+        display: inline-block;
+    }
+    .gnb .gnb_list.depth1 > .gnb_item .depth2 > .gnb_item:hover .depth3{
+        display: flex;
+    }
 }
 
 
 /* 로그인 회원가입 사이트맵 */
 .header_right{
-    width: 15%;
     display: flex;
+    width: 15%;
     flex-direction: column;
 }
 .account{
-    width: 100%;
     display: flex;
+    width: 100%;
     justify-content: right;
     margin-bottom: 5px;
 }
 .account ul{
-    list-style-type: none;
     display: flex;
+    list-style-type: none;
 }
 .account ul li:first-child{
     margin: 0 10px;
@@ -165,8 +185,8 @@ nav{
     margin: 0;
 }
 .account .language{
-    flex-direction: column;
     position: absolute;
+    flex-direction: column;
     z-index: 100;
     background: #fff;
 }
@@ -176,8 +196,8 @@ nav{
 
 /* 검색 */
 .button{
-    width: 100%;
     display: flex;
+    width: 100%;
     justify-content: right;
 }
 .button form{
@@ -206,46 +226,23 @@ nav{
 
 
 /* 스와이퍼(sec01, sec05 슬라이드 공통) */
-.swiper{
+
+.swiper {
     width: 100%;
-    height: 100%;
-    border-bottom: 1px solid #dddddd;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
-.swiper-slide{
-    font-size: 18px;
-    background: #fff;
-    position: relative;
+
+.swiper .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 50%;
+    height: auto;
 }
-.swiper-slide img{
+
+.swiper-slide img {
     display: block;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.swiper-slide .content{
-    position: absolute;
-    bottom:100px;
-    padding: 10px 30px;
-    background-color: black;
-    opacity: 0.8;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.swiper-slide .content a{
-    color: #fff;
-}
-.swiper-slide .content a h3, h5, p{
-    margin:0 0 20px 0;
-}
-.swiper-slide .content .tag{
-    display: flex;
-    justify-content: flex-start;
-    width : 100%;
-}
-.swiper-slide .content .tag a{
-    margin: 0 20px 0 0;
-    padding: 0 10px;
 }
 
 /* 섹션2 */
@@ -253,8 +250,8 @@ nav{
     margin: 10px 0;
 }
 .sec02 .inner{
-    width: 100%;
     display: flex;
+    width: 100%;
     flex-direction: column;
     border-bottom: 1px solid #dddddd;
 }
@@ -270,17 +267,26 @@ nav{
     margin: 5px;
 }
 .sec02 .inner .boxContent01{
-    display: flex;
-    justify-content: center;
-    gap: 30px;
+    overflow: auto;
     width: 100%;
-    margin: 10px;
-    overflow-x: auto;
 }
-.sec02 .inner .boxContent01 a{
+.sec02 .inner .boxContent01 .boxContent_list,
+.sec03 .inner .boxContent02 .boxContent_list{
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    padding: 0 3%;
+    margin: 10px;
+}
+.sec02 .inner .boxContent01 .boxContent_list .boxContent_item,
+.sec03 .inner .boxContent02 .boxContent_list .boxContent_item{
+    list-style: none;
+}
+.sec02 .inner .boxContent01 .boxContent_list .boxContent_item .boxContent_anchor,
+.sec03 .inner .boxContent02 .boxContent_list .boxContent_item .boxContent_anchor{
+    display: flex;
     width: 140px;
     height: 140px;
-    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -366,10 +372,8 @@ nav{
     border-bottom: 1px solid #dddddd;
 }
 .sec03 .left{
-    display: flex;
-    flex-direction: column;
+    width: 30%;
     margin: 10px 30px 0 0;
-    height: 395px;
 }
 .sec03 .inner .left .menu{
     display: flex;
@@ -377,32 +381,30 @@ nav{
     align-items: center;
 }
 .sec03 .inner .left .menu span{
-    align-items: center;
     display: flex;
+    align-items: center;
     margin-left: 10px;
 }
-.sec03 .inner .left .boxContent02{
-    width: 100%;
-    height: 100%;
+.sec03 .inner .left .boxContent02 .boxContent_list{
     display: flex;
-    flex-direction: row;
+    margin: 0;
     flex-wrap: wrap;
-    justify-content: center;
-    margin: 10px;
+    flex-direction: column;
+    height: 100%;
 }
-.sec03 .inner .left .boxContent02 a{
-    width: 25%;
-    height: 50%;
-    border-radius: 20px;
-    padding: 0 10px;
-    gap: 10px;
+.sec03 .inner .left .boxContent02 .boxContent_list .boxContent_item{
+    display: inline-block;
+}
+.sec03 .inner .left .boxContent02 .boxContent_list .boxContent_item:nth-child(2n + 1){
+    margin-right:25px;
+}
+.sec03 .inner .left .boxContent02 .boxContent_list .boxContent_item .boxContent_anchor{
+    display: flex;
     font-size: 18px;
     border:1px solid #dddddd;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
     word-break:keep-all;
+    height: auto;
+    border-radius:5px;
 }
 .sec03 .inner .left .boxContent02 a:hover{
     background: #43a047;
@@ -543,7 +545,6 @@ nav{
 }
 .sec05 .inner .boxContent03{
     display: flex;
-    justify-content: center;
     gap: 30px;
     align-items: flex-start;
     width: 100%;
@@ -551,9 +552,9 @@ nav{
     overflow-x: auto;
 }
 .sec05 .inner .boxContent03 a{
+    display: flex;
     width: 140px;
     height: 140px;
-    display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
@@ -626,19 +627,19 @@ footer .mark a{
 
 /* 사이트맵 */
 .sitemap{
-    height: 100%;
-    top: 0;
-    left: 0;
     display: none;
     position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
     z-index: 100;
     overflow-y: scroll;
     background: #43a047;
     width: 100%;
 }
 .sitemap .inner{
-    max-width: 1400px;
     display: flex;
+    max-width: 1400px;
     flex-direction: column;
     margin: 10px auto;
 }
@@ -653,9 +654,9 @@ footer .mark a{
 
 /* 헤더 */
 .sitemap header{
+    display: flex;
     width: 100%;
     height: 200px;
-    display: flex;
     justify-content: center;
     align-items: flex-end;
     text-align: center;
@@ -665,20 +666,20 @@ footer .mark a{
     border-bottom: 4px solid #fafbfc;
 }
 .sitemap header .close {
-    float: right;
     position: absolute;
     top: 20px;
     right: 10px;
+    float: right;
     border: none;
     font-size: 40px;
 }
 .sitemap header .slideToggle{
-    width: 200px;
     position: absolute;
-    border: 2px solid #fff;
-    font-size: 20px;
     top: 130px;
     right: 10px;
+    width: 200px;
+    border: 2px solid #fff;
+    font-size: 20px;
     padding: 5px 0;
     font-weight: 500;
 }
@@ -705,8 +706,8 @@ footer .mark a{
     font-weight: bold;
 }
 .sitemap .content {
-    width: 85%;
     display: flex;
+    width: 85%;
     justify-content: flex-start;
     transition: height 0.3s ease;
     border-top: 1px solid #fafbfc;
