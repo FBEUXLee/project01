@@ -358,7 +358,7 @@ section{
     color: #fff;
     background-color: #9D419F;
 }
-.sec02 .inner .boxContent01 .boxContent_list .boxContent_item .boxContent_anchor img{
+.sec02 .inner .boxContent01 .boxContent_list img{
     display: inline-block;
     justify-content: center;
     align-items: center;
@@ -536,6 +536,7 @@ section{
 .tag{
     margin: 0;
     padding: 0;
+    display: flex;
 }
 .tag a{
     display: block;

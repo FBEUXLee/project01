@@ -43,9 +43,9 @@
         font-size: 13px;
         flex-shrink: 0;
     }
-    .sec02 .inner .boxContent01 .boxContent_list .boxContent_item .boxContent_anchor img{
-        width: 30px;
-        height: 30px;
+    .sec02 .inner .boxContent01 .boxContent_list .boxContent_item img{
+        width: 40px;
+        height: 40px;
     }
 
     /* sec03 */
@@ -68,7 +68,7 @@
     .sec03 .inner .left .boxContent02 .boxContent_list .boxContent_item .boxContent_anchor{
         /* width: 100px; */
         height: 100px;
-        font-size: 13px;
+        font-size: 12px;
     }
     .sec03 .inner .right{
         margin-left: 0;

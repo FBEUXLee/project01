@@ -1,5 +1,5 @@
 @charset "utf-8";
-@media all and (max-width:640px){
+@media (max-width:640px){
     /* 공통 */
     .inner{
         width:100%
@@ -49,8 +49,8 @@
         flex-shrink: 0;
     }
     .sec02 .inner .boxContent01 .boxContent_list .boxContent_item .boxContent_anchor img{
-        width: 20px;
-        height: 20px;
+        width: 30px;
+        height: 30px;
     }
 
     /* 섹션3 */
