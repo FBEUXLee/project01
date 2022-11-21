@@ -24,7 +24,7 @@
         width: 100%;
     }
     header img{
-        width: 150px;
+        width: 130px;
     }
 
     
@@ -40,7 +40,7 @@
         width: 90px;
         height: 90px;
         padding: 0;
-        font-size: 13px;
+        font-size: 12px;
         flex-shrink: 0;
     }
     .sec02 .inner .boxContent01 .boxContent_list .boxContent_item img{
@@ -55,19 +55,17 @@
     }
     .sec03 .inner .left{
         width: 100%;
-        height: auto;
     }
     .sec03 .inner .left .boxContent02{
         display: flex;
         width: 100%;
         justify-content: center;
         gap: 10px;
-        /* overflow-y: scroll; */
         padding: 0;
     } 
     .sec03 .inner .left .boxContent02 .boxContent_list .boxContent_item .boxContent_anchor{
-        /* width: 100px; */
-        height: 100px;
+        width: 80px;
+        height: 80px;
         font-size: 12px;
     }
     .sec03 .inner .right{
@@ -98,7 +96,7 @@
     .sec05 .inner .boxContent03 .boxContent_list .boxContent_item a{
         width: 90px;
         height: 90px;
-        font-size: 13px;
+        font-size: 12px;
         padding: 0;
         flex-shrink: 0;
     }

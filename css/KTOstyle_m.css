@@ -26,7 +26,7 @@
         padding: 0;
     }
     header img{
-        width: 120px;
+        width: 100px;
     }
     /* 네비 */
     nav .wrapper,.header_right .account
@@ -69,13 +69,13 @@
         padding: 0;
     }
     .sec03 .inner .left .boxContent02  .boxContent_list .boxContent_item .boxContent_anchor{
-        width: 90px;
-        height: 90px;
+        width: 70px;
+        height: 70px;
         font-size: 10px;
     }
-    .sec03 .inner .right{
-        margin-left: 0px;
-    }
+    /* .sec03 .inner .right{
+        margin: 0 10px;
+    } */
     .sec03 .inner .right .article01, .article02 h3{
         font-size: 15px;
     }

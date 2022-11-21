@@ -29,7 +29,7 @@ var swiper = new Swiper(".swiper.banner", {
 $(function () {
     // language
     $(".account .language").hide();
-    $(".account ul li span").click(function () {
+    $(".account > ul > li:nth-child(2)").click(function () {
         $(".account .language").stop().slideToggle("slow", "swing");
         $(this).text(function (e, text) {
             return text === 'expand_Less' ? 'expand_more' : 'expand_Less';

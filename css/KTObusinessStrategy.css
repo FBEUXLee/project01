@@ -18,156 +18,181 @@
 a {
     color: black;
 }
-header {
+/* 헤더 */
+header{
     display: flex;
+    top: 0;
+    max-width: 1920px;
+    /* position: fixed; */
 }
-.header_inner {
+.header_inner{
+    display: flex;
+    position:relative;
     border-bottom: 1px solid #dddddd;
     width: 100%;
     padding: 0;
     padding: 0 0 0 10px;
-    display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.header_inner a {
-    margin: 0;
-}
-header img {
-    width: 200px;
+/* .header_inner .logo{
+    position: absolute;
+    left: 20px;
+} */
+header img{
+    width: 160px;
     font-size: 0;
 }
+:before,
+:after{display:none;content:"";}
 
-
-/* nav */
-nav {
+/* 네비 */
+/* nav common */
+.gnb {
+    width: 1000px;
+    height: 100%;
+}
+.gnb .gnb_list ul{
+    display: none;
+}
+.gnb li{
     display: flex;
-    width: 100%;
-    height: 50px;
-    line-height: 65px;
-}
-nav .wrapper {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    position: relative;
-    z-index: 9;
-}
-.wrapper .nav-links {
-    width: 100%;
-    display: inline-flex;
-    justify-content: center;
-}
-.nav-links li {
     list-style: none;
-    margin: 0 20px;
+    justify-content: center;
+    align-items: center;
 }
-.nav-links li:hover .mega-box {
-    opacity: 1;
-    visibility: visible;
-    top: 50px;
-    transition: all 0.3s ease;
-    background: #fff;
+.gnb li > a{
+    position:relative;
+    width:100%;
+    text-align: center;
 }
-.nav-links li a {
-    color: black;
-    text-decoration: none;
+.gnb li:hover > a:after{
+    display:inline-block;
+    position:absolute;
+    top:80%;
+    left:50%;
+    transform:translateX(-50%);
+    height:1px;
+    width:90%;
+    background-color:#43a047;
+}
+.gnb .gnb_list{
+    display: flex;
+}
+.gnb .gnb_title{
+    position:absolute;
+    top:50%;
+    right:100%;
+    width:100%;
+}
+/* //nav common */
+.gnb .gnb_list.depth1{
+    padding: 0 72px;
+    height: 100%;
+}
+.gnb .gnb_list.depth1 > .gnb_item{
+    width: 20%;
+    z-index: 100;
+    height: 100%;
+}
+.gnb .gnb_list.depth1 > .gnb_item:before{
+    display: none;
+    position:absolute;
+    top:100%;
+    left:0;
+    width:100%;
+    height:425px;
+    background-color: #badbad44;
+    z-index: -1;
+}
+.gnb .gnb_list.depth1 .gnb_item .gnb_anchor{
+    padding: 17px 9px;
+    border-radius: 10px;
+}
+.gnb .gnb_list.depth1 > .gnb_item .depth2{
+    position: absolute;
+    top:100%;
+    left:20%;
+    flex-direction: column;
+    height:426px;
+    background-color:#fff;
+    width: 1200px;
+}
+.gnb .gnb_list.depth1 > .gnb_item .depth2>.gnb_item{
+    border-bottom:1px solid #43a047;
+    justify-content: flex-start; 
+    flex-shrink: 0;   
+}
+.gnb .gnb_list.depth1 > .gnb_item .depth2>.gnb_item>.gnb_anchor{
     font-size: 18px;
-    font-weight: 500;
-    padding: 9px 15px;
-    border-radius: 5px;
-    transition: all 0.3s ease;
-}
-nav .nav-links li a:hover {
-    background: #43a047;
-    color: #fff;
+    width: 210px;
 }
 
-.mega-box {
-    position: absolute;
-    top: 80px;
-    width: 100%;
-    left: 0;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.3s ease;
-}
-nav .nav-links li a:hover .mega-box {
-    top: 60px;
-    opacity: 1;
-    visibility: visible;
-    transition: all 0.3s ease;
-}
-.mega-box .mega-content {
-    padding: 20px 20px;
+.gnb .gnb_list.depth1 > .gnb_item > .depth2 > .gnb_item > .depth3{
+    /* top:0;
+    left:100%; */
+    flex-wrap: wrap;
+    /* max-height: 420px; */
+    overflow: auto;
     display: flex;
-    flex-flow: row wrap;
-    width: 100%;
+    width: calc(100% - 210px);
 }
-.mega-content .row {
-    width: 20%;
-    line-height: 40px;
+.gnb .gnb_list.depth1 > .gnb_item .depth2 > .gnb_item .depth3 > .gnb_item{
+    text-align: center;
+    display: flex;
 }
-.mega-content .row h3 {
-    color: black;
+.gnb .gnb_list.depth1 > .gnb_item .depth2 > .gnb_item .depth3 .gnb_item .gnb_anchor{
     font-size: 15px;
-    font-weight: 500;
-    word-break: keep-all;
+    white-space: nowrap;
 }
-.mega-content .row .mega-links {
-    border-left: 1px solid rgba(255, 255, 255, 0.08);
-    margin-left: -20px;
-}
-.row .mega-links li a {
-    padding: 0 5px;
-    margin: 5px 0;
-    color: black;
-    font-size: 12px;
-    display: block;
-    word-break: keep-all;
-}
-.row .mega-links li a:hover {
-    background: #43a047;
-    color: #fff;
-}
-.row .single a {
-    width: 100%;
-    font-size: 17px;
-    text-align: left;
-    margin: 0;
-    padding: 0;
-    border-radius: 0;
+
+
+@media (min-width:800px) {
+    .gnb .gnb_list.depth1 > .gnb_item:hover .depth2{
+        display: flex;
+    }    
+    .gnb .gnb_list.depth1 > .gnb_item:hover:before{
+        display: inline-block;
+    }
+    .gnb .gnb_list.depth1 > .gnb_item .depth2 > .gnb_item:hover .depth3{
+        display: flex;
+    }
 }
 
 
 /* 로그인 회원가입 사이트맵 */
 .header_right{
-    width: 15%;
     display: flex;
+    width: 15%;
     flex-direction: column;
+    /* position: absolute;
+    right: 20px; */
 }
 .account{
-    width: 100%;
     display: flex;
+    width: 100%;
     justify-content: right;
     margin-bottom: 5px;
 }
 .account ul{
-    list-style-type: none;
     display: flex;
+    list-style-type: none;
+}
+.account ul li:first-child{
+    margin: 0 10px;
 }
 .account ul li a{
     display: flex;
     align-items: center;
-    margin: 0 5px;
     font-size: 11px;
 }
 .account ul li a span{
     font-size: 13px;
+    margin: 0;
 }
 .account .language{
-    flex-direction: column;
     position: absolute;
+    flex-direction: column;
     z-index: 100;
     background: #fff;
 }
@@ -177,9 +202,8 @@ nav .nav-links li a:hover .mega-box {
 
 /* 검색 */
 .button{
-    width: 100%;
     display: flex;
-    margin-right: 10px;
+    width: 100%;
     justify-content: right;
 }
 .button form{
@@ -270,7 +294,7 @@ nav .nav-links li a:hover .mega-box {
     position: relative;
     background: #fafbfc;
     width: 100%;
-    height: 200px;
+    height: 100%;
     line-height: 40px;
 }
 .left nav > ul > li {
@@ -286,6 +310,8 @@ nav .nav-links li a:hover .mega-box {
 .left nav div a {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    width: 100%;
 }
 .left nav a:hover {
     color: #43a047;
