@@ -1,16 +1,8 @@
 var swiper = new Swiper(".swiper.banner", {
-    effect: "coverflow",
-    grabCursor: true,
     centeredSlides: true,
-    slidesPerView: "auto",
+    slidesPerView: 1.8,
+    spaceBetween: 20,
     loop: true,
-    coverflowEffect: {
-        rotate: 50,
-        stretch: 0,
-        depth: 100,
-        modifier: 1,
-        slideShadows: true,
-    },
     autoplay: {
         delay: 2500,
         disableOnInteraction: false,
@@ -19,22 +11,13 @@ var swiper = new Swiper(".swiper.banner", {
         el: ".swiper-pagination",
         clickable: true,
     },
-    
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
 });
 
-$(function () {
-    // language
-    $(".account .language").hide();
-    $(".account > ul > li:nth-child(2)").click(function () {
-        $(".account .language").stop().slideToggle("slow", "swing");
-        $(this).text(function (e, text) {
-            return text === 'expand_Less' ? 'expand_more' : 'expand_Less';
-        });
-    });
+$(function () {    
     // 섹션2 hover
     $(".boxContent01 a:eq(0)").hover(function () {
         $(this).children('img').attr("src", "image/채용정보2.svg");
@@ -88,38 +71,4 @@ $(function () {
         $(".article02").stop(true).fadeIn(100);
         $(".article01").hide();
     });
-
-    // 사이트맵
-    $(".sitemap .content .list").hide();
-    $(".sitemap .nav a span").click(function () {
-        $(this).parent().siblings(".content").find(".list").stop().slideToggle("slow", "swing");
-        $(this).text(function (e, text) {
-            return text === 'expand_Less' ? 'expand_more' : 'expand_Less';
-        });
-    });
-
-    $(".sitemap .slideToggle").click(function () {
-        $(".sitemap .list").stop().slideToggle("slow", "swing");
-        $(this).text(function (e, text) {
-            return text === '전체열기' ? '전체닫기' : '전체열기';
-        });
-        $(".sitemap .nav a span").text(function (e, text) {
-            return text === 'expand_Less' ? 'expand_more' : 'expand_Less';
-        });
-    });
-
-    $("form .shortcut").click(function () {
-        $(".sitemap").show();
-    });
-    $(".sitemap .close").click(function () {
-        $(".sitemap").hide();
-    });
-
-    var $gnb = $('.gnb'),
-        $gnb_top = $gnb.find('.depth1 > .gnb_item');
-
-    $gnb_top.each(function (n, v) {
-        var $gnb_text = $(v).find('a:not(".depth2 a")').text();
-        $(v).find('.depth2').append('<h3 class="gnb_title">' + $gnb_text + '</h3>');
-    })
 });
