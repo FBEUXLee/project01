@@ -159,19 +159,9 @@ header img{
     white-space: nowrap;
 }
 
-
 @media (min-width:800px) {
-    .gnb .gnb_list.depth1 > .gnb_item:before{
-        height:496px;
-    }    
     .gnb .gnb_list.depth1 > .gnb_item:hover .depth2{
         display: flex;
-        width: 680px;
-        height: 496px;
-    }
-    .gnb .gnb_title{
-        top:42%;
-        left: -24%;
     }
     .gnb .gnb_list.depth1 > .gnb_item:hover:before{
         display: inline-block;
