@@ -6,8 +6,15 @@
     box-sizing:border-box ;
 }
 
-
-.sec01{
+.sec01, .sec02, .sec03, .sec04{
     width: 1920px;
-    height: 100%;
+    height: 1060px;
+}
+
+/* 섹션1 */
+.sec01{
+    background: url(/project01/image/shortcut02.png) no-repeat 50% 50%/cover;
+}
+.sec01 h2{
+    font-size: 60px;
 }
