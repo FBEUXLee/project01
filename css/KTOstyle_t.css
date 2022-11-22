@@ -63,6 +63,7 @@
         gap: 10px;
         padding: 0;
     } 
+
     .sec03 .inner .left .boxContent02 .boxContent_list .boxContent_item .boxContent_anchor{
         width: 80px;
         height: 80px;
@@ -70,6 +71,10 @@
     }
     .sec03 .inner .right{
         margin-left: 0;
+    }
+    .sec03 .inner .right .article01 ul li span,
+    .sec03 .inner .right .article02 ul li span{
+        font-size: 15px;
     }
 
     /* sec04 */

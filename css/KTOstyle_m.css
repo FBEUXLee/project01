@@ -79,7 +79,8 @@
     .sec03 .inner .right .article01, .article02 h3{
         font-size: 15px;
     }
-    .sec03 .inner .right .article01, .article02 span{
+    .sec03 .inner .right .article01 ul li span,
+    .sec03 .inner .right .article02 ul li span{
         font-size: 13px;
     }
 
