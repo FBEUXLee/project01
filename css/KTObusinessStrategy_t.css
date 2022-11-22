@@ -43,7 +43,7 @@
     }
 
     /* footer */
-    footer img{
+    footer .logo img{
         width: 100px;
     }
     footer .address{
@@ -55,6 +55,7 @@
     }
     footer .mark div span{
         font-size:5px;
+        word-break: keep-all;
     }
 
     /* 사이트맵 */

@@ -78,6 +78,12 @@
     }
 
     /* sec04 */
+    .swiper.banner2 .swiper-slide.swiper-slide-active .content{
+        display: flex;
+        width: 100%;
+        height: auto;
+        align-items: center;
+    }
     .tag{
         display: none;
     }
@@ -119,7 +125,7 @@
     }
     
     /* footer */
-    footer img{
+    footer .logo img{
         width: 100px;
     }
     footer .address{
@@ -131,6 +137,7 @@
     }
     footer .mark div span{
         font-size:5px;
+        word-break: keep-all;
     }
 
     /* 사이트맵 */

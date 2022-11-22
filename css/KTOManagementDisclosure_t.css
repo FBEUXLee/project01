@@ -1,11 +1,16 @@
 @charset "utf-8";
 @media all and (min-width:641px) and (max-width:1080px){    
-    .account, nav .wrapper,.left{
+    .account, .gnb, .wrapper,.left{
         display: none;
     }
 
-    nav{
-        justify-content: flex-end;
+    /* 헤더 */
+    .header_inner{
+        width: 100%;
+        padding: 0;
+    }
+    header img{
+        width: 100px;
     }
     
     /* 섹션1 */
@@ -33,9 +38,9 @@
     .right li span{
         font-size: 13px;
     }
-
+    
     /* footer */
-    footer img{
+    footer .logo img{
         width: 100px;
     }
     footer .address{
@@ -47,6 +52,7 @@
     }
     footer .mark div span{
         font-size:5px;
+        word-break: keep-all;
     }
 
     /* 사이트맵 */

@@ -1,12 +1,18 @@
 @charset "utf-8";
 @media all and (max-width:640px){
-    .account, nav .wrapper,input,.left{
+    .account, .gnb, .wrapper,input,.left{
         display: none;
     }
 
-    nav{
-        justify-content: flex-end;
+    /* 헤더 */
+    .header_inner{
+        width: 100%;
+        padding: 0;
     }
+    header img{
+        width: 100px;
+    }
+
 
     /* 섹션1 */
     .sec01 .banner{
@@ -57,12 +63,15 @@
 
     /* footer */
     footer img{
-        width: 70px;
+        /* width: 50px; */
         display: none;
     }
     footer .address{
         font-size: 3px;
         margin-left: 0;
+        display: flex;
+        width: 100%;
+        margin-left: 10px;
     }
     footer .mark{
         margin: 0;

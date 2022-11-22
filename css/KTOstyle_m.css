@@ -122,12 +122,15 @@
 
     /* footer */
     footer img{
-        width: 80px;
-        /* display: none; */
+        /* width: 50px; */
+        display: none;
     }
     footer .address{
         font-size: 3px;
         margin-left: 0;
+        display: flex;
+        width: 100%;
+        margin-left: 10px;
     }
     footer .mark{
         margin: 0;

@@ -35,16 +35,13 @@ header{
     align-items: center;
     justify-content: space-between;
 }
-/* .header_inner .logo{
-    position: absolute;
-    left: 20px;
-} */
+
 header img{
     width: 160px;
     font-size: 0;
 }
-:before,
-:after{display:none;content:"";}
+.gnb :before,
+.gnb :after{display:none;content:"";}
 
 /* 네비 */
 /* nav common */
@@ -81,11 +78,12 @@ header img{
 }
 .gnb .gnb_title{
     position:absolute;
-    top:42%;
-    left: -15%;
+    top:40%;
+    left: -20%;
     width:100%;
     font-size: 25px;
 }
+
 /* //nav common */
 .gnb .gnb_list.depth1{
     padding: 0 72px;
@@ -102,9 +100,10 @@ header img{
     top:100%;
     left:0;
     width:100%;
-    height:420px;
-    background-color: #badbad44;
+    height:466px;
+    background-color: #fff;
     z-index: -1;
+    opacity: 0.5;
 }
 .gnb .gnb_list.depth1 .gnb_item .gnb_anchor{
     padding: 17px 9px;
@@ -115,25 +114,43 @@ header img{
     top:100%;
     left:20%;
     flex-direction: column;
-    height:420px;
+    height:auto;
     background-color:#fff;
     width: 1200px;
+    border-top: 1px solid #43a047;
+}
+.gnb .gnb_list.depth1 > .gnb_item .depth2>.gnb_text{
+    width: 1200px;
+    border: 1px solid #43a047;
+    padding: 5px 0;
+    border-top: 0;
+    font-size: 20px;
+    text-align: center;
 }
 .gnb .gnb_list.depth1 > .gnb_item .depth2>.gnb_item{
-    border-bottom:1px solid #43a047;
+    border:1px solid #43a047;
+    border-top: none;
     justify-content: flex-start; 
-    flex-shrink: 0;   
+    align-items: center;
+    flex-shrink: 0;  
 }
+
 .gnb .gnb_list.depth1 > .gnb_item .depth2>.gnb_item>.gnb_anchor{
     font-size: 17px;
     width: 200px;
+    border-radius: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border-right: 1px solid #43a047; */
 }
 
 .gnb .gnb_list.depth1 > .gnb_item > .depth2 > .gnb_item > .depth3{
     /* top:0;
     left:100%; */
-    flex-wrap: wrap;
     /* max-height: 420px; */
+    flex-wrap: wrap;
     overflow: auto;
     display: flex;
     width: calc(100% - 200px);
@@ -154,6 +171,9 @@ header img{
         width:100%;
         font-size: 25px;
     }
+    .gnb .gnb_list.depth1 > .gnb_item:before{
+        height:438px;
+    }
     .gnb .gnb_list.depth1 > .gnb_item:hover .depth2{
         width: 900px;
     }
@@ -166,6 +186,9 @@ header img{
     }
     .gnb .gnb_list.depth1 > .gnb_item .depth2 > .gnb_item .depth3 .gnb_item .gnb_anchor{
         font-size: 13px;
+    }
+    .gnb .gnb_list.depth1 > .gnb_item .depth2>.gnb_text{
+        width: 900px;
     }
 }
 
@@ -181,34 +204,41 @@ header img{
     }
 }
 
+
 /* 로그인 회원가입 사이트맵 */
 .header_right{
-    width: 15%;
     display: flex;
     flex-direction: column;
+    margin-right: 10px;
+    /* width: 15%; */
+    /* position: absolute;
+    right: 20px; */
 }
 .account{
-    width: 100%;
     display: flex;
+    width: 100%;
     justify-content: right;
     margin-bottom: 5px;
 }
 .account ul{
-    list-style-type: none;
     display: flex;
+    list-style-type: none;
+}
+.account ul li:first-child{
+    margin: 0 10px;
 }
 .account ul li a{
     display: flex;
     align-items: center;
-    margin: 0 5px;
     font-size: 11px;
 }
 .account ul li a span{
     font-size: 13px;
+    margin: 0;
 }
 .account .language{
-    flex-direction: column;
     position: absolute;
+    flex-direction: column;
     z-index: 100;
     background: #fff;
 }
@@ -218,9 +248,8 @@ header img{
 
 /* 검색 */
 .button{
-    width: 100%;
     display: flex;
-    margin-right: 10px;
+    width: 100%;
     justify-content: right;
 }
 .button form{
@@ -374,9 +403,14 @@ footer{
     background: #222222;
     padding: 30px 0;
 }
+footer .logo img{
+    padding-left: 10px;
+    width: 150px;
+}
 footer .address{
     display: flex;
     flex-direction: column;
+    font-size: 12px;
 }
 .address address,
 .address span{
@@ -386,14 +420,11 @@ footer .mark{
     display: flex;
     align-items: flex-end;
 }
-footer .mark a{
-    margin: 0;
-    padding: 0;
-}
 .mark img{
     display: block;
     width: 25px;
     height: 25px;
+    margin: 0 5px 0 0;
 }
 .mark div{
     display: flex;
@@ -402,6 +433,7 @@ footer .mark a{
 .mark div span{
     font-size: 10px;
     color: #fff;
+    margin: 0 10px 0 0;
 }
 
 /* 사이트맵 */
