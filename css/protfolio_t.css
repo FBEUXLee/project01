@@ -1,0 +1,17 @@
+@charset "utf-8";
+@media (max-width:1200px){
+    .inner{
+        width: 100%;
+    }
+    .navi li a{
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+    .sec01 .inner .home h1{
+        font-size: 50px;
+    }
+    .sec01 .inner .home span{
+        font-size: 30px;
+    }
+}
