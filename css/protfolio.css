@@ -35,7 +35,7 @@ nav{
     justify-content: space-between;
     align-items: center;
     height: 100%;
-    margin: 0 50px;
+    margin: 0 60px;
     z-index: 100;
 }
 .navi li a{
@@ -113,14 +113,94 @@ nav{
 .sec03{
     background: url(/project01/image/길03.png) no-repeat 50% 50%/cover;
 }
+.sec03 .inner .project_name{
+    width: 100%;
+}
+.sec03 .inner .project_name > ul{
+    display: flex;
+    justify-content: right;
+}
+.sec03 .inner .project_name > ul > li{
+    background: #ddd;
+    padding: 10px;
+    width: 100px;
+}
+
 .sec03 .inner .project{
     display: flex;
+    background: rgba(255,255,255,0.8);
+    width: 100%;
 }
 .sec03 .inner .project .left{
     width: 50%;
+    background: #eee;
 }
+.sec03 .inner .project .left .web{
+    overflow: hidden;
+    width: 500px;
+    height: 300px;
+    position: relative;
+}
+.sec03 .inner .project .left .web .web-img{
+    background: url(/project01/image/Screenshot_1.JPG) no-repeat center/cover;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 800px;
+    transition: all 2s;
+}
+.sec03 .inner .project .left .mobile{
+    overflow: hidden;
+    width: 150px;
+    height: 220px;
+    position: absolute;
+    top: 250px;
+    right: 5%;
+}
+.sec03 .inner .project .left .mobile .mobile-img{
+    background: url(/project01/image/Screenshot_2.JPG) no-repeat center/cover;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 1000px;
+    transition: all 3s;
+    z-index: 1;
+}
+
+
 .sec03 .inner .project .right{
     width: 50%;
+    position: relative;
+}
+.sec03 .inner .project .right::before{
+    content: '';
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    background: #eee;
+    top: 0;
+}
+.sec03 .inner .project .right .info{
+    margin: 20px;
+}
+.sec03 .inner .project .right .info h3{
+    font-size: 25px;
+}
+.sec03 .inner .project .right .info div{
+    display: flex;
+    margin: 20px 10px 0 0px;
+    width: 100%;
+}
+.sec03 .inner .project .right .info div h4{
+    flex: 0 0 150px;
+    width: 130px;
+    font-size: 20px;
+}
+.sec03 .inner .project .right .info div P{
+    word-break: keep-all;
+}
+.sec03 .inner .project .right .btn{
+    margin: 20px 10px 0 10px;
 }
 
 /* 섹션4 */
@@ -142,6 +222,6 @@ nav{
     font-size: 25px;
 }
 .sec04 .inner .bye h3{
-    font-size: 50px;
+    font-size: 40px;
     text-align: center;
 }
