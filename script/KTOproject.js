@@ -15,6 +15,11 @@ var swiper = new Swiper(".swiper.banner", {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
+    breakpoints: {
+        1024: {
+            slidesPerView: 3.2,
+        },
+    },
 });
 
 $(function () {    
