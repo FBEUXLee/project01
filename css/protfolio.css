@@ -1,15 +1,16 @@
 @charset "utf-8";
+/* 공통 */
 *{
     margin: 0;
     padding: 0;
     text-decoration: none;
     box-sizing:border-box ;
 }
-
 .sec01, .sec02, .sec03, .sec04{
     width: 1920px;
     height: 1060px;
 }
+
 
 /* 섹션1 */
 .sec01{

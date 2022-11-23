@@ -65,8 +65,8 @@
     } 
 
     .sec03 .inner .left .boxContent02 .boxContent_list .boxContent_item .boxContent_anchor{
-        width: 80px;
-        height: 80px;
+        /* width: 80px;
+        height: 80px; */
         font-size: 12px;
     }
     .sec03 .inner .right{
