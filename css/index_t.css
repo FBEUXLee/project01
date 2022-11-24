@@ -1,0 +1,57 @@
+@charset "utf-8";
+@media (max-width:1200px){
+    /* 공통 */
+    .inner{
+        width: 100%;
+    }
+    .navi li a{
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+    /* 섹션1 */
+    .sec01 .inner .home h1{
+        font-size: 45px;
+    }
+    .sec01 .inner .home span{
+        font-size: 30px;
+    }
+
+    /* 섹션2 */
+    .sec02 .inner h2{
+        font-size: 40px;
+    }
+    .sec02 .inner .profile > ul{
+        margin: 0 30px;
+    }
+    .sec02 .inner .profile .title{
+        font-size: 20px;
+    }
+    .sec02 .inner .profile .content li{
+        font-size: 15px;
+    }
+    .sec02 .inner .profile .content.skill{
+        margin-top: 0;
+    }
+    .sec02 .inner .profile .content.skill li{
+        margin: 20px 20px 0 0;
+        padding: 7px;
+        border-radius: 5px;
+    }
+
+    /* 섹션4 */
+    .sec04 .inner .end .contact h2{
+        font-size: 40px;
+    }
+    .sec04 .inner .end .contact ul{
+        margin: 10px 0 0 0 ;
+    }
+    .sec04 .inner .end .contact ul li a{
+        display: block;
+        font-size: 20px;
+    }
+    .sec04 .inner .bye h3{
+        font-size: 35px;
+        text-align: center;
+    }
+}
