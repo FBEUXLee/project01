@@ -67,6 +67,9 @@
 
     .sec03 .inner .project .left{
         position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .sec03 .inner .project .left::before {
         content: '';
@@ -78,7 +81,23 @@
     }
 
     .sec03 .inner .project .right::before {
-        /* display: none; */
+        display: none;
+    }
+    .sec03 .inner .project .right .info h3{
+        font-size: 20px;
+    }
+    .sec03 .inner .project .right .info div h4{
+        font-size: 18px;
+    }
+    .sec03 .inner .project .right .info div p{
+        font-size: 15px;
+    }
+    .sec03 .inner .project .right .info .main-color div{
+        width: 25px;
+        height: 25px;
+    }
+    .sec03 .inner .project .right .btn{
+        margin: 20px 10px 0 10px;
     }
 
     /* 섹션4 */

@@ -47,6 +47,40 @@
         border-radius: 5px;
     }
 
+    /* 섹션3*/
+    .sec03 .inner .project_name {
+        width: 90%;
+    }
+
+    .sec03 .inner .project {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 90%;
+    }
+
+    .sec03 .inner .project .left,
+    .sec03 .inner .project .right {
+        width: 100%;
+    }
+
+    .sec03 .inner .project .left{
+        position: relative;
+    }
+    .sec03 .inner .project .left::before {
+        content: '';
+        width: 100%;
+        height: 5px;
+        position: absolute;
+        background: #ddd;
+        top: 0;
+    }
+
+    .sec03 .inner .project .right::before {
+        display: none;
+    }
+
+
     /* 섹션4 */
     .sec04 .inner .end .contact h2{
         font-size: 30px;
