@@ -122,6 +122,11 @@ nav{
 }
 
 /* 섹션3 */
+.sec03 .inner .wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .sec03 .inner .project_name{
     width: 100%;
 }
@@ -240,6 +245,43 @@ nav{
 .sec03 .inner .project .right .btn a:hover{
     font-weight: bold;
 }
+@media (max-width:1400px){
+    .sec03 .inner .project_name {
+        width: 90%;
+    }
+    .sec03 .inner .project {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 90%;
+    }
+    .sec03 .inner .project .left,
+    .sec03 .inner .project .right {
+        width: 100%;
+    }
+
+    .sec03 .inner .project .left{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sec03 .inner .project .left::before {
+        content: '';
+        width: 100%;
+        height: 5px;
+        position: absolute;
+        background: #ddd;
+        top: 0;
+    }
+
+    .sec03 .inner .project .right::before {
+        display: none;
+    }
+    .sec03 .inner .project .right .btn{
+        margin: 20px 10px 0 10px;
+    }
+}
 
 /* 섹션4 */
 .sec04 .inner .end{
@@ -255,6 +297,15 @@ nav{
 .sec04 .inner .end .contact ul li a{
     display: block;
     font-size: 25px;
+}
+
+.sec04 .inner .e-mail form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sec04 .inner .e-mail form .adress{
+    display: flex;
 }
 .sec04 .inner .bye h3{
     font-size: 40px;
