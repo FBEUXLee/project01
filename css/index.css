@@ -130,6 +130,7 @@ nav{
 .sec03 .inner .project_name > ul > li{
     background: #ddd;
     padding: 10px;
+    font-weight: bold;
 }
 
 .sec03 .inner .project{
@@ -161,7 +162,7 @@ nav{
     transition: all 2s;
 }
 .sec03 .inner .project .left .web .web-img:hover{
-    transform: translateY(-65%) ;
+    transform: translateY(-62%) ;
 }
 .sec03 .inner .project .left .mobile{
     overflow: hidden;
