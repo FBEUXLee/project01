@@ -1,5 +1,6 @@
 @charset "utf-8";
 @media (max-width:640px){
+
     /* 공통 */
     .inner{
         width: 100%;
@@ -11,10 +12,10 @@
 
     /* 섹션1 */
     .sec01 .inner .home h1{
-        font-size: 30px;
+        font-size: 35px;
     }
     .sec01 .inner .home span{
-        font-size: 20px;
+        font-size: 25px;
     }
 
     /* 섹션2 */

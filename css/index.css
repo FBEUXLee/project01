@@ -1,4 +1,6 @@
 @charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600&display=swap');
+
 /* 공통 */
 *{
     margin: 0;
@@ -6,6 +8,7 @@
     text-decoration: none;
     box-sizing:border-box ;
     list-style: none;
+    font-family: 'Dosis', sans-serif;
 }
 a,span{
     color: black;
@@ -98,7 +101,7 @@ nav{
 .sec02 .inner .profile .content{
     display: flex;
     flex-direction: column;
-    margin: 20px 0 ;
+    margin: 20px ;
 }
 .sec02 .inner .profile .content.skill{
     flex-direction: row;
@@ -108,15 +111,14 @@ nav{
     font-size: 18px;
     font-weight: 500;
     word-break: keep-all;
+    line-height: 30px;
 }
 .sec02 .inner .profile .content.skill li{
     margin: 0 20px 0 0;
-    background: #eee;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px;
-    border-radius: 5px;
+    padding: 5px;
 }
 
 /* 섹션3 */
@@ -133,6 +135,7 @@ nav{
     font-weight: bold;
 }
 
+/* 섹션3 hover(왼쪽) */
 .sec03 .inner .project{
     display: flex;
     background: rgba(255,255,255,0.8);
@@ -171,6 +174,7 @@ nav{
     position: absolute;
     top: 250px;
     right: 5%;
+    z-index: 5;
 }
 .sec03 .inner .project .left .mobile .mobile-img{
     background: url(../image/Screenshot_2.JPG) no-repeat center/cover;
@@ -179,10 +183,9 @@ nav{
     width: 100%;
     height: 1000px;
     transition: all 3s;
-    z-index: 1;
 }
 
-
+/* 섹션3 오른쪽 */
 .sec03 .inner .project .right{
     width: 50%;
     position: relative;
@@ -233,6 +236,9 @@ nav{
 }
 .sec03 .inner .project .right .btn{
     margin: 20px 10px 0 10px;
+}
+.sec03 .inner .project .right .btn a:hover{
+    font-weight: bold;
 }
 
 /* 섹션4 */
