@@ -12,6 +12,7 @@ a,span{
 }
 .sec01, .sec02,.sec03 ,.sec04{
     height: 1040px;
+    background: rgba(0,0,0,0.7);
 }
 .inner{
     width: 1400px;
@@ -46,29 +47,38 @@ nav{
     color: #fc8406;
 }
 
+.background{
+    background-image: url(/image/길04.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
 
 /* 섹션1 */
-.sec01{
-    background: url(/project01/image/길001.png) no-repeat 50% 50%/cover;
-}
 .sec01 .inner .home{
-    background: rgba(255,255,255,0.8);
+    /* background: rgba(255,255,255,0.8); */
     padding: 20px;
-    text-align: center;    
+    text-align: center;
 }
 .sec01 .inner .home h1{
     font-size: 60px;
+    color: #fff;
 }
 .sec01 .inner .home span{
     font-size: 40px;
+    color: #fff;
 }
 
 /* 섹션2 */
-.sec02{
-    background: url(/project01/image/길02.png) no-repeat 50% 50%/cover;
-}
 .sec02 .inner h2{
     font-size: 50px;
+    color: #fff;
 }
 .sec02 .inner .profile{
     background: rgba(255,255,255,0.8);
@@ -110,9 +120,6 @@ nav{
 }
 
 /* 섹션3 */
-.sec03{
-    background: url(/project01/image/길03.png) no-repeat 50% 50%/cover;
-}
 .sec03 .inner .project_name{
     width: 100%;
 }
@@ -135,6 +142,12 @@ nav{
     width: 50%;
     background: #eee;
 }
+.sec03 .inner .project .left .txt{
+    padding: 5px;
+}
+.sec03 .inner .project .left .txt p{
+    font-weight: bold;
+}
 .sec03 .inner .project .left .web{
     overflow: hidden;
     width: 500px;
@@ -142,12 +155,15 @@ nav{
     position: relative;
 }
 .sec03 .inner .project .left .web .web-img{
-    background: url(/project01/image/Screenshot_1.JPG) no-repeat center/cover;
+    background: url(/image/Screenshot_1.JPG) no-repeat center/cover;
     position: absolute;
     top: 0;
     width: 100%;
     height: 800px;
     transition: all 2s;
+}
+.sec03 .inner .project .left .web .web-img:hover{
+    transform: translateY(-65%) ;
 }
 .sec03 .inner .project .left .mobile{
     overflow: hidden;
@@ -158,7 +174,7 @@ nav{
     right: 5%;
 }
 .sec03 .inner .project .left .mobile .mobile-img{
-    background: url(/project01/image/Screenshot_2.JPG) no-repeat center/cover;
+    background: url(/image/Screenshot_2.JPG) no-repeat center/cover;
     position: absolute;
     top: 0;
     width: 100%;
@@ -177,7 +193,7 @@ nav{
     width: 100%;
     height: 5px;
     position: absolute;
-    background: #eee;
+    background: #ddd;
     top: 0;
 }
 .sec03 .inner .project .right .info{
@@ -188,8 +204,13 @@ nav{
 }
 .sec03 .inner .project .right .info div{
     display: flex;
+    justify-content: flex-start;
     margin: 20px 10px 0 0px;
     width: 100%;
+}
+.sec03 .inner .project .right .info .responsive,
+.sec03 .inner .project .right .info .main-color{
+    align-items: center;
 }
 .sec03 .inner .project .right .info div h4{
     flex: 0 0 150px;
@@ -199,14 +220,23 @@ nav{
 .sec03 .inner .project .right .info div P{
     word-break: keep-all;
 }
+.sec03 .inner .project .right .info .main-color div{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border: 1px solid #333;
+}
+.sec03 .inner .project .right .info .main-color .co01{
+    background-color: #43a047;
+}
+.sec03 .inner .project .right .info .main-color .co02{
+    background-color: #fff;
+}
 .sec03 .inner .project .right .btn{
     margin: 20px 10px 0 10px;
 }
 
 /* 섹션4 */
-.sec04{
-    background: url(/project01/image/길04.png) no-repeat 50% 50%/cover;
-}
 .sec04 .inner .end{
     background: rgba(255,255,255,0.8);
     padding: 20px;
@@ -224,4 +254,5 @@ nav{
 .sec04 .inner .bye h3{
     font-size: 40px;
     text-align: center;
+    color: #fff;
 }
