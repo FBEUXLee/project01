@@ -48,7 +48,7 @@ nav{
 }
 
 .background{
-    background-image: url(/image/길04.png);
+    background-image: url(../image/길04.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -136,7 +136,6 @@ nav{
 .sec03 .inner .project{
     display: flex;
     background: rgba(255,255,255,0.8);
-    width: 100%;
 }
 .sec03 .inner .project .left{
     width: 50%;
@@ -155,7 +154,7 @@ nav{
     position: relative;
 }
 .sec03 .inner .project .left .web .web-img{
-    background: url(/image/Screenshot_1.JPG) no-repeat center/cover;
+    background: url(../image/Screenshot_1.JPG) no-repeat center/cover;
     position: absolute;
     top: 0;
     width: 100%;
@@ -174,7 +173,7 @@ nav{
     right: 5%;
 }
 .sec03 .inner .project .left .mobile .mobile-img{
-    background: url(/image/Screenshot_2.JPG) no-repeat center/cover;
+    background: url(../image/Screenshot_2.JPG) no-repeat center/cover;
     position: absolute;
     top: 0;
     width: 100%;

@@ -1,56 +1,101 @@
 @charset "utf-8";
-@media (max-width:1200px){
+
+@media (max-width:1200px) {
+
     /* 공통 */
-    .inner{
+    .inner {
         width: 100%;
     }
-    .navi li a{
+
+    .navi li a {
         font-size: 25px;
         font-weight: 600;
     }
 
     /* 섹션1 */
-    .sec01 .inner .home h1{
+    .sec01 .inner .home h1 {
         font-size: 45px;
     }
-    .sec01 .inner .home span{
+
+    .sec01 .inner .home span {
         font-size: 30px;
     }
 
     /* 섹션2 */
-    .sec02 .inner h2{
+    .sec02 .inner h2 {
         font-size: 40px;
     }
-    .sec02 .inner .profile > ul{
+
+    .sec02 .inner .profile>ul {
         margin: 0 30px;
     }
-    .sec02 .inner .profile .title{
+
+    .sec02 .inner .profile .title {
         font-size: 20px;
     }
-    .sec02 .inner .profile .content li{
+
+    .sec02 .inner .profile .content li {
         font-size: 15px;
     }
-    .sec02 .inner .profile .content.skill{
+
+    .sec02 .inner .profile .content.skill {
         margin-top: 0;
     }
-    .sec02 .inner .profile .content.skill li{
+
+    .sec02 .inner .profile .content.skill li {
         margin: 20px 20px 0 0;
         padding: 7px;
         border-radius: 5px;
     }
 
+    /* 섹션3*/
+    .sec03 .inner .project_name {
+        width: 90%;
+    }
+
+    .sec03 .inner .project {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 90%;
+    }
+
+    .sec03 .inner .project .left,
+    .sec03 .inner .project .right {
+        width: 100%;
+    }
+
+    .sec03 .inner .project .left{
+        position: relative;
+    }
+    .sec03 .inner .project .left::before {
+        content: '';
+        width: 100%;
+        height: 5px;
+        position: absolute;
+        background: #ddd;
+        top: 0;
+    }
+
+    .sec03 .inner .project .right::before {
+        /* display: none; */
+    }
+
     /* 섹션4 */
-    .sec04 .inner .end .contact h2{
+    .sec04 .inner .end .contact h2 {
         font-size: 40px;
     }
-    .sec04 .inner .end .contact ul{
-        margin: 10px 0 0 0 ;
+
+    .sec04 .inner .end .contact ul {
+        margin: 10px 0 0 0;
     }
-    .sec04 .inner .end .contact ul li a{
+
+    .sec04 .inner .end .contact ul li a {
         display: block;
         font-size: 20px;
     }
-    .sec04 .inner .bye h3{
+
+    .sec04 .inner .bye h3 {
         font-size: 35px;
         text-align: center;
     }
