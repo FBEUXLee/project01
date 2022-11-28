@@ -41,12 +41,52 @@
     }
 
     .sec02 .inner .profile .content.skill li {
-        margin: 20px 20px 0 0;
-        padding: 7px;
+        margin: 5px 15px 0 0;
+        padding: 5px;
         border-radius: 5px;
     }
 
     /* 섹션3 */
+    .sec03 .inner .project_name {
+        width: 90%;
+    }
+    .sec03 .inner .project {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 90%;
+    }
+    .sec03 .inner .project .left,
+    .sec03 .inner .project .right {
+        width: 100%;
+    }
+
+    .sec03 .inner .project .left{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sec03 .inner .project .left::before {
+        content: '';
+        width: 100%;
+        height: 5px;
+        position: absolute;
+        background: #ddd;
+        top: 0;
+    }
+    .sec03 .inner .project .left .mobile{
+        top: 110px;
+        right: 6%;
+    }
+
+    .sec03 .inner .project .right::before {
+        display: none;
+    }
+    .sec03 .inner .project .right .btn{
+        margin: 20px 10px 0 10px;
+    }
+
     .sec03 .inner .project .right .info h3{
         font-size: 20px;
     }
@@ -63,7 +103,7 @@
 
     /* 섹션4 */
     .sec04 .inner .end .contact h2 {
-        font-size: 40px;
+        font-size: 35px;
     }
 
     .sec04 .inner .end .contact ul {
@@ -76,7 +116,8 @@
     }
 
     .sec04 .inner .bye h3 {
-        font-size: 35px;
+        font-size: 30px;
         text-align: center;
+        margin-top: 30px;
     }
 }

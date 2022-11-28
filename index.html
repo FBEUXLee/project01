@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <link rel="stylesheet" type="text/css" href="css/index_t.css">
     <link rel="stylesheet" type="text/css" href="css/index_m.css">
@@ -39,25 +41,33 @@
                 <h2>Profile</h2>
                 <div class="profile">
                     <ul>
-                        <li class="title">Name
+                        <li class="title"><span class="material-symbols-outlined">
+                            account_circle
+                            </span>Name
                             <ul class="content">
                                 <li>이남혁(NamHyeok-Lee)</li>
                             </ul>
                         </li>
-                        <li class="title">Education
+                        <li class="title"><span class="material-symbols-outlined">
+                            school
+                            </span>Education
                             <ul class="content">
                                 <li>UI/UX웹디자인&반응형 웹 프로젝트(웹퍼블리셔 취업과정)(2022.07.25~2022.11.24)</li>
                             </ul>
                         </li>
-                        <li class="title">License
+                        <li class="title"><span class="material-symbols-outlined">
+                            picture_in_picture
+                            </span>License
                             <ul class="content">
                                 <li>웹디자인기능사 필기 합격(2022)</li>
                                 <li>컴퓨터활용능력(2019)</li>
                                 <li>워드프로세서(2014)</li>
-                                <li>운전면허 1종(2012)</li>
+                                <li>운전면허 1종 보통(2012)</li>
                             </ul>
                         </li>
-                        <li class="title">Skills
+                        <li class="title"><span class="material-symbols-outlined">
+                            memory
+                            </span>Skills
                             <ul class="content skill">
                                 <li>html</li>
                                 <li>css</li>
@@ -111,6 +121,8 @@
                                     <div class="co01"></div>
                                     <div class="co02"></div>
                                 </div>
+                                <div class="tip01">#43a047</div>
+                                <div class="tip02">#fff</div>
                                 <div class="btn">
                                     <a href="KTOproject.html">바로가기</a>
                                 </div>
@@ -128,23 +140,27 @@
                         <li>
                             <h2>Contact</h2>
                             <ul>
-                                <li><a href="#">Phone : 010-9492-7416</a></li>
-                                <li><a href="#">e-mail : dlwlgur37@gmail.com</a></li>
+                                <li><a href="#"><span class="material-symbols-outlined">
+                                    phone_in_talk
+                                    </span>Phone : 010-9492-7416</a></li>
+                                <li><a href="#"><span class="material-symbols-outlined">
+                                    alternate_email
+                                    </span>e-mail : dlwlgur37@naver.com</a></li>
                             </ul>
                         </li>
                     </ul>
                 </div>
 
                 <div class="e-mail">
-                    <form class="contactform">
+                    <form class="contactform" action="[appURL]" method="post" data-email="dlwlgur37@gmail.com">
                         <div class="adress">
                             <div>
                                 <p>보내는 사람</p>
-                                <input type="text" id="from_name" name="to_name" placeholder="이름" tabindex="0">
+                                <input type="text" id="from_name" name="to_name" placeholder="이름" tabindex="0" autocomplete="on">
                             </div>
                             <div>
                                 <p>연락가능한 이메일</p>
-                                <input type="email" id="from_mail" name="to_mail" placeholder="이메일" tabindex="0">
+                                <input type="email" id="from_mail" name="to_mail" placeholder="이메일" tabindex="0" autocomplete="on">
                                 <p class="caution">이메일 형식이 잘못되었습니다.</p>
                             </div>
                         </div>
@@ -154,15 +170,15 @@
                         </div>
 
                         <div class="button">
-                            <input type="submit" value="보내기" tabindex="0">
-                            <input type="reset" value="초기화" tabindex="0">
+                            <input type="submit" value="보내기" tabindex="-1">
+                            <input type="reset" value="초기화" tabindex="-1">
                         </div>
                     </form>
                 </div>
 
-                <div class="bye">
+                <!-- <div class="bye">
                     <h3>Thank you for visiting here!<br>I hope you guys to be happy!</h3>
-                </div>
+                </div> -->
             </div>
         </div>
 
@@ -171,6 +187,7 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.min.js"></script>
     <script src="script/jquery-mousewheel-3.1.13.min.js"></script>
     <script src="/www/web/js/jquery-mousewheel-3.1.13.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="script/index.js"></script>
 </body>
 
