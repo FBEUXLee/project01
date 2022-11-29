@@ -15,7 +15,10 @@ a,span{
     color: black;
 }
 
-.sec01, .sec02,.sec03 ,.sec04{
+.sec01{
+    height: 1040px;
+}
+.sec02,.sec03 ,.sec04{
     height: 1040px;
     background: rgba(0,0,0,0.7);
 }
@@ -130,6 +133,7 @@ nav{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0 10px;
 }
 .sec03 .inner .project_name{
     width: 100%;
@@ -249,26 +253,13 @@ nav{
     background-color: #fff;
 }
 
-.sec03 .inner .project .right .tip01,
-.sec03 .inner .project .right .tip02{
-    width: 250px;
-    height: 30px;
-    border-radius: 20px;
-    background: #333;
-    color: #fff;
-    text-align: center;
-    line-height: 30px;
-    position: absolute;
-    opacity: 0;
-    transition: opacity 0.3s ease;                
-}
-.sec03 .inner .project .right .tip01.on,
-.sec03 .inner .project .right .tip02.on{
-    opacity: 0.8;            
-}
-
 .sec03 .inner .project .right .btn{
     margin: 20px 10px 0 10px;
+}
+.sec03 .inner .project .right .btn a{
+    background: #eee;
+    padding: 5px;
+    border: 1px solid black;
 }
 .sec03 .inner .project .right .btn a:hover{
     font-weight: bold;

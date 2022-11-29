@@ -76,10 +76,14 @@
         background: #ddd;
         top: 0;
     }
+    .sec03 .inner .project .left .web{
+        width: 400px;
+    }
 
     .sec03 .inner .project .right::before {
         display: none;
     }
+    
 
 
     /* 섹션4 */

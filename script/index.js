@@ -36,22 +36,6 @@ $(function(){
     });
     
 
-    // 컬러hover
-    $(".main-color .co01").mousemove(function(event){
-        var x = event.pageX;
-        var y = event.pageY;
-        $(".tip01").css({left:x+10, top:y-40}).addClass("on");
-    }).mouseleave(function(){
-        $(".tip01").removeClass("on");
-    });
-    $(".main-color .co02").mousemove(function(event){
-        var x = event.pageX;
-        var y = event.pageY;
-        $(".tip02").css({left:x+10, top:y-40}).addClass("on");
-    }).mouseleave(function(){
-        $(".tip02").removeClass("on");
-    });
-
     //메일폼
     var regmail = /^[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*\.[a-zA-Z]{2,3}$/;
     emailjs.init("iE8kgMdT2Yfy5HeyS"); // API keys
