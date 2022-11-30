@@ -40,14 +40,14 @@ $(function(){
     var regmail = /^[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*\.[a-zA-Z]{2,3}$/;
     emailjs.init("iE8kgMdT2Yfy5HeyS"); // API keys
 
-    document.querySelector('.contactForm').addEventListener('submit', function(e) {
+    document.querySelector('#contactform').addEventListener('submit', function(e) {
         e.preventDefault(); // submit이벤트 막기
         const fromName = document.querySelector('#from_name').value; //전송자 이름 추출
         const mailaddr = document.querySelector('#from_mail').value;
 
         if(regmail.test(mailaddr) === true){
             $('.caution').removeClass('on');
-            emailjs.sendForm("service_9nqhgtd", "template_10kyvl5", this)
+            emailjs.sendForm("service_9nqhgtd", "template_5xa19me", this)
             .then(function() {
                 alert(`${fromName}님, 메일 전송 완료 되었습니다.`)
             }, function(error) {
@@ -61,5 +61,20 @@ $(function(){
 
     $('input[type=reset]').on('click', function(){
         $('.caution').removeClass('on');
+    });
+
+    //목차, 나브 누르면 해당 슬라이드로 이동 1200초과
+    $('nav ul li').on('click', function(){
+        $('.vertical-slider').slick('slickGoTo', $(this).data('index'));
+    });
+    //목차, 나브 누르면 해당 슬라이드로 이동 1200이하
+    $('nav ul li').each(function() {
+        var thisOffset = $('.' + $(this).data('id')).offset().top;
+
+        $(this).click(function() {
+            $('html, body').animate({
+                scrollTop: thisOffset
+            }, 500);
+        });
     });
 });

@@ -105,10 +105,17 @@ nav{
     font-size: 30px;
     font-weight: bold;
 }
+.sec02 .inner .profile .title>div{
+    display: flex;
+    align-items: center;
+}
+.sec02 .inner .profile .title > div > span{
+    margin-right: 5px;
+}
 .sec02 .inner .profile .content{
     display: flex;
     flex-direction: column;
-    margin: 20px ;
+    margin: 20px 0 20px 25px;
 }
 .sec02 .inner .profile .content.skill{
     flex-direction: row;
@@ -135,6 +142,7 @@ nav{
     align-items: center;
     margin: 0 10px;
 }
+
 .sec03 .inner .project_name{
     width: 100%;
 }
@@ -153,11 +161,19 @@ nav{
     display: flex;
     background: rgba(255,255,255,0.8);
     width: 100%;
+    height: 400px;
+}
+.sec03 .inner .project .left,
+.sec03 .inner .project .right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .sec03 .inner .project .left{
     width: 50%;
     background: #eee;
     position: relative;
+    padding-left: 20px;
 }
 .sec03 .inner .project .left .txt{
     padding: 5px;
@@ -188,8 +204,8 @@ nav{
     width: 250px;
     height: 220px;
     position: absolute;
-    top: 100px;
-    right: 6%;
+    top: 168px;
+    right: 4%;
 }
 .sec03 .inner .project .left .mobile .mobile-img{
     background: url(../image/Screenshot_2.JPG) no-repeat center/cover;

@@ -17,17 +17,17 @@
     <header>
         <nav>
             <ul class="navi">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Profile</a></li>
-                <li><a href="#">Project</a></li>
-                <li><a href="#">Contact</a></li>
+                <li data-index="1" data-id="sec01"><a href="#">Home</a></li>
+                <li data-index="2" data-id="sec02"><a href="#">Profile</a></li>
+                <li data-index="3" data-id="sec03"><a href="#">Project</a></li>
+                <li data-index="4" data-id="sec04"><a href="#">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <div class="background"></div>
     <div class="swiper">
-        <div class="vertical-slider sec01">
+        <div class="vertical-slider sec01" data-index="1">
             <div class="inner">
                 <div class="home">
                     <h1>Welcome to my Portfolio!</h1>
@@ -36,28 +36,37 @@
             </div>
         </div>
 
-        <div class="vertical-slider sec02">
+        <div class="vertical-slider sec02" data-index="2">
             <div class="inner">
                 <h2>Profile</h2>
                 <div class="profile">
                     <ul>
-                        <li class="title"><span class="material-symbols-outlined">
+                        <li class="title">
+                            <div>
+                            <span class="material-symbols-outlined">
                             account_circle
                             </span>Name
+                        </div>
                             <ul class="content">
                                 <li>이남혁(NamHyeok-Lee)</li>
                             </ul>
                         </li>
-                        <li class="title"><span class="material-symbols-outlined">
+                        <li class="title">
+                            <div>
+                            <span class="material-symbols-outlined">
                             school
                             </span>Education
+                        </div>
                             <ul class="content">
                                 <li>UI/UX웹디자인&반응형 웹 프로젝트(웹퍼블리셔 취업과정)(2022.07.25~2022.11.24)</li>
                             </ul>
                         </li>
-                        <li class="title"><span class="material-symbols-outlined">
+                        <li class="title">
+                        <div>
+                            <span class="material-symbols-outlined">
                             picture_in_picture
                             </span>License
+                        </div>
                             <ul class="content">
                                 <li>웹디자인기능사 필기 합격(2022)</li>
                                 <li>컴퓨터활용능력(2019)</li>
@@ -65,9 +74,12 @@
                                 <li>운전면허 1종 보통(2012)</li>
                             </ul>
                         </li>
-                        <li class="title"><span class="material-symbols-outlined">
+                        <li class="title">
+                        <div>
+                            <span class="material-symbols-outlined">
                             memory
                             </span>Skills
+                        </div>
                             <ul class="content skill">
                                 <li>html</li>
                                 <li>css</li>
@@ -82,7 +94,7 @@
             </div>
         </div>
 
-        <div class="vertical-slider sec03">
+        <div class="vertical-slider sec03" data-index="3">
             <div class="inner">
                 <div class="wrapper">
                     <div class="project_name">
@@ -131,7 +143,7 @@
             </div>
         </div>
 
-        <div class="vertical-slider sec04">
+        <div class="vertical-slider sec04" data-index="4">
             <div class="inner">
                 <div class="end">
                     <ul class="contact">
@@ -150,15 +162,15 @@
                 </div>
 
                 <div class="e-mail">
-                    <form class="contactform" action="[appURL]" method="post" data-email="dlwlgur37@gmail.com">
+                    <form id="contactform" class="mail">
                         <div class="adress">
                             <div>
                                 <p>보내는 사람</p>
-                                <input type="text" id="from_name" name="to_name" placeholder="이름" tabindex="0" autocomplete="on">
+                                <input type="text" id="from_name" name="to_name" placeholder="이름" autocomplete="on">
                             </div>
                             <div>
                                 <p>연락가능한 이메일</p>
-                                <input type="email" id="from_mail" name="to_mail" placeholder="이메일" tabindex="0" autocomplete="on">
+                                <input type="email" id="from_mail" name="to_mail" placeholder="이메일" autocomplete="on">
                                 <p class="caution">이메일 형식이 잘못되었습니다.</p>
                             </div>
                         </div>
@@ -168,8 +180,8 @@
                         </div>
 
                         <div class="button">
-                            <input type="submit" value="보내기" tabindex="-1">
-                            <input type="reset" value="초기화" tabindex="-1">
+                            <input type="submit" value="보내기">
+                            <input type="reset" value="초기화">
                         </div>
                     </form>
                 </div>
