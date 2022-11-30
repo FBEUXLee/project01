@@ -17,39 +17,44 @@ header{
 }
 
 /* 네비 */
-nav{
+.gnb{
     width: 100%;
     height: 100%;
     margin: 0 20px;
 }
-nav .navi{
+.gnb .gnb_list.depth1{
     display:flex;
     justify-content: space-between;
     position: relative;
 }
-nav .navi li{
+.gnb .gnb_list li{
     list-style: none;
+    padding: 5px;
     text-align: center;
+}
+.gnb .gnb_list li a{
+    color: black;    
+    font-weight: bold;
     padding: 5px;
 }
-nav .navi > li:hover > a{
-    background: solid #a8ece7;
-}
-nav .navi > li:hover > a::after{
+.gnb .gnb_list > li:hover > a::after{
     content: '';
     height: 2px;
     background: #ddd;
 }
-nav .navi li a{
-    color: black;    
-    font-weight: bold;
+.gnb .gnb_list.depth1 > li > a{
+    font-size: 18px;
 }
 
-nav .navi .sub_navi{
+.gnb .gnb_list .gnb_list.depth2{
     /* display: none; */
     position: absolute;
     background: #eee ;
-    top: 43px;
+    top: 45px;
+}
+.gnb .gnb_list .gnb_list.depth2 > .gnb_item{
+    display: flex;
+    flex-direction: column;
 }
 
 /* 로그인/검색 */
