@@ -1,15 +1,23 @@
 @charset "utf-8";
 @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     font-family: 'Noto Sans KR', sans-serif;
 }
+.inner{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+a{
+    color: black;
+}
 
 /* 헤더 */
-header{
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -17,50 +25,122 @@ header{
 }
 
 /* 네비 */
-.gnb{
+.gnb {
     width: 100%;
     height: 100%;
     margin: 0 20px;
 }
-.gnb .gnb_list.depth1{
-    display:flex;
+
+.gnb .gnb_list.depth1 {
+    display: flex;
     justify-content: space-between;
     position: relative;
 }
-.gnb .gnb_list li{
+
+.gnb .gnb_list li {
     list-style: none;
     padding: 5px;
     text-align: center;
 }
-.gnb .gnb_list li a{
-    color: black;    
+
+.gnb .gnb_list li a {
+    color: black;
     font-weight: bold;
     padding: 5px;
 }
-.gnb .gnb_list > li:hover > a::after{
+
+.gnb .gnb_list>li:hover>a::after {
     content: '';
     height: 2px;
     background: #ddd;
 }
-.gnb .gnb_list.depth1 > li > a{
+
+.gnb .gnb_list.depth1>li>a {
     font-size: 18px;
 }
 
-.gnb .gnb_list .gnb_list.depth2{
+.gnb .gnb_list .gnb_list.depth2 {
     display: none;
     position: absolute;
-    background: #eee ;
+    background: #eee;
     top: 45px;
 }
-.gnb .gnb_list .gnb_list.depth2 > .gnb_item{
+
+.gnb .gnb_list .gnb_list.depth2>.gnb_item {
     display: flex;
     flex-direction: column;
 }
 
 /* 로그인/검색 */
-.account{
+.account {
     display: flex;
 }
-.account span{
+
+.account span {
     margin-right: 10px;
+}
+
+/* 슬라이드 섹션1*/
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 섹션2 */
+
+/* 섹션3 */
+
+/* 섹션4 */
+.sec04 .inner{
+    display: flex;
+    justify-content: space-between;
+}
+.sec04 .inner .menu{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.sec04 .inner .menu .plus a{
+    display: flex;
+    align-items: center;
+}
+.sec04 .inner .menu .plus a span{
+    margin-left: 5px;
+}
+.sec04 .inner .menu .plus a span:hover{
+    transform: rotate(360deg);
+    transition: all 0.5s linear;
+}
+.sec04 .inner > div{
+    width: 48%;
+}
+.sec04 .inner > div .content{
+    margin: 10px 5px 0 20px;
+}
+.sec04 .inner > div .content li a{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 7px;
+}
+.sec04 .inner > div .content li a:hover{
+    font-weight: bold;
 }

@@ -1,151 +1,186 @@
 <!DOCTYPE html>
 <html lang="ko">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>중문골프장</title>
-        <link rel="stylesheet" type="text/css" href="css/golf.css">
-    </head>
 
-    <body>
-        <header>
-            <div class="logo">
-                <a href="#"><img src="image/chinagolf_logo.png" alt="로고"></a>
-            </div>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>중문골프장</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/golf.css">
+</head>
 
-            <nav class="gnb">
-                <!-- .depth1 > .gnb_item -->
-                <ul class="gnb_list depth1">
-                    <li class="gnb_item">
-                        <a href="" class="gnb_anchor"><span class="gnb_text">클럽소개</span></a>
-                    </li>
+<body>
+    <header>
+        <div class="logo">
+            <a href="#"><img src="image/chinagolf_logo.png" alt="로고"></a>
+        </div>
 
-                    <li class="gnb_item">
-                        <a href="" class="gnb_anchor"><span class="gnb_text">이용안내</span></a>
-                        <ul class="gnb_list depth2">
-                            <li class="gnb_item">
-                                <a href="#" class="gnb_anchor"><span class="gnb_text">이용방법</span></a>
-                                <a href="#" class="gnb_anchor"><span class="gnb_text">예약안내</span></a>
-                                <a href="#" class="gnb_anchor"><span class="gnb_text">예약하기</span></a>
-                                <a href="#" class="gnb_anchor"><span class="gnb_text">공지사항</span></a>
-                            </li>
-                        </ul>
-                    </li>
+        <nav class="gnb">
+            <!-- .depth1 > .gnb_item -->
+            <ul class="gnb_list depth1">
+                <li class="gnb_item">
+                    <a href="" class="gnb_anchor"><span class="gnb_text">클럽소개</span></a>
+                </li>
 
-                    <li class="gnb_item">
-                        <a href="" class="gnb_anchor"><span class="gnb_text">골프코스</span></a>
-                        <ul class="gnb_list depth2">
-                            <li class="gnb_item">
-                                <a href="" class="gnb_anchor"><span class="gnb_text">코스안내</span></a>
-                                <a href="" class="gnb_anchor"><span class="gnb_text">코스특징</span></a>
-                            </li>
-                        </ul>
-                    </li>
+                <li class="gnb_item">
+                    <a href="" class="gnb_anchor"><span class="gnb_text">이용안내</span></a>
+                    <ul class="gnb_list depth2">
+                        <li class="gnb_item">
+                            <a href="#" class="gnb_anchor"><span class="gnb_text">이용방법</span></a>
+                            <a href="#" class="gnb_anchor"><span class="gnb_text">예약안내</span></a>
+                            <a href="#" class="gnb_anchor"><span class="gnb_text">예약하기</span></a>
+                            <a href="#" class="gnb_anchor"><span class="gnb_text">공지사항</span></a>
+                        </li>
+                    </ul>
+                </li>
 
-                    <li class="gnb_item">
-                        <a href="" class="gnb_anchor"><span class="gnb_text">사진갤러리</span></a>
-                        <ul class="gnb_list depth2">
-                            <li class="gnb_item">
-                                <a href="" class="gnb_anchor"><span class="gnb_text">한라코스</span></a>
-                                <a href="" class="gnb_anchor"><span class="gnb_text">해안코스</span></a>
-                            </li>
-                        </ul>
-                    </li>
+                <li class="gnb_item">
+                    <a href="" class="gnb_anchor"><span class="gnb_text">골프코스</span></a>
+                    <ul class="gnb_list depth2">
+                        <li class="gnb_item">
+                            <a href="" class="gnb_anchor"><span class="gnb_text">코스안내</span></a>
+                            <a href="" class="gnb_anchor"><span class="gnb_text">코스특징</span></a>
+                        </li>
+                    </ul>
+                </li>
 
-                    <li class="gnb_item">
-                        <a href="" class="gnb_anchor"><span class="gnb_text">부대시설</span></a>
-                    </li>
+                <li class="gnb_item">
+                    <a href="" class="gnb_anchor"><span class="gnb_text">사진갤러리</span></a>
+                    <ul class="gnb_list depth2">
+                        <li class="gnb_item">
+                            <a href="" class="gnb_anchor"><span class="gnb_text">한라코스</span></a>
+                            <a href="" class="gnb_anchor"><span class="gnb_text">해안코스</span></a>
+                        </li>
+                    </ul>
+                </li>
 
-                    <li class="gnb_item">
-                        <a href="" class="gnb_anchor"><span class="gnb_text">골프정보</span></a>
-                        <ul class="gnb_list depth2">
-                            <li class="gnb_item">
-                                <a href="" class="gnb_anchor"><span class="gnb_text">골프자료실</span></a>
-                                <a href="" class="gnb_anchor"><span class="gnb_text">PGA챔피언쉽</span></a>
-                            </li>
-                        </ul>
-                    </li>
+                <li class="gnb_item">
+                    <a href="" class="gnb_anchor"><span class="gnb_text">부대시설</span></a>
+                </li>
 
-                    <li class="gnb_item">
-                        <a href="" class="gnb_anchor"><span class="gnb_text">마이골프</span></a>
-                        <ul class="gnb_list depth2">
-                            <li class="gnb_item">
-                                <a href="" class="gnb_anchor"><span class="gnb_text">티업조회</span></a>
-                                <a href="" class="gnb_anchor"><span class="gnb_text">마일리지조회</span></a>
-                                <a href="" class="gnb_anchor"><span class="gnb_text">문의내역조회</span></a>
-                            </li>
-                        </ul>
-                    </li>
+                <li class="gnb_item">
+                    <a href="" class="gnb_anchor"><span class="gnb_text">골프정보</span></a>
+                    <ul class="gnb_list depth2">
+                        <li class="gnb_item">
+                            <a href="" class="gnb_anchor"><span class="gnb_text">골프자료실</span></a>
+                            <a href="" class="gnb_anchor"><span class="gnb_text">PGA챔피언쉽</span></a>
+                        </li>
+                    </ul>
+                </li>
 
-                    <li class="gnb_item">
-                        <a href="" class="gnb_anchor"><span class="gnb_text">이용관련문의</span></a>
-                        <ul class="gnb_list depth2">
-                            <li class="gnb_item">
-                                <a href="" class="gnb_anchor"><span class="gnb_text">조인게시판</span></a>
-                                <a href="" class="gnb_anchor"><span class="gnb_text">Q&A</span></a>
-                                <a href="" class="gnb_anchor"><span class="gnb_text">연락처안내</span></a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
+                <li class="gnb_item">
+                    <a href="" class="gnb_anchor"><span class="gnb_text">마이골프</span></a>
+                    <ul class="gnb_list depth2">
+                        <li class="gnb_item">
+                            <a href="" class="gnb_anchor"><span class="gnb_text">티업조회</span></a>
+                            <a href="" class="gnb_anchor"><span class="gnb_text">마일리지조회</span></a>
+                            <a href="" class="gnb_anchor"><span class="gnb_text">문의내역조회</span></a>
+                        </li>
+                    </ul>
+                </li>
 
-            <div class="account">
-                <a href="#"><span class="material-symbols-outlined">
+                <li class="gnb_item">
+                    <a href="" class="gnb_anchor"><span class="gnb_text">이용관련문의</span></a>
+                    <ul class="gnb_list depth2">
+                        <li class="gnb_item">
+                            <a href="" class="gnb_anchor"><span class="gnb_text">조인게시판</span></a>
+                            <a href="" class="gnb_anchor"><span class="gnb_text">Q&A</span></a>
+                            <a href="" class="gnb_anchor"><span class="gnb_text">연락처안내</span></a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="account">
+            <a href="#"><span class="material-symbols-outlined">
                     login
-                    </span></a>
-                <a href="#"><span class="material-symbols-outlined">
+                </span></a>
+            <a href="#"><span class="material-symbols-outlined">
                     search
-                    </span></a>
+                </span></a>
+        </div>
+    </header>
+
+    <div class="swiper sec01">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><a href="#"><img src="image/golf_banner1.png" alt="실험1"></a></div>
+            <div class="swiper-slide"><a href="#"><img src="image/golf_banner2.png" alt="실험2"></a></div>
+            <div class="swiper-slide"><a href="#"><img src="image/golf_banner3.png" alt="실험3"></a></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <section class="sec02">
+        <div class="inner">
+            <h2>예약하기</h2>
+        </div>
+    </section>
+
+    <section class="sec03">
+        <div class="inner">
+            <h2>제주날씨</h2>
+        </div>
+    </section>
+
+    <section class="sec04">
+        <div class="inner">
+            <div class="notice">
+                <ul>
+                    <div class="menu">
+                        <li><a href="#">
+                                <h3>공지사항</h3>
+                            </a></li>
+                        <li class="plus"><a href="#"><span class="material-symbols-outlined">
+                            add
+                            </span></a></li>
+                    </div>
+                    <div class="content">
+                        <li><a href="#">2023년 1월 중문골프장 인터넷 예약 안내<span>2022-11-30</span></a></li>
+                        <li><a href="#">2022년 12월 중문골프장 인터넷 예약 안내<span>2022-10-25</span></a></li>
+                        <li><a href="#">영상정보처리기기 운영 관리 방침<span>2022-10-12</span></a></li>
+                        <li><a href="#">골프장 코스작업 안내<span>2022-10-05</span></a></li>
+                        <li><a href="#">2022년 11월 중문골프장 인터넷 예약 안내<span>2022-09-26</span></a></li>
+                    </div>
+                </ul>
             </div>
-        </header>
 
-        <section class="sec01">
-            <a href="#"><img src="#"></a>
-            <a href="#"><img src="#"></a>
-            <a href="#"><img src="#"></a>
-            <a href="#"><img src="#"></a>
-            <a href="#"><img src="#"></a>
-        </section>
-
-        <section class="sec02">
-            <div class="inner">
-                <h2>이용객 현황</h2>
-            </div>            
-        </section>
-
-        <section class="sec03">
-            <div class="inner">
-                <div class="notice">
-                    <ul>
-                        <li><a href="#"><h3>공지사항</h3></a></li>
-                        <li><a href="#"></a>더보기</li>
-                    </ul>
-                    <ul>
+            <div class="Q&A">
+                <ul>
+                    <div class="menu">
+                        <li><a href="#">
+                                <h3>Q&A</h3>
+                            </a></li>
+                        <li class="plus"><a href="#"><span class="material-symbols-outlined">
+                            add
+                            </span></a></li>
+                    </div>
+                    <div class="content">
                         <li><a href="#">게시물</a></li>
                         <li><a href="#">게시물</a></li>
                         <li><a href="#">게시물</a></li>
                         <li><a href="#">게시물</a></li>
                         <li><a href="#">게시물</a></li>
-                    </ul>
-                </div>
-
-                <div class="course">
-                    <a href="#"></a>
-                </div>
-
-                <div class="Q&A">
-                    <a href="#"></a>
-                </div>
+                    </div>
+                </ul>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="sec04">
-            <div class="inner">
-                <div class="reservation"></div>
+    <section class="sec04">
+        <div class="inner">
+            <div class="reservation">
+
             </div>
-        </section>
+        </div>
+    </section>
 
-        <footer></footer>
-    </body>
+    <footer></footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="script/swiper.js"></script>
+</body>
+
 </html>
