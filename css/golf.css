@@ -47,7 +47,7 @@ header{
 }
 
 .gnb .gnb_list .gnb_list.depth2{
-    /* display: none; */
+    display: none;
     position: absolute;
     background: #eee ;
     top: 45px;
