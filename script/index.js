@@ -1,5 +1,5 @@
 $(function(){
-    $(".vertical-slider").each(function () {
+    $(".vertical-slide").each(function () {
         // 개별적으로 Wheel 이벤트 적용 mousewheel(IE/chrome/opera) DOMMouseScroll(FF)
         $(this).on("mousewheel DOMMouseScroll", function (e) {
             e.preventDefault();
@@ -63,9 +63,11 @@ $(function(){
         $('.caution').removeClass('on');
     });
 
+    
+
     //목차, 나브 누르면 해당 슬라이드로 이동 1200초과
     $('nav ul li').on('click', function(){
-        $('.vertical-slider').slick('slickGoTo', $(this).data('index'));
+        $('.vertical-slide').slick('slickGoTo', $(this).data('index'));
     });
     //목차, 나브 누르면 해당 슬라이드로 이동 1200이하
     $('nav ul li').each(function() {

@@ -40,7 +40,7 @@ nav{
     position: fixed;
     width: 100%;
     background: rgba(255,255,255,0.8);
-    padding: 20px 0;
+    padding: 15px 0;
 }
 .navi{
     display: flex;
@@ -92,8 +92,8 @@ nav{
 }
 .sec02 .inner .profile{
     background: rgba(255,255,255,0.8);
-    width: 60%;
-    height: 60%;
+    width: 65%;
+    height: 65%;
     display: flex;
     align-items: center;
     margin-top: 30px;
@@ -130,9 +130,13 @@ nav{
 .sec02 .inner .profile .content.skill li{
     margin: 0 20px 0 0;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 5px;
+}
+.sec02 .inner .profile .content.skill img{
+    width: 60px;
 }
 
 /* 섹션3 */
