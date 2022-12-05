@@ -57,6 +57,9 @@ nav{
 .navi li a:hover{
     color: #fc8406;
 }
+.navi li.on a{
+    color: #fc8406;
+}
 
 .background{
     background-image: url(../image/길04.png);
@@ -102,7 +105,7 @@ nav{
     margin: 0 30px;
 }
 .sec02 .inner .profile .title{
-    font-size: 30px;
+    font-size: 23px;
     font-weight: bold;
 }
 .sec02 .inner .profile .title>div{
@@ -117,15 +120,15 @@ nav{
     flex-direction: column;
     margin: 20px 0 20px 25px;
 }
-.sec02 .inner .profile .content.skill{
-    flex-direction: row;
-    flex-wrap: wrap;
-}
 .sec02 .inner .profile .content li{
     font-size: 18px;
     font-weight: 500;
     word-break: keep-all;
     line-height: 30px;
+}
+.sec02 .inner .profile .content.skill{
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 .sec02 .inner .profile .content.skill li{
     margin: 0 20px 0 0;

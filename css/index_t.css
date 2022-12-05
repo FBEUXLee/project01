@@ -23,7 +23,10 @@
     .sec02 .inner h2 {
         font-size: 40px;
     }
-
+    .sec02 .inner .profile{
+        width: 80%;
+        height: 70%;
+    }
     .sec02 .inner .profile>ul {
         margin: 0 30px;
     }
@@ -44,6 +47,9 @@
         margin: 5px 15px 0 0;
         padding: 5px;
         border-radius: 5px;
+    }
+    .sec02 .inner .profile .content.skill img{
+        width: 45px;
     }
 
     /* 섹션3 */

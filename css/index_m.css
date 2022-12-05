@@ -23,21 +23,20 @@
         font-size: 30px;
     }
     .sec02 .inner .profile{
-        background: rgba(255,255,255,0.8);
-        width: 75%;
-        height: 60%;
+        width: 85%;
+        height: 65%;
     }
     .sec02 .inner .profile > ul{
-        margin: 0 10px;
+        margin: 0 20px;
     }
     .sec02 .inner .profile .title{
-        font-size: 15px;
+        font-size: 20px;
     }
     .sec02 .inner .profile .content{
         margin: 20px 0 ;
     }
     .sec02 .inner .profile .content li{
-        font-size: 13px;
+        font-size: 15px;
     }
     .sec02 .inner .profile .content.skill{
         margin-top: 0;
@@ -46,6 +45,9 @@
         margin: 5px 10px 0 0;
         padding: 5px;
         border-radius: 5px;
+    }
+    .sec02 .inner .profile .content.skill img{
+        width: 35px;
     }
 
     /* 섹션3*/
