@@ -145,6 +145,11 @@ header {
     display: flex;
     justify-content: space-between;
 }
+.sec04 .inner .menu h3{
+    background: #999;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
 .sec04 .inner .menu .plus a{
     display: flex;
     align-items: center;
@@ -170,4 +175,9 @@ header {
 }
 .sec04 .inner > div .content li a:hover{
     font-weight: bold;
+}
+
+/* 섹션5 */
+.sec05{
+    background-color: #0080ff;
 }
