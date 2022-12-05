@@ -1,19 +1,24 @@
 @charset "utf-8";
-@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600&family=Nanum+Gothic:wght@400;700;800&family=Noto+Sans+KR:wght@300;400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0");
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: "Nanum Gothic", sans-serif;
 }
 .inner{
     max-width: 1400px;
     margin: 0 auto;
+    display: flex;
 }
 a{
     color: black;
+}
+section{
+    margin: 50px 0;
 }
 
 /* 헤더 */
@@ -21,7 +26,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #a8ece7;
+    background: #0080ff;
 }
 
 /* 네비 */
@@ -45,7 +50,6 @@ header {
 
 .gnb .gnb_list li a {
     color: black;
-    font-weight: bold;
     padding: 5px;
 }
 
@@ -54,9 +58,8 @@ header {
     height: 2px;
     background: #ddd;
 }
-
 .gnb .gnb_list.depth1>li>a {
-    font-size: 18px;
+    font-size: 15px;
 }
 
 .gnb .gnb_list .gnb_list.depth2 {
@@ -65,7 +68,6 @@ header {
     background: #eee;
     top: 45px;
 }
-
 .gnb .gnb_list .gnb_list.depth2>.gnb_item {
     display: flex;
     flex-direction: column;
@@ -105,12 +107,37 @@ header {
 }
 
 /* 섹션2 */
+.sec02 .inner{
+    align-items: center;
+}
+.sec02 ul{
+    width: 100%;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+.sec02 ul li a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 100%;
+    width: 120px;
+    height: 120px;
+    box-shadow: 2px 3px 4px ;
+}
+.sec02 ul li a span{
+    font-size: 50px;
+}
 
 /* 섹션3 */
+.sec03{
+    background: #0080ff;
+}
 
 /* 섹션4 */
 .sec04 .inner{
-    display: flex;
     justify-content: space-between;
 }
 .sec04 .inner .menu{
@@ -139,7 +166,7 @@ header {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-top: 7px;
+    margin-top: 10px;
 }
 .sec04 .inner > div .content li a:hover{
     font-weight: bold;
