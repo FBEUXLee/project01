@@ -57,9 +57,9 @@ nav{
 .navi li a:hover{
     color: #fc8406;
 }
-.navi li.on a{
+/* .navi li.on a{
     color: #fc8406;
-}
+} */
 
 .background{
     background-image: url(../image/길04.png);
