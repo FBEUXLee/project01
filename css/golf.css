@@ -39,14 +39,6 @@ header {
 .gnb :before,
 .gnb :after{display:none;content:"";}
 
-.gnb .gnb_list.depth1 {
-    display: flex;
-    justify-content: center;
-}
-.gnb .gnb_list.depth1 > .gnb_item{
-    position: relative;
-}
-
 .gnb .gnb_list li {
     padding: 5px;
     text-align: center;
@@ -67,18 +59,32 @@ header {
     width:80%;
     background-color:#0080ff;
 }
+
+.gnb .gnb_list.depth1 {
+    display: flex;
+    justify-content: center;
+}
+.gnb .gnb_list.depth1 > .gnb_item{
+    position: relative;
+}
 .gnb .gnb_list.depth1 > li > a {
     font-size: 17px;
     padding: 0 10px;
 }
 
 .gnb .gnb_list .gnb_list.depth2 {
-    /* display: none; */
+    display: none;
     position: absolute;
-    background: #eee;
+    background: #fff;
     top: 43px;
     z-index: 9;
     width: 100%;
+}
+.gnb .gnb_list .gnb_list.depth2::before{
+    background: #fff;
+    position: absolute;
+    width: 100%;
+    height: 100%;
 }
 .gnb .gnb_list .gnb_list.depth2 > .gnb_item {
     display: flex;
@@ -201,6 +207,11 @@ header {
 .sec04 .inner .content{
     margin: 0px 5px 0 20px;
     overflow: hidden;
+    height: calc(100% * 4);
+    animation: slide 12s infinite;
+}
+.sec04 .inner > div .content li{
+    vertical-align: middle;
 }
 .sec04 .inner > div .content li a{
     width: 100%;
@@ -222,6 +233,13 @@ header {
 /* 섹션5 */
 .sec05{
     background-color: #0080ff;
+}
+.sec05 .inner .reservation{
+    display: flex;
+}
+.sec05 .inner .reservation div{
+    display: flex;
+    flex-direction: column;
 }
 
 /* footer */
