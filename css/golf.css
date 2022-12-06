@@ -68,7 +68,7 @@ header {
     position: relative;
 }
 .gnb .gnb_list.depth1 > li > a {
-    font-size: 17px;
+    font-size: 18px;
     padding: 0 10px;
 }
 
@@ -83,8 +83,7 @@ header {
 .gnb .gnb_list .gnb_list.depth2::before{
     background: #fff;
     position: absolute;
-    width: 100%;
-    height: 100%;
+    height: 420px;
 }
 .gnb .gnb_list .gnb_list.depth2 > .gnb_item {
     display: flex;
@@ -92,7 +91,7 @@ header {
 }
 .gnb .gnb_list .gnb_list.depth2 > .gnb_item a{
     word-break:break-all;
-    font-size: 15px;
+    font-size: 13px;
 }
 
 /* 로그인/검색 */
