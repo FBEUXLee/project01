@@ -19,7 +19,7 @@ a{
     color: black;
 }
 section{
-    margin: 50px 0px;
+    padding: 60px 0px;
 }
 
 /* 헤더 */
@@ -49,7 +49,7 @@ header {
     padding: 5px;
 }
 
-.gnb li:hover > a::after {
+.gnb .gnb_list li:hover > a::after {
     display:inline-block;
     position:absolute;
     top:100%;
@@ -143,14 +143,15 @@ header {
     justify-content: center;
     gap: 10px;
     border-radius: 100%;
-    width: 120px;
-    height: 120px;
-    box-shadow: 1px 1px 1px 1px ;
+    width: 140px;
+    height: 140px;
+    box-shadow: 3px 3px 12px rgb(0 0 0 / 20%);
+    font-weight: bold;
 }
 .sec02 ul li a:hover{
     background: #0080ff;
     color: #fff;
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
 }
 .sec02 ul li a span{
     font-size: 50px;
@@ -160,14 +161,41 @@ header {
 .sec03{
     background: #0080ff;
 }
+.sec03 .inner{
+    align-items: center;
+}
+.sec03 h2,
+.sec05 h2{
+    word-break: keep-all;
+}
 .sec03 ul{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    width: 100%;
 }
 .sec03 ul li{
-    width: 25%;
+    width: 190px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    gap: 10px;
+    padding: 30px 0;
+    margin-right: 40px;
+    background: #fff;
+    box-shadow: 0px 2px 2px 1px;
+    transition: all 1s ease;
+    font-size: 25px;
+    font-weight: bold;
+    color: #0080ff;
+}
+.sec03 ul li span{
+    color: black;
+    font-size: 30px;
+    margin: 10px 0;
+}
+.sec03 ul li p{
+    color: black;
 }
 
 /* 섹션4 */
@@ -204,9 +232,9 @@ header {
     width: 100%;
 }
 .sec04 .inner .content{
-    margin: 0px 5px 0 20px;
+    margin: 5px 5px 0 20px;
     overflow: hidden;
-    height: calc(100% * 4);
+    /* height: calc(100% * 4); */
     animation: slide 12s infinite;
 }
 .sec04 .inner > div .content li{
@@ -216,7 +244,7 @@ header {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-top: 10px;
+    margin-bottom: 15px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
