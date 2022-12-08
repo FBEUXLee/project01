@@ -32,8 +32,6 @@ header {
 
 /* 네비 */
 .gnb {
-    width: 100%;
-    height: 100%;
     margin: 0 20px;
 }
 .gnb :before,
@@ -70,6 +68,7 @@ header {
 .gnb .gnb_list.depth1 > li > a {
     font-size: 18px;
     padding: 0 10px;
+    font-weight: bold;
 }
 
 .gnb .gnb_list .gnb_list.depth2 {
@@ -147,6 +146,7 @@ header {
     height: 140px;
     box-shadow: 3px 3px 12px rgb(0 0 0 / 20%);
     font-weight: bold;
+    transition: all 1s ease;
 }
 .sec02 ul li a:hover{
     background: #0080ff;
@@ -162,6 +162,7 @@ header {
     background: #0080ff;
 }
 .sec03 .inner{
+    flex-direction: column;
     align-items: center;
 }
 .sec03 h2,
@@ -170,8 +171,9 @@ header {
 }
 .sec03 ul{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     width: 100%;
+    margin-top: 50px;
 }
 .sec03 ul li{
     width: 190px;
@@ -181,7 +183,6 @@ header {
     border-radius: 10px;
     gap: 10px;
     padding: 30px 0;
-    margin-right: 40px;
     background: #fff;
     box-shadow: 0px 2px 2px 1px;
     transition: all 1s ease;
@@ -261,12 +262,22 @@ header {
 .sec05{
     background-color: #0080ff;
 }
+.sec05 .inner{
+    flex-direction: column;
+    align-items: center;
+}
 .sec05 .inner .reservation{
     display: flex;
+    margin-top: 50px;
 }
-.sec05 .inner .reservation div{
+.sec05 .inner .reservation .warning{
     display: flex;
     flex-direction: column;
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    gap: 20px;
+    /* color: red; */
 }
 
 /* footer */
