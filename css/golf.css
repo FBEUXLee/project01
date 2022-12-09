@@ -268,9 +268,10 @@ header {
 }
 .sec05 .inner .reservation{
     display: flex;
+    flex-direction: column;
     margin-top: 50px;
 }
-.sec05 .inner .reservation .warning{
+.sec05 .inner .reservation .explanation{
     display: flex;
     flex-direction: column;
     background: #fff;
@@ -278,6 +279,32 @@ header {
     padding: 20px;
     gap: 20px;
     /* color: red; */
+}
+.sec05 .inner .reservation .schedule{
+    display: flex;
+}
+.sec05 .inner .reservation .explanation.ex01{
+    width: 49%;
+}
+.sec05 .inner .reservation .explanation.ex01 .first_title{
+    font-weight: bold;
+    font-size: 18px;
+}
+.sec05 .inner .reservation .explanation.ex01 .second_title{
+    color: #0080ff;
+    font-size: 16px;
+}
+.sec05 .inner .reservation .explanation.ex01 .second_title ul li{
+    font-size: 14px;
+    color: black;
+    font-weight: normal;
+}
+.sec05 .inner .reservation .explanation.ex01 .second_title ul li.warning{
+    color: red;
+}
+
+.sec05 .inner .reservation .explanation.ex02{
+    margin-top: 20px;
 }
 
 /* footer */
