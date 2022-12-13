@@ -69,6 +69,7 @@ header {
     font-size: 18px;
     padding: 0 10px;
     font-weight: bold;
+
 }
 
 .gnb .gnb_list .gnb_list.depth2 {
@@ -321,13 +322,23 @@ header {
 }
 
 .sec05 .inner .reservation .explanation.ex02{
-    margin-top: 20px;
+    /* margin-top: 20px; */
     color: red;
     font-weight: bold;
 }
 
 .sec05 .inner .reservation .button{
-
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 20px 10px;
+}
+.sec05 .inner .reservation .button a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #fff;
+    padding: 10px 20px;
 }
 
 /* footer */
@@ -343,6 +354,9 @@ footer .bot_logo img{
     width: 120px;
 }
 
+footer address{
+    line-height: 25px;
+}
 footer address p{
     font-size: 15px;
 }
