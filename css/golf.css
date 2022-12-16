@@ -151,12 +151,12 @@ header {
     height: 140px;
     box-shadow: 3px 3px 12px rgb(0 0 0 / 20%);
     font-weight: bold;
-    transition: all 1s ease;
+    transition: all 0.5s ease;
 }
 .sec02 ul li a:hover{
     background: #0080ff;
     color: #fff;
-    transition: all 0.5s ease;
+    transition: all 0.3s ease;
 }
 .sec02 ul li a span{
     font-size: 50px;
@@ -208,8 +208,12 @@ header {
 .sec04 .inner{
     justify-content: space-between;
 }
-.sec04 .inner .notice{
+.sec04 .inner .left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin-left: 10px;
+    width: 45% ;
 }
 .sec04 .inner .menu{
     list-style: none;
@@ -220,22 +224,21 @@ header {
     background: #999;
     padding: 5px 10px;
     border-radius: 20px;
+    width: 76px;
+    text-align: center;
 }
-/* .sec04 .inner .menu .plus a{
+.sec04 .inner .menu .plus a{
     display: flex;
     align-items: center;
 }
 .sec04 .inner .menu .plus a span{
-    margin-left: 5px;
+    margin-left: 15px;
     background: #999;
     border-radius: 100%;
 }
 .sec04 .inner .menu .plus a span:hover{
     transform: rotate(360deg);
     transition: all 0.5s linear;
-} */
-.sec04 .inner > div{
-    width: 48%;
 }
 .sec04 .inner .menu li:nth-child(2){
     width: 100%;
@@ -243,14 +246,11 @@ header {
 .sec04 .inner .content{
     margin: 5px 5px 0 20px;
     overflow: hidden;
-    /* height: calc(100% * 4); */
-    animation: slide 12s infinite;
 }
 .sec04 .inner > div .content li{
     vertical-align: middle;
 }
 .sec04 .inner > div .content li a{
-    width: 100%;
     display: flex;
     justify-content: space-between;
     margin-bottom: 15px;
@@ -264,6 +264,16 @@ header {
 .sec04 .inner > div .content li a span{
     font-size: 13px;
     color: #999;
+}
+.sec04 .inner .left .question{
+    margin-top: 60px;
+}
+.sec04 .inner .right .pic{
+    display: flex;
+    justify-content: center;
+}
+.sec04 .inner .right .pic img{
+    width: 80%;
 }
 
 /* 섹션5 */
@@ -289,6 +299,10 @@ header {
     padding: 30px 20px;
     gap: 20px;
     margin: 0 10px;
+}
+
+.sec05 .inner .reservation .schedule{
+    display: none;
 }
 .sec05 .inner .reservation .explanation.ex01 ul li{
     line-height: 30px;
