@@ -1,6 +1,8 @@
 var swiper = new Swiper(".sec01", {
-    spaceBetween: 30,
     centeredSlides: true,
+    slidesPerView: 1.8,
+    spaceBetween: 25,
+    loop: true,
     autoplay: {
         delay: 2500,
         disableOnInteraction: false,
@@ -12,5 +14,10 @@ var swiper = new Swiper(".sec01", {
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+        1024: {
+            slidesPerView:1.8,
+        },
     },
 });

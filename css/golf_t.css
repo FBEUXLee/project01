@@ -3,4 +3,19 @@
     .gnb{
         display: none;
     }
+
+    .sec02 ul li a{
+        width: 110px;
+        height: 110px;
+    }
+    .sec02 ul li a span{
+        font-size: 30px;
+    }
+
+    .sec04 .inner{
+        flex-direction: column;
+    }
+    .sec04 .inner .left{
+        width: 98%;
+    }
 }

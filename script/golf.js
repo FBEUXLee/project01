@@ -1,4 +1,5 @@
 $(function () {
+    $(".gnb .depth2").hide();
     $(".gnb .depth1 > .gnb_item").hover(function () {
         $(".gnb .depth2").stop().slideToggle();
     });
@@ -18,4 +19,9 @@ $(function () {
         var month = dateObj.getMonth()+1;
         var date = dateObj.getDate();
         document.getElementById('date').innerHTML = year + '-' + month + '-' + date;
+
+    //상세안내
+    $(".button a:first-chlid").click(function(){
+        $(".explanation.ex01").show();
+    });
 });

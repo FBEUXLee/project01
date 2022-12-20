@@ -7,7 +7,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: "Nanum Gothic", sans-serif;
+    font-family: "Noto Sans KR", sans-serif;
     list-style: none;
 }
 .inner{
@@ -23,19 +23,22 @@ section{
 }
 
 /* 헤더 */
-header {
+header{
+    /* background: #0080ff;     */
+    position: relative;
+}
+header .inner{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #0080ff;
+    height: 80px;
 }
 
 /* 네비 */
 .gnb {
     margin: 0 20px;
+    width: 100%;
 }
-.gnb :before,
-.gnb :after{display:none;content:"";}
 
 .gnb .gnb_list li {
     padding: 5px;
@@ -47,52 +50,46 @@ header {
     padding: 5px;
 }
 
-.gnb .gnb_list li:hover > a::after {
-    display:inline-block;
-    position:absolute;
-    top:100%;
-    left:50%;
-    transform:translateX(-50%);
-    height:2px;
-    width:80%;
-    background-color:#0080ff;
-}
-
 .gnb .gnb_list.depth1 {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 .gnb .gnb_list.depth1 > .gnb_item{
-    position: relative;
+    height: 100%;
+    z-index: 100;
 }
-.gnb .gnb_list.depth1 > li > a {
-    font-size: 18px;
-    padding: 0 10px;
+.gnb .gnb_list.depth1 > .gnb_item::before{
+    position:absolute;
+    top:105%;
+    left:0;
+    width:100%;
+    background-color: #fff;
+    z-index: -1;
+    height: 300px;
+}
+.gnb .gnb_list.depth1 > .gnb_item > a{
     font-weight: bold;
-
+    font-size: 18px;
+}
+.gnb .gnb_list.depth1 > .gnb_item a:hover{
+    color: #0080ff;
 }
 
-.gnb .gnb_list .gnb_list.depth2 {
-    display: none;
+.gnb .gnb_list.depth2{
     position: absolute;
-    background: #fff;
-    top: 43px;
+    top: 100%;
     z-index: 9;
-    width: 100%;
-}
-.gnb .gnb_list .gnb_list.depth2::before{
     background: #fff;
-    position: absolute;
-    height: 420px;
+    opacity: 0.8;
+    height: 200px;
 }
-.gnb .gnb_list .gnb_list.depth2 > .gnb_item {
+.gnb .gnb_list.depth2 .gnb_item{
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
-.gnb .gnb_list .gnb_list.depth2 > .gnb_item a{
-    word-break:break-all;
-    font-size: 13px;
-}
+
+
 
 /* 로그인/검색 */
 .account {
@@ -112,7 +109,6 @@ header {
 .swiper-slide {
     text-align: center;
     font-size: 18px;
-    background: #fff;
 
     /* Center slide text vertically */
     display: flex;
@@ -268,6 +264,8 @@ header {
 .sec04 .inner .left .question{
     margin-top: 60px;
 }
+
+
 .sec04 .inner .right .pic{
     display: flex;
     justify-content: center;
