@@ -81,7 +81,7 @@ header .inner{
     z-index: 9;
     background: #fff;
     opacity: 0.8;
-    height: 200px;
+    height: 180px;
 }
 .gnb .gnb_list.depth2 .gnb_item{
     display: flex;
@@ -249,6 +249,7 @@ header .inner{
 .sec04 .inner > div .content li a{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 15px;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -299,8 +300,13 @@ header .inner{
     margin: 0 10px;
 }
 
-.sec05 .inner .reservation .schedule{
+.sec05 .inner .reservation .explanation.ex01{
     display: none;
+    position: absolute;
+    top: 75%;
+    left: 3%;
+    z-index: 1;
+    background: rgba(255,255,255,0.9);
 }
 .sec05 .inner .reservation .explanation.ex01 ul li{
     line-height: 30px;
@@ -328,6 +334,20 @@ header .inner{
     color: black;
     font-weight: normal;
 }
+.sec05 .inner .reservation .explanation.ex01 .close{
+    position: absolute;
+    top: 3%;
+    right: 5%;
+    cursor: pointer;
+}
+.sec05 .inner .reservation .explanation.ex01 .close span{
+    font-weight: bold;
+    font-size: 25px;
+}
+.sec05 .inner .reservation .explanation.ex01 .close:hover{
+    transform: rotate(360deg);
+    transition: all 0.5s linear;
+}
 .sec05 .inner .reservation .explanation.ex01 .second_title ul li.warning{
     color: red;
     font-weight: bold;
@@ -341,16 +361,25 @@ header .inner{
 
 .sec05 .inner .reservation .button{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     width: 100%;
-    margin: 20px 10px;
+    margin: 20px;
+    padding: 0 10px;
 }
 .sec05 .inner .reservation .button a{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid #fff;
+    background: #fff;
     padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    width: 200px;
+    font-size: 20px;
+}
+.sec05 .inner .reservation .button a:hover{
+    color: #0080ff;
+    transition: 0.3s ease;
 }
 
 /* footer */

@@ -21,7 +21,10 @@ $(function () {
         document.getElementById('date').innerHTML = year + '-' + month + '-' + date;
 
     //상세안내
-    $(".button a:first-chlid").click(function(){
+    $(".button a.on").click(function(){
         $(".explanation.ex01").show();
     });
+    $(".sec05 .reservation .explanation.ex01 .close").click(function(){
+        $(".explanation.ex01").hide();
+    })
 });
