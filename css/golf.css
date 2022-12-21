@@ -36,7 +36,7 @@ header .inner{
 
 /* 네비 */
 .gnb {
-    margin: 0 30px;
+    margin: 0 40px;
     width: 100%;
 }
 .gnb .gnb_list.depth1{
@@ -93,8 +93,6 @@ header .inner{
     transition: height 0.5s;
 }
 
-
-
 /* 로그인/검색 */
 .account {
     display: flex;
@@ -102,6 +100,10 @@ header .inner{
 
 .account span {
     margin-right: 10px;
+    font-weight: bold;
+}
+.account span:hover{
+    color: #0080ff;
 }
 
 /* 슬라이드 섹션1*/
@@ -304,11 +306,12 @@ header .inner{
     margin: 0 10px;
 }
 
+
 .sec05 .inner .reservation .explanation.ex01{
     display: none;
     position: absolute;
-    top: 75%;
-    left: 3%;
+    top: 85%;
+    right: calc(20% - 20px);
     z-index: 1;
     background: rgba(255,255,255,0.9);
 }
@@ -341,12 +344,12 @@ header .inner{
 .sec05 .inner .reservation .explanation.ex01 .close{
     position: absolute;
     top: 3%;
-    right: 5%;
+    right: 3%;
     cursor: pointer;
 }
 .sec05 .inner .reservation .explanation.ex01 .close span{
     font-weight: bold;
-    font-size: 25px;
+    font-size: 30px;
 }
 .sec05 .inner .reservation .explanation.ex01 .close:hover{
     transform: rotate(360deg);
