@@ -24,7 +24,7 @@ section{
 
 /* 헤더 */
 header{
-    /* background: #0080ff;     */
+    /* background: #0080ff;*/
     position: relative;
 }
 header .inner{
@@ -36,57 +36,61 @@ header .inner{
 
 /* 네비 */
 .gnb {
-    margin: 0 20px;
+    margin: 0 30px;
     width: 100%;
 }
-
-.gnb .gnb_list li {
-    padding: 5px;
+.gnb .gnb_list.depth1{
+    height: 80px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    z-index: 9;
     text-align: center;
 }
 
-.gnb .gnb_list li a {
-    color: black;
-    padding: 5px;
+.gnb .gnb_list > li {
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    /* border-right: 1px solid rgba(255, 255, 255, 0.5); */
 }
-
-.gnb .gnb_list.depth1 {
-    display: flex;
-    justify-content: space-between;
-}
-.gnb .gnb_list.depth1 > .gnb_item{
-    height: 100%;
-    z-index: 100;
-}
-.gnb .gnb_list.depth1 > .gnb_item::before{
-    position:absolute;
-    top:105%;
-    left:0;
-    width:100%;
-    background-color: #fff;
-    z-index: -1;
-    height: 300px;
-}
-.gnb .gnb_list.depth1 > .gnb_item > a{
-    font-weight: bold;
-    font-size: 18px;
-}
-.gnb .gnb_list.depth1 > .gnb_item a:hover{
+.gnb .gnb_list > li a:hover{
     color: #0080ff;
 }
-
-.gnb .gnb_list.depth2{
-    position: absolute;
-    top: 100%;
-    z-index: 9;
+/* .gnb .gnb_list > li:nth-child(1) {
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+} */
+.gnb .gnb_list > li.all {
+    width: 100%;
+    height: 0;
+    /* height: 300px; */
+    line-height: unset;
     background: #fff;
     opacity: 0.8;
-    height: 180px;
-}
-.gnb .gnb_list.depth2 .gnb_item{
+    position: absolute;
+    top: 80px;
+    left: 0;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
+    align-items: flex-start;
+    overflow-y: hidden;
+    z-index: 9;
+}
+.gnb .gnb_list > li.all > .depth2 {
+    width: 150px;
+    text-align: center;
+    padding: 20px 0 0 0;
+}
+.gnb .gnb_list > li.all > .depth2 > li {
+    height: 40px;
+    line-height: 40px;
+    font-size: 1.1rem;
+}
+.gnb .gnb_list li:hover ~ li.all,
+.gnb .gnb_list li.all:hover {
+    height: 300px;
+    transition: height 0.5s;
 }
 
 

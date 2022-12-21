@@ -1,8 +1,8 @@
 $(function () {
-    $(".gnb .depth2").hide();
-    $(".gnb .depth1 > .gnb_item").hover(function () {
-        $(".gnb .depth2").stop().slideToggle();
-    });
+    // $(".gnb .depth2").hide();
+    // $(".gnb .depth1 > .gnb_item").hover(function () {
+    //     $(".gnb .depth2").stop().slideToggle();
+    // });
 
     // 골프장 날씨
     fetch('http://goweather.herokuapp.com/weather/Seogwipo')
