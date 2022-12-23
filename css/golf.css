@@ -213,9 +213,9 @@ header .inner{
 .sec04 .inner .left{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     margin-left: 10px;
-    width: 45% ;
+    width: 50% ;
 }
 .sec04 .inner .menu{
     list-style: none;
@@ -247,7 +247,6 @@ header .inner{
 }
 .sec04 .inner .content{
     margin: 5px 5px 0 20px;
-    overflow: hidden;
 }
 .sec04 .inner > div .content li{
     vertical-align: middle;
@@ -272,10 +271,14 @@ header .inner{
     margin-top: 60px;
 }
 
-
+.sec04 .inner .right{
+    justify-content: flex-end;
+    width: 45%;
+}
 .sec04 .inner .right .pic{
     display: flex;
     justify-content: center;
+    overflow: hidden;
 }
 .sec04 .inner .right .pic img{
     width: 80%;
@@ -370,7 +373,7 @@ header .inner{
     display: flex;
     justify-content: space-between;
     width: 100%;
-    margin: 20px;
+    margin: 20px 0 ;
     padding: 0 10px;
 }
 .sec05 .inner .reservation .button a{
