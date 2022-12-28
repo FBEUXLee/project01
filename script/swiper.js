@@ -1,6 +1,5 @@
 var swiper = new Swiper(".sec01", {
     centeredSlides: true,
-    slidesPerView: 1.8,
     spaceBetween: 15,
     loop: true,
     autoplay: {
@@ -17,7 +16,7 @@ var swiper = new Swiper(".sec01", {
     },
     breakpoints: {
         1024: {
-            slidesPerView: 1.8,
+            // slidesPerView: 1.8,
         },
     },
 });
