@@ -182,7 +182,7 @@ header:after {
 
 /* 섹션3 */
 .sec03 {
-    background: #0080ff;
+    background: #f2f2f2;
 }
 
 .sec03 .inner {
@@ -211,7 +211,7 @@ header:after {
     gap: 10px;
     padding: 30px 0;
     background: #fff;
-    box-shadow: 0px 2px 2px 1px;
+    box-shadow: 0px 2px 2px 1px rgb(0 0 0 / 20%);
     transition: all 1s ease;
     font-size: 25px;
     font-weight: bold;
@@ -229,91 +229,31 @@ header:after {
 }
 
 /* 섹션4 */
-.sec04 {
-    background: #f2f2f2;
+.sec04{
+    background: url(/image/실험7.png) no-repeat 50% 70%/cover;
+    padding: 100px 0;
 }
-
-.sec04 .inner {
-    justify-content: space-between;
-}
-
-.sec04 .inner .left {
+.sec04 .PGA{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    margin-left: 10px;
-    width: 100%;
-}
-
-.sec04 .inner .menu {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-}
-
-.sec04 .inner .menu h3 {
-    background: #999;
-    padding: 5px 10px;
-    border-radius: 20px;
-    width: 76px;
-    text-align: center;
-}
-
-.sec04 .inner .menu .plus {
-    margin: 10px 0 0 5px;
-}
-
-.sec04 .inner .menu .plus a {
-    display: flex;
     align-items: center;
 }
-
-.sec04 .inner .menu .plus a span {
-    margin-left: 15px;
-    background: #999;
-    border-radius: 100%;
-}
-
-.sec04 .inner .menu .plus a span:hover {
-    transform: rotate(360deg);
-    transition: all 0.5s linear;
-}
-
-.sec04 .inner .menu li:nth-child(2) {
-    width: 100%;
-}
-
-.sec04 .inner .content {
-    margin: 5px 5px 0 20px;
-}
-
-.sec04 .inner>div .content li {
-    vertical-align: middle;
-}
-
-.sec04 .inner>div .content li a {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 15px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
-
-.sec04 .inner>div .content li a:hover {
+.sec04 p{
+    color: #fff;
     font-weight: bold;
 }
-
-.sec04 .inner>div .content li a span {
-    font-size: 13px;
-    color: #999;
+.sec04 .PGA_title{
+    font-size: 2rem;
+}
+.sec04 .PGA p:nth-child(2){
+    margin-top: 20px;
+    font-size: 20px;
 }
 
 
 /* 섹션5 */
 .sec05 {
-    background-color: #0080ff;
+    background-color: #f2f2f2;
 }
 
 .sec05 .inner {
@@ -524,11 +464,11 @@ header:after {
 }
 
 .sec05 .calendar .legend .bg .color.ex01 {
-    background: rebeccapurple;
+    background: green;
 }
 
 .sec05 .calendar .legend .bg .color.ex02 {
-    background: green;
+    background: red;
 }
 
 .sec05 .calendar .legend .bg .color.ex03 {
@@ -662,6 +602,88 @@ header:after {
     background: #fff;
     border-radius: 100%;
     margin-left: 20px;
+}
+
+/* 섹션7 */
+.sec07 {
+    background: #f2f2f2;
+}
+
+.sec07 .inner {
+    justify-content: space-between;
+}
+
+.sec07 .inner .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 10px;
+    width: 100%;
+}
+
+.sec07 .inner .menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sec07 .inner .menu h3 {
+    background: #999;
+    padding: 5px 10px;
+    border-radius: 20px;
+    width: 76px;
+    text-align: center;
+}
+
+.sec07 .inner .menu .plus {
+    margin: 10px 0 0 5px;
+}
+
+.sec07 .inner .menu .plus a {
+    display: flex;
+    align-items: center;
+}
+
+.sec07 .inner .menu .plus a span {
+    margin-left: 15px;
+    background: #999;
+    border-radius: 100%;
+}
+
+.sec07 .inner .menu .plus a span:hover {
+    transform: rotate(360deg);
+    transition: all 0.5s linear;
+}
+
+.sec07 .inner .menu li:nth-child(2) {
+    width: 100%;
+}
+
+.sec07 .inner .content {
+    margin: 5px 5px 0 20px;
+}
+
+.sec07 .inner>div .content li {
+    vertical-align: middle;
+}
+
+.sec07 .inner>div .content li a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.sec07 .inner>div .content li a:hover {
+    font-weight: bold;
+}
+
+.sec07 .inner>div .content li a span {
+    font-size: 13px;
+    color: #999;
 }
 
 /* footer */
