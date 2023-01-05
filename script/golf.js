@@ -34,6 +34,22 @@ $(function () {
     });
     $(".sec05 .reservation .explanation.ex01 .close").click(function () {
         $(".explanation.ex01").hide();
-    })
+    });
 
+    // 사이트맵
+    // $('.sitemap').hide();
+    $('.account .sitemap_btn').click(function(){
+        $('.sitemap').show();
+    });
+    $('.close_btn').click(function(){
+        $('.sitemap').hide();
+    });
+
+    $('.sitemap .gnb_chor').click(function(){
+        $('.sitemap .depth').stop().slideToggle();
+        $('.sitemap .gnb_chor span').text(function (e, text) {
+            $(this).parent().parent().siblings().find(".depth").stop().slideToggle("slow", "swing");
+            return text === 'expand_Less' ? 'expand_more' : 'expand_Less';
+        });
+    });
 });

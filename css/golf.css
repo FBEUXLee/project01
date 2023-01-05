@@ -106,13 +106,14 @@ header:after {
 .account span {
     margin-right: 10px;
     font-weight: bold;
+    font-size: 30px;
 }
 
 .account span:hover {
     color: #0080ff;
 }
 
-.account .sitemap {
+.account .sitemap_btn {
     display: none;
 }
 
