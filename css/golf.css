@@ -636,26 +636,6 @@ header:after {
     text-align: center;
 }
 
-.sec07 .inner .menu .plus {
-    margin: 10px 0 0 5px;
-}
-
-.sec07 .inner .menu .plus a {
-    display: flex;
-    align-items: center;
-}
-
-.sec07 .inner .menu .plus a span {
-    margin-left: 15px;
-    background: #999;
-    border-radius: 100%;
-}
-
-.sec07 .inner .menu .plus a span:hover {
-    transform: rotate(360deg);
-    transition: all 0.5s linear;
-}
-
 .sec07 .inner .menu li:nth-child(2) {
     width: 100%;
 }
@@ -685,6 +665,26 @@ header:after {
 .sec07 .inner>div .content li a span {
     font-size: 13px;
     color: #999;
+}
+
+.sec07 .inner .menu .plus {
+    margin: 10px 0 0 5px;
+}
+
+.sec07 .inner .menu .plus a {
+    display: flex;
+    align-items: center;
+}
+
+.sec07 .inner .menu .plus a span {
+    margin-left: 15px;
+    background: #999;
+    border-radius: 100%;
+}
+
+.sec07 .inner .menu .plus a span:hover {
+    transform: rotate(360deg);
+    transition: all 0.5s linear;
 }
 
 /* footer */

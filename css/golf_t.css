@@ -41,10 +41,21 @@
     }
     
     .sec03 ul li span {
-        font-size: 25px;
+        font-size: 30px;
     }
     .sec03 ul li p{
         font-size: 20px;
+    }
+
+    /* 섹션4 */
+    .sec04{
+        padding: 70px 0;
+    }
+    .sec04 .PGA_title{
+        font-size: 1.8rem;
+    }
+    .sec04 .PGA p:nth-child(2){
+        font-size: 18px;
     }
 
     /* 섹션5 */
@@ -94,7 +105,11 @@
         align-items: flex-start;
     }
     footer .footer_top .shortcut{
-        margin: 20px 0 0 -30px;
+        margin: 20px 0 0 -15px;
+    }
+    footer .footer_top .shortcut a {
+        font-size: 15px;
+        margin: 0 0 0 15px;
     }
 
     /* 사이트맵 */
