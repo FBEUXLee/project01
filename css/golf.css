@@ -26,19 +26,18 @@ section {
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 /* 헤더 */
-header {
+/* header {
     position: relative;
-}
+} */
 
 header .inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 80px;
 }
 
 header:after {
@@ -56,7 +55,7 @@ header:after {
 
 /* 네비 */
 .gnb {
-    margin: 0 30px;
+    margin: 0 20px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -65,24 +64,27 @@ header:after {
     display: inline-block;
     vertical-align: top;
     padding: 0 13px;
+    position: relative;
 }
 
 .gnb>ul>li>a {
     display: block;
     font-size: 20px;
     font-weight: 500;
-    padding: 32px 0;
+    padding: 20px 0;
     transition: color 0.3s ease-out;
 }
 
 .gnb>ul>li>.depth {
-    padding-top: 25px;
-    padding-bottom: 72px;
-    display: none;
+    position: absolute;
+    z-index: 9;
+    background: #ddd;
+    /* display: none; */
 }
 
 .gnb>ul>li>.depth ul li {
     padding: 10px 0;
+    text-align: center;
 }
 
 .gnb>ul>li>.depth ul li a {
@@ -93,7 +95,8 @@ header:after {
     line-height: 20px;
 }
 
-.gnb a:hover {
+.gnb a:hover,
+.gnb>ul>li>.depth ul li a:hover {
     color: #0080ff;
 }
 
@@ -146,15 +149,16 @@ header:after {
 }
 
 .sec02 .inner h2 {
-    margin-left: 10px;
+    margin-left: 20px;
     width: 135px;
+    font-size: 2rem;
 }
 
 .sec02 ul {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin: 0 10px;
+    margin: 0 20px;
 }
 
 .sec02 ul li a {
@@ -200,7 +204,7 @@ header:after {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    margin: 50px 10px 0 10px;
+    margin: 50px 20px 0 20px;
 }
 
 .sec03 ul li {
@@ -526,7 +530,8 @@ header:after {
     flex-direction: column;
 }
 
-.sec06 .inner h2 {
+.sec06 .inner h2,
+.sec07 .inner h2 {
     text-align: center;
     width: 100%;
 }
@@ -611,51 +616,72 @@ header:after {
 }
 
 .sec07 .inner {
-    justify-content: space-between;
+    flex-direction: column;
+}
+.sec07 .inner .wrap{
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
 }
 
 .sec07 .inner .left {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     margin-left: 10px;
     width: 100%;
 }
+.sec07 .inner .left>ul{
+    width: 100%;
+    margin-right: 30px;
+}
 
-.sec07 .inner .menu {
+.sec07 .inner .notice {
     list-style: none;
     display: flex;
+    flex-direction: column;
+    background: #fff;
+}
+
+.sec07 .inner .notice .menu{
+    display: flex;
     justify-content: space-between;
-}
-
-.sec07 .inner .menu h3 {
+    align-items: center;
     background: #999;
-    padding: 5px 10px;
-    border-radius: 20px;
-    width: 76px;
-    text-align: center;
+    padding: 8px;
 }
-
-.sec07 .inner .menu li:nth-child(2) {
-    width: 100%;
+.sec07 .inner .notice .menu h3{
+    font-size: 25px;
 }
-
-.sec07 .inner .content {
-    margin: 5px 5px 0 20px;
+.sec07 .inner .notice .menu .plus{
+    display: flex;
+    align-items: center;
+}
+.sec07 .inner .notice .menu .plus span{
+    font-size: 30px;
+    font-weight: bold;
+}
+.sec07 .inner .notice .menu .plus span:hover {
+    transform: rotate(360deg);
+    transition: all 0.5s linear;
 }
 
 .sec07 .inner>div .content li {
     vertical-align: middle;
+    padding: 18px 0;
+    border-bottom: 1px solid #999;
+}
+.sec07 .inner>div .content li:last-child {
+    border: none;
 }
 
 .sec07 .inner>div .content li a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 15px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    margin: 0 10px;
+    font-size: 18px;
 }
 
 .sec07 .inner>div .content li a:hover {
@@ -663,29 +689,10 @@ header:after {
 }
 
 .sec07 .inner>div .content li a span {
-    font-size: 13px;
+    font-size: 15px;
     color: #999;
 }
 
-.sec07 .inner .menu .plus {
-    margin: 10px 0 0 5px;
-}
-
-.sec07 .inner .menu .plus a {
-    display: flex;
-    align-items: center;
-}
-
-.sec07 .inner .menu .plus a span {
-    margin-left: 15px;
-    background: #999;
-    border-radius: 100%;
-}
-
-.sec07 .inner .menu .plus a span:hover {
-    transform: rotate(360deg);
-    transition: all 0.5s linear;
-}
 
 /* footer */
 footer {
@@ -754,4 +761,8 @@ footer address {
 
 footer address p {
     font-size: 15px;
+}
+
+.sitemap{
+    display: none;
 }
