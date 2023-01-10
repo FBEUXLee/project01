@@ -16,7 +16,7 @@ var swiper = new Swiper(".sec01", {
     },
     breakpoints: {
         1024: {
-            // slidesPerView: 1.8,
+            slidesPerView: 1.8,
         },
     },
 });
