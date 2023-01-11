@@ -30,11 +30,8 @@ h2 {
 }
 
 /* 헤더 */
-header {
-    height: 70px;
-}
-
 header .inner {
+    height: 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -44,18 +41,6 @@ header .inner .logo h1{
     font-size: 20px;
     word-break: keep-all;
 }
-/* header:after {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    height: 0;
-    background: #fff;
-    z-index: 0;
-    transition: all 0.3s ease-out;
-    ;
-} */
 
 /* 네비 */
 .gnb {
@@ -64,6 +49,18 @@ header .inner .logo h1{
     display: flex;
     justify-content: center;
 }
+.gnb > ul::after{
+    width: 100%;
+    height: 300px;
+    background: #ddd;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 70px;
+    z-index: 8;
+    display: none;
+}
+
 .gnb>ul>li {
     display: inline-block;
     vertical-align: top;
@@ -83,11 +80,14 @@ header .inner .logo h1{
     position: absolute;
     z-index: 9;
     background: #ddd;
-    /* display: none; */
+    width: 100%;
+    left: 0;
+    height: 300px;
+    display: block;
 }
 
 .gnb>ul>li>.depth ul li {
-    padding: 10px 0;
+    padding: 15px 0;
     text-align: center;
     word-break: keep-all;
 }
@@ -209,7 +209,7 @@ header .inner .logo h1{
     display: flex;
     justify-content: space-between;
     width: 100%;
-    margin: 50px 20px 0 20px;
+    padding: 50px 20px 0 20px;
 }
 
 .sec03 ul li {
@@ -557,11 +557,11 @@ header .inner .logo h1{
 }
 
 .sec06 .inner .wrap .course.halla {
-    background: url(/image/halla.png) 50% 50%/cover;
+    background: url(../image/halla.png) 50% 50%/cover;
 }
 
 .sec06 .inner .wrap .course.coast {
-    background: url(/image/coast.png) 50% 50%/cover;
+    background: url(../image/coast.png) 50% 50%/cover;
 }
 
 .sec06 .inner .wrap .course .name {

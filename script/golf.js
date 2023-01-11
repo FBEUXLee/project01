@@ -1,15 +1,10 @@
 $(function () {
     // nav
-    var header = {
-        init: function () {
-            $('.gnb').mouseover(function () {
-                $('.gnb .depth').stop().slideDown();
-            });
-            $('.gnb').mouseleave(function () {
-                $('.gnb .depth').stop().slideUp();
-            });
-        }
-    };
+    $('.gnb .depth').hide();
+    $('.gnb').hover(function(){
+        $('.gnb .depth').stop().slideToggle();
+        $('.gnb > ul::after').stop().slideToggle();
+    });
 
     // 골프장 날씨
     fetch('http://goweather.herokuapp.com/weather/Seogwipo')
@@ -37,7 +32,6 @@ $(function () {
     });
 
     // 사이트맵
-    // $('.sitemap').hide();
     $('.account .sitemap_btn').click(function(){
         $('.sitemap').show();
     });
