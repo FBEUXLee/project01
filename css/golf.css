@@ -72,7 +72,6 @@ header .inner .logo h1{
     display: block;
     font-size: 20px;
     font-weight: 500;
-    padding: 20px 0;
     transition: color 0.3s ease-out;
 }
 
@@ -81,13 +80,14 @@ header .inner .logo h1{
     z-index: 9;
     background: #ddd;
     width: 100%;
+    top: 49px;
     left: 0;
     height: 300px;
     display: block;
 }
 
 .gnb>ul>li>.depth ul li {
-    padding: 15px 0;
+    padding-top: 25px;
     text-align: center;
     word-break: keep-all;
 }

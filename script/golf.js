@@ -1,9 +1,27 @@
 $(function () {
-    // nav
-    $('.gnb .depth').hide();
-    $('.gnb').hover(function(){
-        $('.gnb .depth').stop().slideToggle();
-        $('.gnb > ul::after').stop().slideToggle();
+
+    //슬라이드
+    var swiper = new Swiper(".sec01", {
+        centeredSlides: true,
+        spaceBetween: 15,
+        loop: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+            1024: {
+                slidesPerView: 1.8,
+            },
+        },
     });
 
     // 골프장 날씨
@@ -31,19 +49,4 @@ $(function () {
         $(".explanation.ex01").hide();
     });
 
-    // 사이트맵
-    $('.account .sitemap_btn').click(function(){
-        $('.sitemap').show();
-    });
-    $('.close_btn').click(function(){
-        $('.sitemap').hide();
-    });
-
-    $('.sitemap .gnb_chor').click(function(){
-        $('.sitemap .depth').stop().slideToggle();
-        $('.sitemap .gnb_chor span').text(function (e, text) {
-            $(this).parent().parent().siblings().find(".depth").stop().slideToggle("slow", "swing");
-            return text === 'expand_Less' ? 'expand_more' : 'expand_Less';
-        });
-    });
 });
