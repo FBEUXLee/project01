@@ -28,6 +28,9 @@ section {
 h2 {
     font-size: 2.5rem;
 }
+.wrap{
+    width: 100%;
+}
 
 /* 헤더 */
 header .inner {
@@ -134,15 +137,57 @@ header .inner .logo h1{
 }
 
 /* 섹션2 */
-.sec02 .page-top{
+.sec02 .page-top,
+.sec03 .page-mid{
+    margin: 0 20px;
+}
+.sec02 .page-top .title{
     display: flex;
     justify-content: space-between;
 }
+.sec02 .page-top .title .sub_title{
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+}
+.sec02 .page-top .title .sub_title a{
+    margin-left: 15px;
+}
+.sec02 .page-top .title .sub_title a::after{
+    content: '/';
+    position: absolute;
+    color: #cccccc;
+    font-size: 14px;
+    margin: 2px 0 0 6px;
+}
+.sec02 .page-top .title .sub_title a:last-child:after{
+    display: none;
+}
 
 
-
-
-
+/* 섹션3 */
+.sec03 .page-mid .top .caution{
+    font-size: 20px;
+    color: #777777;
+    margin: 30px 0;
+}
+.sec03 .page-mid .top .road{
+    display: flex;
+    margin-top: 50px;
+}
+.sec03 .page-mid .top .road h3{
+    word-break: keep-all;
+    margin-right: 100px;
+    font-size: 26px;
+    width: 145px;
+}
+.sec03 .page-mid .top .road span{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 18px;
+    line-height: 40px;
+    margin-right: 17px;
+}
 
 
 /* footer */
