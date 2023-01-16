@@ -171,7 +171,12 @@
                         </div>
 
                         <div class="bot">
-                            <div class="map"></div>
+                            <div id="map"></div>
+                            <!-- 지도 확대, 축소 컨트롤 div 입니다 -->
+                            <div class="custom_zoomcontrol radius_border"> 
+                                <span onclick="zoomIn()"><img src="https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/ico_plus.png" alt="확대"></span>  
+                                <span onclick="zoomOut()"><img src="https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/ico_minus.png" alt="축소"></span>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -321,7 +326,10 @@
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.min.js"></script>
     <script src="script/golf_common.js"></script>
+    <script type="text/javascript"
+        src="//dapi.kakao.com/v2/maps/sdk.js?appkey=aac9cb0d232cdfca27ec383f3e64fedc"></script>
     <script src="script/golf_map.js"></script>
+    </script>
 </body>
 
 </html>
