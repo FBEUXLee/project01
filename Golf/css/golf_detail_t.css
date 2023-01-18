@@ -1,0 +1,139 @@
+@charset "utf-8";
+@media (max-width:1040px){
+    h2 {
+        font-size: 2.3rem;
+    }
+
+    .gnb{
+        display: none;
+    }
+
+    .account .sitemap_btn{
+        display:block;
+    }
+
+    /* 섹션3 */
+    .sec03 .page-mid .top .explanation.ex01 .first_title {
+        font-size: 23px;
+    }
+
+    .sec03 .page-mid .top .explanation.ex01 .second_title {
+        font-size: 15px;
+    }
+
+    .sec03 .page-mid .top .explanation.ex01 .second_title ul li {
+        font-size: 14px;
+    }
+
+    /* footer */
+    footer{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    footer .inner .footer_top{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    footer .footer_top .shortcut{
+        margin: 20px 0 0 -15px;
+    }
+    footer .footer_top .shortcut a {
+        font-size: 15px;
+        margin: 0 0 0 15px;
+    }
+
+    /* 사이트맵 */
+    .sitemap{
+        position: fixed;
+        background: rgba(0,0,0,0.8);
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 10;
+    }
+    .sitemap .wrap{
+        position: absolute;
+        right: 0;
+        background: #fff;
+        width: 500px;
+        height: 100%;
+        overflow-y: auto;
+    }
+    .sitemap .wrap .top{
+        margin-top: 80px;
+    }
+    .sitemap .wrap .top .wc{
+        font-size: 20px;
+        margin-left: 20px;
+    }
+    .sitemap .wrap .top .login{
+        background: #0080ff;
+        padding: 20px 30px;
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .sitemap .wrap .top .login a{
+        /* color: #fff; */
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    /* 사이트맵 네비 */
+    .sitemap ul{
+        margin-top: 20px;
+    }
+    
+    .sitemap ul .gnb_chor{
+        padding: 30px 0 0 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-weight: bold;
+        font-size: 25px;
+    }
+    .sitemap ul .gnb_chor::after{
+        content: '';
+        width: 100%;
+        height: 2px;
+        background: #f3f3f3;
+        position: absolute;
+        margin-top: 68px;
+        margin-left: -20px;
+    }
+
+    .sitemap ul .gnb_chor span{
+        font-size: 50px;
+        color: #35313170;
+    }
+
+    .sitemap ul div.depth{
+        background: #f6f6f6;
+        display: none;
+    }
+    .sitemap ul div.depth ul{
+        margin-top: 0;
+    }
+    .sitemap ul div.depth ul li{
+        padding: 20px;
+        margin-top: 10px;
+        font-size: 20px;
+    }
+    .sitemap ul div.depth ul li a{
+        color: #777;
+    }
+    .sitemap ul div.depth ul li a:hover{
+        color: #0080ff;
+        transition: 0.3s ease;
+    }
+
+    .sitemap .close_btn{
+        position: absolute;
+        right: 0;
+        top:0
+    }
+    .sitemap .close_btn span{
+        font-size: 50px;
+    }
+}
