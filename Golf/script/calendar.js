@@ -22,7 +22,7 @@ var buildcalendar = function () {
 		dates.push(i); // 다음 달 날짜 채우기 (나머지 다 채운 다음 출력할 때 42개만 출력함)
 	}
 
-	for (var i = 0; i < 42; i++) {
+	for (var i = 0; i < 35; i++) {
 		if (i < thisFirst.getDay()) {
 			htmlDates += '<div class="date last">' + dates[i] + '</div>';
 		} else if (today.getDate() == dates[i] && today.getMonth() == CDate.getMonth() && today.getFullYear() == CDate.getFullYear()) {
