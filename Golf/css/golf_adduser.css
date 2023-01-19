@@ -147,11 +147,20 @@ header .inner .logo h1{
     flex-direction: column;
     align-items: center;
 }
-
+.sec02 .subtitle,
+.sec02 .idpw{
+    margin-top: 30px;
+}
 .sec02 .idpw{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
+    border: 3px solid beige;
+    padding: 60px 30px;
+}
+.sec02 .idpw .kakao img{
+    height: 60px;
 }
 
 
