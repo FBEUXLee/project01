@@ -157,10 +157,61 @@ header .inner .logo h1{
     justify-content: space-between;
     align-items: center;
     border: 3px solid beige;
-    padding: 60px 30px;
+    padding: 60px;
 }
+
+.sec02 .idpw .w3-container{
+    display: flex;
+    flex-direction: column;
+}
+.sec02 .idpw .w3-container label{
+    margin-top: 10px;
+}
+.sec02 .idpw .w3-container label b{
+    font-size: 20px;
+}
+
+.sec02 .idpw .w3-container .w3-input{
+    height: 40px;
+    width: 263px;
+}
+.sec02 .idpw .w3-container .w3-btn.w3-blue{
+    margin-top: 20px;
+    background: #2196f3;
+    border: none;
+    padding: 15px 0;
+    cursor: pointer;
+}
+.sec02 .idpw .w3-container button{
+    font-size: 18px;
+    font-weight: 500;
+}
+.sec02 .idpw .w3-container button.w3-btn:hover{
+    background: #0d8bf2;
+    transition: 0.3s ease;
+}
+
 .sec02 .idpw .kakao img{
-    height: 60px;
+    height: 57px;
+    margin-top: 20px;
+}
+
+.sec02 .idpw .search{
+    margin-top: 20px;
+}
+.sec02 .idpw .search a{
+    margin: 0 5px;
+}
+.sec02 .idpw .search a::after{
+    content: '';
+    height: 15px;
+    width: 2px;
+    background: #888;
+    position: absolute;
+    margin: 5px 0 0 5px;
+}
+.sec02 .idpw .search a:last-child::after{
+    display: none;
 }
 
 
