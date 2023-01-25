@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>예약안내</title>
+    <title>예약하기</title>
     <link rel="stylesheet" type="text/css" href="css/golf_reservation.css">
     <link rel="stylesheet" type="text/css" href="css/golf_reservation_t.css">
     <link rel="stylesheet" type="text/css" href="css/golf_reservation_m.css">
@@ -122,6 +122,19 @@
                 </section>
 
                 <section class="sec03">
+                    <!-- (A) BOOKING FORM -->
+                    <form id="bookForm" onsubmit="return book();">
+                        <label for="name">이름</label>
+                        <input type="text" name="name" required>
+
+                        <label for="email">Email</label>
+                        <input type="email" name="email" required>
+
+                        <label for="date">Date</label>
+                        <input type="date" name="date" required>
+
+                        <input type="submit" value="Go!" disabled id="bookGo">
+                    </form>
                 </section>
 
                 <section class="sec04"></section>
@@ -267,6 +280,8 @@
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.min.js"></script>
     <script src="script/golf_common.js"></script>
+    <script src="script/golf_reservation_info.js"></script>
+    <script src="script/golf_reservation_info_server.js"></script>
 </body>
 
 </html>
