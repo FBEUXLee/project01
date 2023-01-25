@@ -169,7 +169,55 @@ header .inner .logo h1{
 }
 
 /* 섹션3 */
+.wrap{
+    background: url(../image/about_bg.jpg) no-repeat 0 0/cover;
+}
+.sec03{
+    padding: 80px 0 ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sec03 .idpw{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 3px solid beige;
+    padding: 60px;
+}
 
+.sec03 .idpw form{
+    display: flex;
+    flex-direction: column;
+}
+.sec03 .idpw form label{
+    margin-top: 10px;
+}
+.sec03 .idpw form label b{
+    font-size: 20px;
+}
+.sec03 .idpw form input{
+    height: 40px;
+    width: 263px;
+}
+.sec03 .idpw form input[type="submit"]{
+    margin-top: 25px;
+    background: #2196f3;
+    border: none;
+    padding: 28px 0;
+    cursor: pointer;
+}
+.sec03 .idpw form input[value]{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 0px;
+}
+.sec03 .idpw form input[type="submit"]:hover{
+    background: #0d8bf2;
+    transition: 0.3s ease;
+}
 
 
 /* footer */
