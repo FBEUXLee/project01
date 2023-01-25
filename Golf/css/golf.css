@@ -240,7 +240,7 @@ header .inner .logo h1{
 
 /* 섹션4 */
 .sec04{
-    background: url(/image/실험7.png) no-repeat 50% 70%/cover;
+    background: url(../image/실험7.png) no-repeat 50% 70%/cover;
     padding: 100px 0;
 }
 .sec04 .PGA{
