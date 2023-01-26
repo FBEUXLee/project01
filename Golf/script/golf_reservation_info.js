@@ -9,11 +9,11 @@ function book() {
     fetch("/book", { method: "POST", body: data })
         .then(res => {
             if (res.status == 200) { location.href = "/thankyou"; }
-            else { alert("Opps an error has occured."); }
+            else { alert("다시 한번 확인 바랍니다."); }
         })
         .catch(err => {
             console.error(err);
-            alert("Opps an error has occured.");
+            alert("다시 한번 확인 바랍니다.");
         });
     return false;
 }

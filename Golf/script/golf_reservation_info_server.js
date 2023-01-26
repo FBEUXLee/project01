@@ -13,8 +13,8 @@ const portHTTP = 80,
         port: 25,
         host: "localhost",
         /* auth: {
-          user: EMAIL/USER,
-          pass: PASSWORD
+        user: EMAIL/USER,
+        pass: PASSWORD
         },*/
         tls: { rejectUnauthorized: false }
     },
