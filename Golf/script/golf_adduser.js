@@ -1,3 +1,4 @@
+window.alert("로그인이 필요합니다.")
 function check(form){
     if(form.userid.value=="giicha2" && form.userpassword.value=="1234"){
         window.open('golf_reservation_info.html')
