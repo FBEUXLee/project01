@@ -3,106 +3,57 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
-    <link rel="stylesheet" type="text/css" href="css/index.css">
-    <link rel="stylesheet" type="text/css" href="css/index_t.css">
-    <link rel="stylesheet" type="text/css" href="css/index_m.css">
-    <link rel="stylesheet" type="text/css" href="slick/slick.css">
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
-    <title>Lee_Portfolio</title>
+    <title>Lee_portfolio</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/index02.css">
+    <link rel="stylesheet" type="text/css" media="screen and (max-width: 768px)" href="css/index02-Mobile.css">
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul class="navi">
-                <li data-index="1" data-id="sec01"><a href="#">Home</a></li>
-                <li data-index="2" data-id="sec02"><a href="#">Profile</a></li>
-                <li data-index="3" data-id="sec03"><a href="#">Project</a></li>
-                <li data-index="4" data-id="sec04"><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <nav>
+        <h1><a href="#">LEE</a></h1>
+        <ul class="gnb">
+            <li data-id="sec01">TITLE</li>
+            <li data-id="sec02">PROJECT</li>
+            <li data-id="about">ABOUT</li>
+            <li data-id="contact">CONTACT</li>
+        </ul>
+        <button>
+            <span class="material-icons-outlined">menu</span>
+        </button>
+        <button>
+            <span class="material-icons-outlined">clear</span>
+        </button>
+    </nav>
 
-    <div class="background"></div>
-    <div class="wrap vertical-slider">
-        <div class="slide vertical-slide sec01" >
-            <div class="inner">
-                <div class="home">
-                    <h1>Welcome to my Portfolio!</h1>
-                    <span>길을 찾아가는 웹퍼블리셔, 이남혁입니다.</span>
-                </div>
-            </div>
-        </div>
+    <section class="sec01">
+        <ul class="title">
+            <li>UI/UX DESIGN</li>
+            <li>WEB PUBLISHING</li>
+            <li>PORTFOLIO</li>
+        </ul>
+        <ul class="title-mobile">
+            <li>UI/UX</li>
+            <li>DESIGN</li>
+            <li>WEB</li>
+            <li>PUBLISHING</li>
+            <li>PORTFOLIO</li>
+        </ul>
+        <button>
+            <span class="scroll-icon"></span>
+            <span>Scroll Down</span>
+        </button>
+    </section>
 
-        <div class="slide vertical-slide sec02">
-            <div class="inner">
-                <h2>Profile</h2>
-                <div class="profile">
-                    <ul>
-                        <li class="title">
-                            <div>
-                            <span class="material-symbols-outlined">
-                            account_circle
-                            </span>Name
-                        </div>
-                            <ul class="content">
-                                <li>이남혁(NamHyeok-Lee)</li>
-                            </ul>
-                        </li>
-                        <li class="title">
-                            <div>
-                            <span class="material-symbols-outlined">
-                            school
-                            </span>Education
-                        </div>
-                            <ul class="content">
-                                <li>UI/UX웹디자인&반응형 웹 프로젝트(웹퍼블리셔 취업과정)(2022.07.25~2022.11.24)</li>
-                            </ul>
-                        </li>
-                        <li class="title">
-                        <div>
-                            <span class="material-symbols-outlined">
-                            picture_in_picture
-                            </span>License
-                        </div>
-                            <ul class="content">
-                                <li>웹디자인기능사(2022)</li>
-                                <li>컴퓨터활용능력 1급(2020)</li>
-                                <li>한국사능력검정시험 1급(2019)</li>
-                                <li>워드프로세서 1급(2014)</li>
-                                <li>운전면허 1종 보통(2012)</li>
-                            </ul>
-                        </li>
-                        <li class="title">
-                        <div>
-                            <span class="material-symbols-outlined">
-                            memory
-                            </span>Skills
-                        </div>
-                            <ul class="content skill">
-                                <li><img src="image/html.png" alt="html">html</li>
-                                <li><img src="image/css.png" alt="css">css</li>
-                                <li><img src="image/javascript.png" alt="javascript">javascript</li>
-                                <li><img src="image/jquery.png" alt="jquery">jquery</li>
-                                <li><img src="image/figma.png" alt="figma">figma</li>
-                                <li><img src="image/python.png" alt="python">python(경험)</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="slide vertical-slide sec03">
+    <section class="sec02 one">
+        <div class="container">
+            <h2>01.</h2>
             <div class="inner">
                 <div class="wrapper">
                     <div class="project_name">
                         <ul>
-                            <li><a href="#" class="on">PROJECT A</a></li>
+                            <li><a href="#" class="on">PROJECT 01</a></li>
                         </ul>
                     </div>
                     <div class="project">
@@ -121,23 +72,26 @@
                         <div class="right">
                             <div class="info">
                                 <h3>한국관광공사</h3>
-                                <div class="overview">
-                                    <h4>OVERVIEW</h4>
-                                    <p>한국관광공사 회사정보와 본사가 시행하는 사업에 관한 정보를 제공하는 반응형 홈페이지입니다. 복잡했던 nav를 정리하고 방문자들이 자주 이용할만한
-                                        기능을
-                                        메인에 배치했습니다.</p>
-                                </div>
-                                <div class="responsive">
-                                    <h4>RESPONSIVE</h4>
-                                    <p>PC, Tablet, Moblie</p>
-                                </div>
-                                <div class="main-color">
-                                    <h4>COLOR</h4>
-                                    <div class="co01"></div>
-                                    <div class="co02"></div>
-                                </div>
-                                <div class="btn">
-                                    <a href="KTOproject.html" target="_blank">사이트 바로가기</a>
+                                <div class="wrap">
+                                    <div class="overview">
+                                        <h4>OVERVIEW</h4>
+                                        <p>한국관광공사 회사정보와 본사가 시행하는 사업에 관한 정보를 제공하는 반응형 홈페이지입니다. 복잡했던 nav를 정리하고 방문자들이 자주
+                                            이용할만한
+                                            기능을
+                                            메인에 배치했습니다.</p>
+                                    </div>
+                                    <div class="responsive">
+                                        <h4>RESPONSIVE</h4>
+                                        <p>PC, Tablet, Moblie</p>
+                                    </div>
+                                    <div class="main-color">
+                                        <h4>COLOR</h4>
+                                        <div class="co01"></div>
+                                        <div class="co02"></div>
+                                    </div>
+                                    <div class="btn">
+                                        <a href="/KTO/KTOproject.html" target="_blank">사이트 바로가기</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -145,25 +99,41 @@
                 </div>
             </div>
         </div>
+    </section>
 
-        <div class="slide vertical-slide sec04">
-            <div class="inner">
-                <div class="end">
-                    <ul class="contact">
-                        <li>
-                            <h2>Contact</h2>
-                            <ul>
-                                <li><a href="#"><span class="material-symbols-outlined">
-                                    phone_in_talk
-                                    </span>Phone : 010-9492-7416</a></li>
-                                <li><a href="#"><span class="material-symbols-outlined">
-                                    alternate_email
-                                    </span>e-mail : dlwlgur37@naver.com</a></li>
-                            </ul>
-                        </li>
-                    </ul>
+    <section class="sec03">
+        <div class="about">
+            <div class="container">
+                <h2>About</h2>
+                <div class="education">
+                    <h4>Education</h4>
+                    <p>2022. 11. 웹디자인(UI/UX) 및 반응형 웹 프로젝트 과정 수료</p>
                 </div>
-
+                <div class="license">
+                    <h4>License</h4>
+                    <p>2022. 12. 웹디자인기능사</p>
+                    <p>2020. 05. 컴퓨터활용능력 1급</p>
+                    <p>2019. 11. 한국사능력검정시험 1급</p>
+                    <p>2014. 02. 워드프로세서 1급</p>
+                    <p>2012. 02. 운전면허 1종 보통</p>
+                </div>
+                <div class="skill">
+                    <h4>Skill</h4>
+                    <p>HTML, CSS, JavaScript, jQuery, Python(경험)</p>
+                </div>
+            </div>
+        </div>
+        <div class="contact">
+            <div class="container">
+                <h2>Contact</h2>
+                <div class="tel">
+                    <h4>TEL.</h4>
+                    <P>010. 9492. 7416.</P>
+                </div>
+                <div class="e-mail">
+                    <h4>E-mail</h4>
+                    <p>dlwlgur37@gmail.com</p>
+                </div>
                 <div class="e-mail">
                     <form id="contactform" class="mail">
                         <div class="adress">
@@ -188,21 +158,14 @@
                         </div>
                     </form>
                 </div>
-
-                <!-- <div class="bye">
-                    <h3>Thank you for visiting here!<br>I hope you guys to be happy!</h3>
-                </div> -->
             </div>
         </div>
+    </section>
 
-    </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script src="slick/slick.js"></script>
-    <script src="slick/slick.min.js"></script>
-    <script src="script/jquery-mousewheel-3.1.13.min.js"></script>
-    <script type="text/javascript" src="script/index.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="js/index02.js"></script>
 </body>
 
 </html>
