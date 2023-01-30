@@ -61,25 +61,3 @@ $('input[type=reset]').on('click', function(){
     $('.caution').removeClass('on');
 });    
 
-//-----------------------------스크롤버튼(nav)
-$(".navi li").each(function() {
-    var thisOffset = $("." + $(this).data('id')).offset().top;
-
-    $(this).click(function() {
-        $("html, body").animate({
-            scrollTop: thisOffset
-        }, 1000);
-        $(this).addClass('on');
-    });
-});
-
-//----------------------------섹션이동 시 리모콘에 하이라이트
-var scrolltop = $(window).scrollTop();
-$("section").each(function() {
-    if (scrolltop >= $(this).offset().top) {
-        $(".navi li[data-id=" + $(this).attr('class').split(' ')[0] + "]").addClass('on').siblings().removeClass('on');
-        $(this).addClass('on').siblings().removeClass('on');
-    } else if (scrolltop >= $(".sec04").offset().top + 130) {
-        $(".navi li[data-id=sec04]").addClass('on').siblings().removeClass('on');
-    }
-});    
