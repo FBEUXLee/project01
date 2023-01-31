@@ -36,7 +36,7 @@ var swiper = new Swiper(".mySwiper", {
 
 //메일폼
 var regmail = /^[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*\.[a-zA-Z]{2,3}$/;
-emailjs.init("iE8kgMdT2Yfy5HeyS"); // API keys
+emailjs.init("_25umooRsbcFGlOTZ"); // API keys
 
 document.querySelector('#contactform').addEventListener('submit', function(e) {
     e.preventDefault(); // submit이벤트 막기
