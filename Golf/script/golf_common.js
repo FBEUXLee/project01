@@ -1,9 +1,8 @@
 $(function () {
     // nav
     $('.gnb .depth').hide();
-    $('.gnb').hover(function () {
+    $('.gnb>ul>li').hover(function () {
         $('.gnb .depth').stop().slideToggle();
-        $('.gnb > ul::after').stop().slideToggle();
     });
 
     // 사이트맵

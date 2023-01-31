@@ -80,14 +80,14 @@ header .inner .logo h1{
     z-index: 9;
     background: #ddd;
     width: 100%;
-    top: 49px;
+    top: 51px;
     left: 0;
-    height: 300px;
     display: block;
+    padding-bottom: 20px;
 }
 
 .gnb>ul>li>.depth ul li {
-    padding-top: 25px;
+    padding-top: 20px;
     text-align: center;
     word-break: keep-all;
 }
