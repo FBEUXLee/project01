@@ -41,12 +41,12 @@ $(function () {
     document.getElementById('date').innerHTML = year + '-' + month + '-' + date;
 
     //상세안내
-    $(".button a.on").click(function (e) {
-        e.preventDefault();
-        $(".explanation.ex01").show();
-    });
-    $(".sec05 .reservation .explanation.ex01 .close").click(function () {
-        $(".explanation.ex01").hide();
-    });
+    // $(".button a.on").click(function (e) {
+    //     e.preventDefault();
+    //     $(".explanation.ex01").show();
+    // });
+    // $(".sec05 .reservation .explanation.ex01 .close").click(function () {
+    //     $(".explanation.ex01").hide();
+    // });
 
 });
