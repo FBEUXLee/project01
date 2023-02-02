@@ -9,6 +9,8 @@
     <link rel="stylesheet" type="text/css" href="css/golf.css">
     <link rel="stylesheet" type="text/css" href="css/golf_t.css">
     <link rel="stylesheet" type="text/css" href="css/golf_m.css">
+    <script src="script/mobiscroll.javascript.min.js"></script>
+    <link rel="stylesheet" href="css/mobiscroll.javascript.min.css">
 </head>
 
 <body>
@@ -87,7 +89,7 @@
 
             <div class="account">
                 <a href="golf_adduser.html"><span class="material-symbols-outlined">
-                    account_circle
+                        account_circle
                     </span></a>
                 <a href="#"><span class="material-symbols-outlined">
                         search
@@ -114,19 +116,19 @@
         <div class="inner">
             <h2>Quick Menu</h2>
             <ul>
-                <li><a href="#"><span class="material-symbols-outlined">
+                <li><a href="https://jungmungolf.visitkorea.or.kr/j_golf/photogallery.kto?func_name=list&photogalleryCourseDTO.course=HALLA"><span class="material-symbols-outlined">
                             landscape
                         </span>한라코스</a></li>
-                <li><a href="#"><span class="material-symbols-outlined">
+                <li><a href="https://jungmungolf.visitkorea.or.kr/j_golf/photogallery.kto?func_name=list&photogalleryCourseDTO.course=BEACH"><span class="material-symbols-outlined">
                             waves
                         </span>해안코스</a></li>
                 <li><a href="golf_adduser.html"><span class="material-symbols-outlined">
                             book_online
                         </span>예약하기</a></li>
-                <li><a href="#"><span class="material-symbols-outlined">
+                <li><a href="https://jungmungolf.visitkorea.or.kr/j_golf/kor/jg/jg_1_4_1.jsp"><span class="material-symbols-outlined">
                             real_estate_agent
                         </span>부대시설</a></li>
-                <li><a href="#"><span class="material-symbols-outlined">
+                <li><a href="https://jungmungolf.visitkorea.or.kr/j_golf/kor/jg/cms_list_2903.jsp"><span class="material-symbols-outlined">
                             receipt_long
                         </span>골프자료실</a></li>
                 <!-- <li><a href="#"><span class="material-symbols-outlined">
@@ -241,7 +243,21 @@
                         </span></div>
                 </div> -->
                 <div class="schedule">
-                    <div class="calendar">
+                    <div class="md-calendar-booking">
+                        <div class="mbsc-form-group">
+                            <div class="mbsc-form-group-title">Single date & appointment booking</div>
+                            <div id="demo-booking-single"></div>
+                        </div>
+                        <div class="mbsc-form-group">
+                            <div class="mbsc-form-group-title">Select date & time</div>
+                            <div id="demo-booking-datetime" class="booking-datetime"></div>
+                        </div>
+                        <div class="mbsc-form-group">
+                            <div class="mbsc-form-group-title">Booking multiple appointments</div>
+                            <div id="demo-booking-multiple"></div>
+                        </div>
+                    </div>
+                    <!-- <div class="calendar">
                         <div class="header">
                             <button class="calendar_btn" onclick="prevCal();">&lt;</button>
                             <div class="title"><span class="year"></span><span class="month"></span></div>
@@ -271,7 +287,7 @@
                                 <span>오늘날짜</span>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="right">
                         <div class="explanation ex02">
                             <ul class="second_title">
@@ -354,8 +370,8 @@
                                         <h3>Notice</h3>
                                     </a>
                                     <a href="#" class="plus"><span class="material-symbols-outlined">
-                                        add
-                                    </span></a>
+                                            add
+                                        </span></a>
                                 </div>
                             </li>
                             <li>

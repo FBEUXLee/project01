@@ -58,7 +58,6 @@ header .inner .logo h1{
     left: 0;
     top: 70px;
     z-index: 8;
-    /* display: none; */
 }
 
 .gnb>ul>li {
@@ -286,7 +285,24 @@ header .inner .logo h1{
 }
 
 /* 달력 */
-.sec05 .calendar {
+.sec05 .md-calendar-booking .mbsc-calendar-text {
+    text-align: center;
+}
+
+.sec05 .md-calendar-booking .booking-datetime .mbsc-datepicker-tab-calendar {
+    flex: 1 1 0;
+    min-width: 300px;
+}
+
+.sec05 .md-calendar-booking .mbsc-timegrid-item {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.sec05 .md-calendar-booking .mbsc-timegrid-container {
+    top: 30px;
+}
+/* .sec05 .calendar {
     width: 80%;
     padding: 20px;
     box-sizing: border-box;
@@ -369,7 +385,7 @@ header .inner .logo h1{
 
 .sec05 .calendar>.dates>.next {
     color: #c8c8c8 !important;
-}
+} */
 
 /* 섹션5 오른쪽 */
 .sec05 .inner .reservation .right {
@@ -531,7 +547,7 @@ header .inner .logo h1{
 
 /* 섹션6 */
 .sec06 {
-    background: url(/image/golf_club_bg.jpg) no-repeat 50% 50%;
+    background: url(../image/golf_club_bg.jpg) no-repeat 50% 50%;
 }
 
 .sec06 .inner {
