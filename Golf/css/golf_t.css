@@ -26,8 +26,8 @@
         margin: 50px 10px 0 10px;
     }
     .sec02 ul li a{
-        width: 100px;
-        height: 100px;
+        width: 120px;
+        height: 120px;
         font-size: 15px;
     }
     .sec02 ul li a span{
@@ -163,7 +163,6 @@
         justify-content: space-between;
     }
     .sitemap .wrap .top .login a{
-        /* color: #fff; */
         font-size: 25px;
         font-weight: bold;
     }

@@ -10,8 +10,8 @@
 
     /* 섹션2 */
     .sec02 ul li a{
-        width: 80px;
-        height: 80px;
+        width: 90px;
+        height: 90px;
         font-size: 12px;
     }
     .sec02 ul li a span{
@@ -69,7 +69,7 @@
 
     /* footer */
     footer .footer_top .shortcut{
-        margin: 20px 0 0 0px;
+        margin: 20px 0 0 -20px;
     }
     footer .footer_top .shortcut a {
         font-size: 13px;
