@@ -92,7 +92,7 @@ header .inner .logo h1{
     font-weight: 400;
     color: #767676;
     background: white;
-    border: 1px solid #DBDBDB;
+    /* border: 1px solid #DBDBDB; */
     border-top: none;
     display: flex;
     flex-direction: column;
