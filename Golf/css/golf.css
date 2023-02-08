@@ -44,12 +44,12 @@ header .inner .logo h1{
 
 /* 네비 */
 .gnb {
-    margin: 0 20px;
+    margin: 0 10px;
     width: 100%;
     display: flex;
     justify-content: center;
 }
-.gnb > ul::after{
+/* .gnb > ul::after{
     width: 100%;
     height: 1px;
     background: #ddd;
@@ -58,52 +58,89 @@ header .inner .logo h1{
     left: 0;
     top: 70px;
     z-index: 8;
+} */
+.gnb .inner{
+    display: flex;
+    align-items: center;
 }
-
-.gnb>ul>li {
-    display: inline-block;
-    vertical-align: top;
-    padding: 0 10px;
+.gnb .inner div{
     position: relative;
+    border-top: 5px solid transparent;
+    width: 118px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
 }
-
-.gnb>ul>li>a {
-    display: block;
-    font-size: 22px;
-    font-weight: 500;
-    transition: color 0.3s ease-out;
+.gnb .inner div:hover{
+    border-top: 5px solid #0080ff;
 }
-
-.gnb>ul>li>.depth {
-    position: absolute;
-    z-index: 9;
-    background: #ddd;
-    width: 100%;
-    top: 51px;
-    left: 0;
-    display: block;
-    padding-bottom: 20px;
+.gnb .inner div span{
+    height: 30px;
+    font-size: 20px;
+    font-weight: 700;
 }
-
-.gnb>ul>li>.depth ul li {
-    padding-top: 20px;
-    text-align: center;
-    word-break: keep-all;
-}
-
-.gnb>ul>li>.depth ul li a {
-    display: block;
-    color: #777777;
-    transition: color 0.3s ease-out;
-    font-size: 16px;
-    line-height: 20px;
-}
-
-.gnb a:hover,
-.gnb>ul>li>.depth ul li a:hover {
+.gnb .inner div:hover span a{
     color: #0080ff;
+} 
+.gnb .inner div ul{
+    width: 118px;
+    height: 0px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #767676;
+    background: white;
+    border: 1px solid #DBDBDB;
+    border-top: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 64px;
+    left: 0px;
+    transition: height 0.5s ease-in;
+    overflow: hidden;
+    z-index: 10; 
 }
-
+.gnb .inner div ul li{
+    width: 100%;
+    padding: 0 20px;
+    margin-bottom: 10px;
+}
+.gnb .inner div ul li:first-child{
+    margin-top: 20px;
+}
+.gnb .inner div ul li:last-child{
+    margin-bottom: 20px;
+}
+.gnb .inner div ul li a:hover{
+    color: #0080ff;
+    font-weight: 500;
+}
+.gnb .inner div:hover ul{
+    display: flex;
+}
+.gnb .inner div.one:hover ul{
+    height: 100%;
+}
+.gnb .inner div.two:hover ul{
+    height: 250px;
+}
+.gnb .inner div.three:hover ul,
+.gnb .inner div.four:hover ul{
+    height: 100px;
+}
+.gnb .inner div.five:hover ul{
+    height: 120px;
+}
+.gnb .inner div.six:hover ul{
+    height: 170px;
+}
+.gnb .inner div.seven:hover ul{
+    height: 167px;
+}
 
 /* 로그인/검색 */
 .account {
@@ -285,7 +322,7 @@ header .inner .logo h1{
 }
 
 /* 달력 */
-.sec05 .md-calendar-booking .mbsc-calendar-text {
+/* .sec05 .md-calendar-booking .mbsc-calendar-text {
     text-align: center;
 }
 
@@ -301,8 +338,8 @@ header .inner .logo h1{
 
 .sec05 .md-calendar-booking .mbsc-timegrid-container {
     top: 30px;
-}
-/* .sec05 .calendar {
+} */
+.sec05 .calendar {
     width: 80%;
     padding: 20px;
     box-sizing: border-box;
@@ -385,7 +422,7 @@ header .inner .logo h1{
 
 .sec05 .calendar>.dates>.next {
     color: #c8c8c8 !important;
-} */
+}
 
 /* 섹션5 오른쪽 */
 .sec05 .inner .reservation .right {
