@@ -63,6 +63,7 @@
         width: 500px;
         height: 100%;
         overflow-y: auto;
+        margin: 0;
     }
     .sitemap .wrap .top{
         margin-top: 80px;
