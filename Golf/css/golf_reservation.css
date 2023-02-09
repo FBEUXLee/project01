@@ -225,27 +225,42 @@ header .inner .logo h1{
 .sec03 .idpw form label b{
     font-size: 20px;
 }
+
 .sec03 .idpw form input{
     height: 40px;
     width: 263px;
 }
 .sec03 .idpw form input[type="submit"]{
     margin-top: 25px;
-    background: #2196f3;
+    background: #0080ff;
     border: none;
     padding: 28px 0;
     cursor: pointer;
+    color: #DBDBDB;
 }
 .sec03 .idpw form input[value]{
     font-size: 18px;
-    font-weight: 500;
+    font-weight: bold;
     line-height: 0px;
 }
 .sec03 .idpw form input[type="submit"]:hover{
-    background: #0d8bf2;
+    background: rgb(4, 91, 173);
     transition: 0.3s ease;
 }
 
+.sec03 .idpw form label .course{
+    display: flex;
+}
+.sec03 .idpw form .course div{
+    align-items: center;
+    display: flex;
+}
+.sec03 .idpw form .course div label{
+    margin: 0 0 0 10px;
+}
+.sec03 .idpw form .course input[type="radio"]{
+    width: 20px;
+}
 
 /* footer */
 footer {

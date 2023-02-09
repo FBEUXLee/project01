@@ -114,23 +114,38 @@
 
                 <section class="sec03">
                     <div class="idpw">
-                    <!-- (A) BOOKING FORM -->
-                    <form id="bookForm" onsubmit="return book();">
-                        <label for="name"><b>이름</b></label>
-                        <input type="text" name="name" required>
+                        <!-- (A) BOOKING FORM -->
+                        <form id="bookForm" onsubmit="return book();">
+                            <label for="name"><b>이름</b></label>
+                            <input type="text" name="name" required>
 
-                        <label for="email"><b>Email</b></label>
-                        <input type="email" name="email" required>
+                            <label for="email"><b>Email</b></label>
+                            <input type="email" name="email" required>
 
-                        <label for="tel"><b>휴대폰</b></label>
-                        <input type="tel" name="tel" required>
+                            <label for="tel"><b>휴대폰</b></label>
+                            <input type="tel" name="tel" required>
 
-                        <label for="date"><b>날짜</b></label>
-                        <input type="date" name="date" required>
+                            <label for="date"><b>날짜</b></label>
+                            <input type="date" name="date" required>
 
-                        <input type="submit" value="예약" disabled id="bookGo">
-                    </form>
-                </div>
+                            <label for="person"><b>인원</b></label>
+                            <input type="number" name="number" required>
+
+                            <label for="course"><b>코스</b></label>
+                            <div class="course">
+                                <div>
+                                    <input type="radio" name="radio" value="한라코스" required>
+                                    <label for="한라코스">한라코스</label>
+                                </div>
+                                <div>
+                                    <input type="radio" name="radio" value="해안코스" required>
+                                    <label for="해안코스">해안코스</label>
+                                </div>
+                            </div>
+
+                            <input type="submit" value="예약" disabled id="bookGo">
+                        </form>
+                    </div>
                 </section>
             </div>
         </div>
