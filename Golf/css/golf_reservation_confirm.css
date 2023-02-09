@@ -221,7 +221,7 @@ header .inner .logo h1{
     margin-bottom: 20px;
 }
 .sec03 .id ul div h3{
-    width: 140px;
+    width: 200px;
     font-size: 23px;
 }
 
@@ -238,7 +238,16 @@ header .inner .logo h1{
     background: #0080ff;
     padding: 10px 0px;
     margin: 0 20px;
-    width: 150px;
+    width: 115px;
+    cursor: pointer;
+}
+.sec03 .id .confirm .confirm_btn:hover{
+    background: rgb(4, 91, 173);
+    transition: all 0.3s ease 0s;
+}
+.sec03 .id .confirm .confirm_btn a{
+    color: #DBDBDB;
+    font-weight: bold;
 }
 
 
