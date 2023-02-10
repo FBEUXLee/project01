@@ -230,6 +230,11 @@ header .inner .logo h1{
     height: 40px;
     width: 263px;
 }
+.sec03 .idpw form input[value]{
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 0px;
+}
 .sec03 .idpw form input[type="submit"]{
     margin-top: 25px;
     background: #0080ff;
@@ -237,11 +242,6 @@ header .inner .logo h1{
     padding: 28px 0;
     cursor: pointer;
     color: #DBDBDB;
-}
-.sec03 .idpw form input[value]{
-    font-size: 18px;
-    font-weight: bold;
-    line-height: 0px;
 }
 .sec03 .idpw form input[type="submit"]:hover{
     background: rgb(4, 91, 173);
@@ -261,6 +261,21 @@ header .inner .logo h1{
 .sec03 .idpw form .course input[type="radio"]{
     width: 20px;
 }
+
+/* .sec03 .idpw form a.submit{
+    margin-top: 20px;
+    background: #0080ff;
+    border: none;
+    padding: 15px 0;
+    cursor: pointer;
+    color: #DBDBDB;
+    text-align: center;
+    font-size: 18px;
+}
+.sec03 .idpw form a.submit:hover{
+    background: rgb(4, 91, 173);
+    transition: 0.3s ease;
+} */
 
 /* footer */
 footer {

@@ -34,7 +34,7 @@ const mailtransport = nodemailer.createTransport(mailSet);
 
 // (D) EXPRESS HANDLERS
 // (D1) HOME PAGE - BOOKING FORM
-app.get("/", (req, res) => res.sendFile(path.join(__dirname, "1-booking.html")));
+app.get("/", (req, res) => res.sendFile(path.join(__dirname, "golf_reservation_info.html")));
 
 // (D2) SEND BOOKING REQUEST VIA EMAIL
 app.post("/book", (req, res) => {
@@ -60,7 +60,7 @@ app.post("/book", (req, res) => {
 });
 
 // (D3) THANK YOU
-app.get("/thankyou", (req, res) => res.sendFile(path.join(__dirname, "2-thank-you.html")));
+app.get("/thankyou", (req, res) => res.sendFile(path.join(__dirname, "golf_reservation_confirm.html")));
 
 // (E) START!
 app.listen(portHTTP);

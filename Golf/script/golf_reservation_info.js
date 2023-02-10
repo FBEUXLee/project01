@@ -8,8 +8,10 @@ function book() {
     // (C) SEND!
     fetch("/book", { method: "POST", body: data })
         .then(res => {
-            if (res.status == 200) { location.href = "/thankyou"; }
-            else { alert("다시 한번 확인 바랍니다."); }
+            if (res.status == 200) { location.href = "golf_reservation_confirm.html"; }// /thankyou
+            else { location.href = "golf_reservation_confirm.html";
+            // alert("다시 한번 확인 바랍니다."); 
+        }
         })
         .catch(err => {
             console.error(err);
