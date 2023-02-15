@@ -7,8 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>로그인</title>
     <link rel="stylesheet" type="text/css" href="css/golf_adduser.css">
-    <link rel="stylesheet" type="text/css" href="css/golf_adduser_t.css">
-    <link rel="stylesheet" type="text/css" href="css/golf_adduser_m.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/golf_adduser_t.css">
+    <link rel="stylesheet" type="text/css" href="css/golf_adduser_m.css"> -->
+    <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.css" />
+
 </head>
 
 <body>
@@ -294,9 +296,13 @@
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.min.js"></script>
     <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.js"></script>
     <script src="script/golf_common.js"></script>
     <script src="script/golf_adduser.js"></script>
-    <script type="module">
+    <script type="module" src="script/firebase.js"></script>
+
+
+    <!-- <script type="module">
         // Import the functions you need from the SDKs you need
         import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js";
         import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-analytics.js";
@@ -315,52 +321,10 @@
             measurementId: "G-N5V8XRJTGG"
         };
 
-        // Initialize Firebase
-        const app = initializeApp(firebaseConfig);
-        const analytics = getAnalytics(app);
-        import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-auth.js";
-
-        const auth = getAuth();
-        document.getElementById('signUpButton').addEventListener('click', (event) => {
-            event.preventDefault()
-            const signUpemail = document.getElementById('signUpEmail').value
-            const signUppassword = document.getElementById('signUpPassword').value
+        
 
 
-            createUserWithEmailAndPassword(auth, signUpemail, signUppassword)
-                .then((userCredential) => {
-                    console.log(userCredential)
-                    // Signed in 
-                    const user = userCredential.user;
-                    // ...
-                })
-                .catch((error) => {
-                    console.log('error')
-                    const errorCode = error.code;
-                    const errorMessage = error.message;
-                    // ..
-                });
-        })
-
-        document.getElementById('signInButton').addEventListener('click', (event) => {
-            event.preventDefault()
-            const signInemail = document.getElementById('signInEmail').value
-            const signInpassword = document.getElementById('signInPassword').value
-        signInWithEmailAndPassword(auth, signInemail, signInpassword)
-            .then((userCredential) => {
-                // Signed in 
-                console.log(userCredential)
-                const user = userCredential.user;
-                // ...
-            })
-            .catch((error) => {
-                console.log('error')
-                const errorCode = error.code;
-                const errorMessage = error.message;
-            });
-        });
-
-    </script>
+    </script> -->
 
 </body>
 
