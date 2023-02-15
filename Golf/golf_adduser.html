@@ -120,12 +120,15 @@
                         <form class="w3-container">
 
                             <label class="w3-text-blue"><b>ID</b></label>
-                            <input class="w3-input w3-border" type="text" name="userid" value="giicha2">
+                            <input id="signInEmail" class="w3-input w3-border" type="text" name="userid"
+                                value="test@test.com">
 
                             <label class="w3-text-blue"><b>PW</b></label>
-                            <input class="w3-input w3-border" type="text" name="userpassword" value="1234">
+                            <input id="signInPassword" class="w3-input w3-border" type="text" name="userpassword"
+                                value="123123">
 
-                            <button class="w3-btn w3-blue" onclick="check(this.form)">로그인</button>
+                            <button id="signInButton" class="w3-btn w3-blue">로그인</button>
+                            <!-- onclick="check(this.form)" -->
 
                         </form>
                         <div class="kakao">
@@ -137,7 +140,7 @@
                         <div class="search">
                             <a href="">아이디 찾기</a>
                             <a href="">비밀번호 찾기</a>
-                            <a href="">회원가입</a>
+                            <a href="" id="signUpButton">회원가입</a>
                         </div>
                     </div>
 
@@ -293,6 +296,71 @@
     <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
     <script src="script/golf_common.js"></script>
     <script src="script/golf_adduser.js"></script>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+            apiKey: "AIzaSyCahl01nUjG3BHgxhnf1vi1BCpBGt9TIaw",
+            authDomain: "easylogin-a714a.firebaseapp.com",
+            projectId: "easylogin-a714a",
+            storageBucket: "easylogin-a714a.appspot.com",
+            messagingSenderId: "562311633998",
+            appId: "1:562311633998:web:cf7c06d70cd7c45608b71f",
+            measurementId: "G-N5V8XRJTGG"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+        import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-auth.js";
+
+        const auth = getAuth();
+        document.getElementById('signUpButton').addEventListener('click', (event) => {
+            event.preventDefault()
+            const signUpemail = document.getElementById('signUpEmail').value
+            const signUppassword = document.getElementById('signUpPassword').value
+
+
+            createUserWithEmailAndPassword(auth, signUpemail, signUppassword)
+                .then((userCredential) => {
+                    console.log(userCredential)
+                    // Signed in 
+                    const user = userCredential.user;
+                    // ...
+                })
+                .catch((error) => {
+                    console.log('error')
+                    const errorCode = error.code;
+                    const errorMessage = error.message;
+                    // ..
+                });
+        })
+
+        document.getElementById('signInButton').addEventListener('click', (event) => {
+            event.preventDefault()
+            const signInemail = document.getElementById('signInEmail').value
+            const signInpassword = document.getElementById('signInPassword').value
+        signInWithEmailAndPassword(auth, signInemail, signInpassword)
+            .then((userCredential) => {
+                // Signed in 
+                console.log(userCredential)
+                const user = userCredential.user;
+                // ...
+            })
+            .catch((error) => {
+                console.log('error')
+                const errorCode = error.code;
+                const errorMessage = error.message;
+            });
+        });
+
+    </script>
 
 </body>
 
