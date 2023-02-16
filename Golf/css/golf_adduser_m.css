@@ -1,0 +1,20 @@
+@charset "utf-8";
+@media (max-width:640px){
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .account span {
+        font-size: 25px;
+    }
+    /* footer */
+    footer .footer_top .shortcut{
+        margin: 20px 0 0 -20px;
+    }
+    footer .footer_top .shortcut a {
+        font-size: 13px;
+    }
+    footer address p {
+        font-size: 12px;
+    }
+}
