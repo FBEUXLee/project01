@@ -39,7 +39,7 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 
-import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, browserSessionPersistence, signOut } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-auth.js";
+import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, isSignInWithEmailLink, signInWithEmailLink, browserSessionPersistence, signOut } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-auth.js";
 
 //회원가입
 const auth = getAuth();
@@ -82,9 +82,38 @@ document.getElementById('signInButton').addEventListener('click', (event) => {
             const errorMessage = error.message;
         });
 
+    //로그인 완료
+    if (isSignInWithEmailLink(auth, window.location.href)) {
+        // Additional state parameters can also be passed via URL.
+        // This can be used to continue the user's intended action before triggering
+        // the sign-in operation.
+        // Get the email if available. This should be available if the user completes
+        // the flow on the same device where they started it.
+        let email = window.localStorage.getItem('emailForSignIn');
+        if (!email) {
+            // User opened the link on a different device. To prevent session fixation
+            // attacks, ask the user to provide the associated email again. For example:
+            email = window.prompt('Please provide your email for confirmation');
+        }
+        // The client SDK will parse the code from the link for you.
+        signInWithEmailLink(auth, email, window.location.href)
+            .then((result) => {
+                // Clear email from storage.
+                window.localStorage.removeItem('emailForSignIn');
+                // You can access the new user via result.user
+                // Additional user info profile not available via:
+                // result.additionalUserInfo.profile == null
+                // You can check if the user is new or existing:
+                // result.additionalUserInfo.isNewUser
+            })
+            .catch((error) => {
+                // Some error occurred, you can inspect the code: error.code
+                // Common errors could be invalid email and invalid or expired OTPs.
+            });
+    }
+
     //로그인유지
-    const browserSessionPersistence = document.getElementById('signInButton').value
-    setPersistence(auth, browserSessionPersistence)
+    setPersistence(firebase.auth.Auth.Persistence.SESSION)//browserSessionPersistence
         .then(() => {
             // Existing and future Auth states are now persisted in the current
             // session only. Closing the window would clear any existing state even
@@ -92,7 +121,6 @@ document.getElementById('signInButton').addEventListener('click', (event) => {
             // ...
             // New sign-in will be persisted with session persistence.
             return signInWithEmailAndPassword(auth, signInemail, signInpassword);
-            console.log(1)
         })
         .catch((error) => {
             // Handle Errors here.
@@ -101,39 +129,6 @@ document.getElementById('signInButton').addEventListener('click', (event) => {
         });
 });
 
-
-
-
-
-// setPersistence(auth, browserSessionPersistence)
-//     .then(() => {
-//         // Existing and future Auth states are now persisted in the current
-//         // session only. Closing the window would clear any existing state even
-//         // if a user forgets to sign out.
-//         // ...
-//         // New sign-in will be persisted with session persistence.
-//         return signInWithEmailAndPassword(auth, signInemail, signInpassword);
-//     })
-//     .catch((error) => {
-//         // Handle Errors here.
-//         console.log('error')
-//         const errorCode = error.code;
-//         const errorMessage = error.message;
-//     });
-
-// setPersistence(auth, inMemoryPersistence)
-//     .then(() => {
-//         const provider = new GoogleAuthProvider();
-//         // In memory persistence will be applied to the signed in Google user
-//         // even though the persistence was set to 'none' and a page redirect
-//         // occurred.
-//         return signInWithRedirect(auth, provider);
-//     })
-//     .catch((error) => {
-//         // Handle Errors here.
-//         const errorCode = error.code;
-//         const errorMessage = error.message;
-//     });
 
 //로그아웃
 signOut(auth).then(() => {
